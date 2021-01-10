@@ -1,7 +1,9 @@
 # LCOM
 
 Labs and final project developed for LCOM 2020/2021.
+
 Intended as a help resource. Be aware of plagiarism!
+
 Developed with [Rita Mendes](https://github.com/eukia).
 
 ## Help material
@@ -11,4 +13,5 @@ Developed with [Rita Mendes](https://github.com/eukia).
 ## Considerations
 
 The serial port was not implemented.
+
 The labs were rewritten to practice for the individual programming assignments.
