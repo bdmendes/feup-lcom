@@ -1,9 +1,7 @@
-# LCOM Project
+# LCOM
 
-LCOM Project for group T9G02.
+Labs and final project developed for LCOM 2020/2021.
 
-Group members:
+Intended as a help resource. Be aware of plagiarism!
 
-1. Bruno Mendes (up201906166@fe.up.pt)
-2. Rita Mendes (up201907877@fe.up.pt)
-
+Developed with Rita Mendes.
