@@ -1,0 +1,5 @@
+<map id="draw_button" name="draw_button">
+<area shape="rect" id="node1" title="draws a button to the video buffer" alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a3671b9920cf64d55c27e948289644554" title="cheap sprite draw; does not check for out of bound positions and does not support negative sprite pos..." alt="" coords="156,5,329,32"/>
+<area shape="rect" id="node3" href="$font_8c.html#a0bac189caf6ba33d8ae33d1044ee8d67" title="draws a string of tiles" alt="" coords="193,56,292,83"/>
+</map>

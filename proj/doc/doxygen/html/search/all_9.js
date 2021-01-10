@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['kbc_2ec_195',['kbc.c',['../kbc_8c.html',1,'']]],
+  ['kbc_2ed_196',['kbc.d',['../kbc_8d.html',1,'']]],
+  ['kbc_2eh_197',['kbc.h',['../kbc_8h.html',1,'']]],
+  ['kbc_5fcan_5fwrite_5fto_5finbuf_198',['kbc_can_write_to_inbuf',['../kbc_8c.html#ae18e1dfab3990e4eb2ad6bb594406d53',1,'kbc_can_write_to_inbuf():&#160;kbc.c'],['../kbc_8h.html#ae18e1dfab3990e4eb2ad6bb594406d53',1,'kbc_can_write_to_inbuf():&#160;kbc.c']]],
+  ['kbc_5fcheck_5fmouse_5finterface_199',['KBC_CHECK_MOUSE_INTERFACE',['../mouse_8h.html#a19f3f409be0e3cfa750c56408ef50f92',1,'mouse.h']]],
+  ['kbc_5fdisable_5fmouse_200',['KBC_DISABLE_MOUSE',['../mouse_8h.html#a1feec59f57ba28933fbe3516f30b1d14',1,'mouse.h']]],
+  ['kbc_5fenable_5fmouse_201',['KBC_ENABLE_MOUSE',['../mouse_8h.html#a2c0f7ed5ff3b86d06f0e95600a5f736f',1,'mouse.h']]],
+  ['kbc_5fin_5fbuf_5fcommand_202',['KBC_IN_BUF_COMMAND',['../kbc_8h.html#ac52e9ca31dfd516502cc543483b37819',1,'kbc.h']]],
+  ['kbc_5fin_5fbuf_5fcommand_5farg_203',['KBC_IN_BUF_COMMAND_ARG',['../kbc_8h.html#a0eca8e60eb7600cbf352417d672b3a97',1,'kbc.h']]],
+  ['kbc_5fout_5fbuf_204',['KBC_OUT_BUF',['../kbc_8h.html#a1ccde68b2b6d4e45b50eef1403e10bb7',1,'kbc.h']]],
+  ['kbc_5fread_5fcommand_5fbyte_205',['kbc_read_command_byte',['../kbc_8c.html#a8dd62e08cf4c5093e096829f8b1eb218',1,'kbc_read_command_byte(uint8_t *cmd_byte):&#160;kbc.c'],['../kbc_8h.html#a8dd62e08cf4c5093e096829f8b1eb218',1,'kbc_read_command_byte(uint8_t *cmd_byte):&#160;kbc.c'],['../kbc_8h.html#ac47080f29be9323868a3b75b2fdbd333',1,'KBC_READ_COMMAND_BYTE():&#160;kbc.h']]],
+  ['kbc_5fstat_5fregister_206',['KBC_STAT_REGISTER',['../kbc_8h.html#a79c80a305fbd097b2a2528c8f4fec064',1,'kbc.h']]],
+  ['kbc_5fwrite_5fbyte_5fto_5fmouse_207',['KBC_WRITE_BYTE_TO_MOUSE',['../mouse_8h.html#a27c4267800118ec8c413f75f0bc45dc3',1,'mouse.h']]],
+  ['kbc_5fwrite_5fcommand_5fbyte_208',['KBC_WRITE_COMMAND_BYTE',['../kbc_8h.html#a3c6ce1613e4d03d394a20d95faf5a11b',1,'KBC_WRITE_COMMAND_BYTE():&#160;kbc.h'],['../kbc_8c.html#a67add78c3cdb2abeaabfc45d429aca0e',1,'kbc_write_command_byte(uint8_t cmd_byte):&#160;kbc.c'],['../kbc_8h.html#a67add78c3cdb2abeaabfc45d429aca0e',1,'kbc_write_command_byte(uint8_t cmd_byte):&#160;kbc.c']]],
+  ['kbd_5fih_209',['kbd_ih',['../keyboard_8c.html#aca842ab89e3fc03d8cca103dd6808895',1,'kbd_ih():&#160;keyboard.c'],['../keyboard_8h.html#aca842ab89e3fc03d8cca103dd6808895',1,'kbd_ih():&#160;keyboard.c']]],
+  ['kbd_5freenable_5finterrupts_210',['kbd_reenable_interrupts',['../keyboard_8c.html#a9af668c9c49ff8c09c526b272f284552',1,'kbd_reenable_interrupts():&#160;keyboard.c'],['../keyboard_8h.html#a9af668c9c49ff8c09c526b272f284552',1,'kbd_reenable_interrupts():&#160;keyboard.c']]],
+  ['kbd_5fsubscribe_5fint_211',['kbd_subscribe_int',['../keyboard_8c.html#a4ac9231a99a664d6a9f0b69767e0d707',1,'kbd_subscribe_int(uint8_t *bit_no):&#160;keyboard.c'],['../keyboard_8h.html#a4ac9231a99a664d6a9f0b69767e0d707',1,'kbd_subscribe_int(uint8_t *bit_no):&#160;keyboard.c']]],
+  ['kbd_5funsubscribe_5fint_212',['kbd_unsubscribe_int',['../keyboard_8c.html#aee0a7b54ee426fade9c780418d110fe0',1,'kbd_unsubscribe_int():&#160;keyboard.c'],['../keyboard_8h.html#aee0a7b54ee426fade9c780418d110fe0',1,'kbd_unsubscribe_int():&#160;keyboard.c']]],
+  ['kdb_5firq_213',['KDB_IRQ',['../keyboard_8h.html#a43822ed369d7779870d653d45990891d',1,'keyboard.h']]],
+  ['keyboard_214',['KEYBOARD',['../ev__handler_8h.html#a92f35e2838071d2514beab97f46fdabcad14e2514427609da194a72091721f4c7',1,'ev_handler.h']]],
+  ['keyboard_2ec_215',['keyboard.c',['../keyboard_8c.html',1,'']]],
+  ['keyboard_2ed_216',['keyboard.d',['../keyboard_8d.html',1,'']]],
+  ['keyboard_2eh_217',['keyboard.h',['../keyboard_8h.html',1,'']]],
+  ['keyboard_5ffail_5fmakecode_218',['KEYBOARD_FAIL_MAKECODE',['../keyboard_8h.html#a3bb94cbfa244219800fbd9c30c63390a',1,'keyboard.h']]]
+];

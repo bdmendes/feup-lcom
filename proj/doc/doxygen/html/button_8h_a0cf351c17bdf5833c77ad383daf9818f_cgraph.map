@@ -1,0 +1,4 @@
+<map id="button_set_position" name="button_set_position">
+<area shape="rect" id="node1" title="sets a button&#39;s position" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="204,5,323,32"/>
+</map>

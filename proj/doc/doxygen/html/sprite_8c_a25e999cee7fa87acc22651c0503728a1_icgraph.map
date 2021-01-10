@@ -1,0 +1,10 @@
+<map id="draw_sprite" name="draw_sprite">
+<area shape="rect" id="node1" title="draws a sprite to a buffer" alt="" coords="732,132,831,159"/>
+<area shape="rect" id="node2" href="$asprite_8h.html#ad22b485550881b685956a65added395e" title="draws an animated sprite to a buffer" alt="" coords="560,56,667,83"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,56,128,83"/>
+<area shape="rect" id="node7" href="$instructions_8h.html#ace38cd97ad46f6f058be7505e8ba3082" title="shows the instructions on the screen" alt="" coords="545,157,682,184"/>
+<area shape="rect" id="node8" href="$sprite_8h.html#ac0ed1caa41e75146327fe870769fe9ae" title="draws a sprite in the original size to a buffer and with the requested zoom factor in other." alt="" coords="543,208,684,235"/>
+<area shape="rect" id="node3" href="$game_8h.html#a13aeefc61ffbb91e51e9ca5a73bda4bb" title="draws the various game elements on the screen: the map, the player, the countdown timer and the resig..." alt="" coords="396,56,495,83"/>
+<area shape="rect" id="node4" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="197,5,327,32"/>
+<area shape="rect" id="node6" href="$ev__handler_8h.html#a4d2f7bf8ee8923bd7c31b1c9a61d5149" title="handles the events while on a game panel (clue or endgame message). The values passed not related to ..." alt="" coords="176,56,348,83"/>
+</map>

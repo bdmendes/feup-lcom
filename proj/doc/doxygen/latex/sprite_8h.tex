@@ -1,0 +1,431 @@
+\hypertarget{sprite_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/sprite/sprite.h File Reference}
+\label{sprite_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/sprite/sprite.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/sprite/sprite.h}}
+{\ttfamily \#include \char`\"{}../../lib/devices/graphics/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for sprite.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_sprite}{Sprite}} holds the width, height, x and y positions and the bitmap of an object that shall be drawn on the screen. If x are y, negative mean that the top left of the sprite is indeed ouside of the screen, and only a part of the sprite is shown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2}{Sprite}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_sprite}{Sprite}} holds the width, height, x and y positions and the bitmap of an object that shall be drawn on the screen. If x are y, negative mean that the top left of the sprite is indeed ouside of the screen, and only a part of the sprite is shown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$() \mbox{\hyperlink{sprite_8h_aa3fdb04b78ba12c1d58e244a8e77a012}{create\+\_\+sprite}} (const char $\ast$pic\mbox{[}$\,$\mbox{]}, int32\+\_\+t x, int32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em allocates a sprite object \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{sprite_8h_a7100c1cb0a41229ab7761ecb5979bd6c}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig)
+\begin{DoxyCompactList}\small\item\em deallocates a sprite object \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{sprite_8h_a25e999cee7fa87acc22651c0503728a1}{draw\+\_\+sprite}} (char $\ast$buffer, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em draws a sprite to a buffer \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{sprite_8h_a550bf3bcf049ad58aabb5900fcb5f98b}{move\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig, int16\+\_\+t xmov, int16\+\_\+t ymov, bool allow\+\_\+image\+\_\+cut\+\_\+left\+\_\+up, bool allow\+\_\+image\+\_\+cut\+\_\+right\+\_\+down)
+\begin{DoxyCompactList}\small\item\em changes the sprite position attributes \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{sprite_8h_aeef385120129fb7d447c3b10d62203d3}{get\+\_\+mirrored\+\_\+pixmap}} (const char $\ast$pixmap, uint16\+\_\+t width, uint16\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em mirrors a pixmap \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{sprite_8h_a66816cf4f68b047b2f11e5c188e09c2c}{is\+\_\+inside\+\_\+sprite}} (uint16\+\_\+t x, uint16\+\_\+t y, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em checks if a coordinate is within a sprite (in its current position) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$() \mbox{\hyperlink{sprite_8h_ae3d8970e3246ba6e6f3eb433529d9233}{create\+\_\+sprite\+\_\+from\+\_\+bitmap}} (char $\ast$map, uint16\+\_\+t width, uint16\+\_\+t height, int32\+\_\+t x, int32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em creates a sprite from a bitmap \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{sprite_8h_ac0ed1caa41e75146327fe870769fe9ae}{draw\+\_\+sprite\+\_\+zoom}} (char $\ast$og\+\_\+buf, char $\ast$zoom\+\_\+buf, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp, uint8\+\_\+t zoom\+\_\+factor)
+\begin{DoxyCompactList}\small\item\em draws a sprite in the original size to a buffer and with the requested zoom factor in other. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$() \mbox{\hyperlink{sprite_8h_a28d2fb69da487db91dda39eb9144277b}{create\+\_\+cloned\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp, uint8\+\_\+t zoom\+\_\+factor)
+\begin{DoxyCompactList}\small\item\em zooms the sprite bitmap (cloning pixels in matrix-\/like form) and return new generated sprite \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{sprite_8h_a3671b9920cf64d55c27e948289644554}{draw\+\_\+sprite\+\_\+no\+\_\+checks}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em cheap sprite draw; does not check for out of bound positions and does not support negative sprite positions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2}\label{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2}} 
+\index{sprite.h@{sprite.h}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{Sprite}{Sprite}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{struct_sprite}{Sprite}}}
+
+
+
+A \mbox{\hyperlink{struct_sprite}{Sprite}} holds the width, height, x and y positions and the bitmap of an object that shall be drawn on the screen. If x are y, negative mean that the top left of the sprite is indeed ouside of the screen, and only a part of the sprite is shown. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sprite_8h_a28d2fb69da487db91dda39eb9144277b}\label{sprite_8h_a28d2fb69da487db91dda39eb9144277b}} 
+\index{sprite.h@{sprite.h}!create\_cloned\_sprite@{create\_cloned\_sprite}}
+\index{create\_cloned\_sprite@{create\_cloned\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_cloned\_sprite()}{create\_cloned\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$() create\+\_\+cloned\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp,  }\item[{uint8\+\_\+t}]{zoom\+\_\+factor }\end{DoxyParamCaption})}
+
+
+
+zooms the sprite bitmap (cloning pixels in matrix-\/like form) and return new generated sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & the original sprite \\
+\hline
+{\em zoom\+\_\+factor} & the desired zoom factor \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & new sprite \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 133 of file sprite.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{sprite_8h_a28d2fb69da487db91dda39eb9144277b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a28d2fb69da487db91dda39eb9144277b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_aa3fdb04b78ba12c1d58e244a8e77a012}\label{sprite_8h_aa3fdb04b78ba12c1d58e244a8e77a012}} 
+\index{sprite.h@{sprite.h}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$() create\+\_\+sprite (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pic\mbox{[}$\,$\mbox{]},  }\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+allocates a sprite object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pic} & the sprite\textquotesingle{}s bitmap \\
+\hline
+{\em x} & the x coordinate of the sprite\textquotesingle{}s position \\
+\hline
+{\em y} & the y coordinate of the sprite\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created sprite \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 3 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aa3fdb04b78ba12c1d58e244a8e77a012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_ae3d8970e3246ba6e6f3eb433529d9233}\label{sprite_8h_ae3d8970e3246ba6e6f3eb433529d9233}} 
+\index{sprite.h@{sprite.h}!create\_sprite\_from\_bitmap@{create\_sprite\_from\_bitmap}}
+\index{create\_sprite\_from\_bitmap@{create\_sprite\_from\_bitmap}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_sprite\_from\_bitmap()}{create\_sprite\_from\_bitmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$() create\+\_\+sprite\+\_\+from\+\_\+bitmap (\begin{DoxyParamCaption}\item[{char $\ast$}]{map,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+creates a sprite from a bitmap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the pixmap \\
+\hline
+{\em width} & the pixmap\textquotesingle{}s width \\
+\hline
+{\em height} & the pixmap\textquotesingle{}s height \\
+\hline
+{\em x} & the x coordinate of the sprite\textquotesingle{}s position \\
+\hline
+{\em y} & the y coordinate of the sprite\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created sprite \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 24 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_ae3d8970e3246ba6e6f3eb433529d9233_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a7100c1cb0a41229ab7761ecb5979bd6c}\label{sprite_8h_a7100c1cb0a41229ab7761ecb5979bd6c}} 
+\index{sprite.h@{sprite.h}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void() destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{fig }\end{DoxyParamCaption})}
+
+
+
+deallocates a sprite object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fig} & the sprite to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 35 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a7100c1cb0a41229ab7761ecb5979bd6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a25e999cee7fa87acc22651c0503728a1}\label{sprite_8h_a25e999cee7fa87acc22651c0503728a1}} 
+\index{sprite.h@{sprite.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily int() draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+draws a sprite to a buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the desired buffer \\
+\hline
+{\em sp} & the desired sprite \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, else !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 40 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a25e999cee7fa87acc22651c0503728a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a3671b9920cf64d55c27e948289644554}\label{sprite_8h_a3671b9920cf64d55c27e948289644554}} 
+\index{sprite.h@{sprite.h}!draw\_sprite\_no\_checks@{draw\_sprite\_no\_checks}}
+\index{draw\_sprite\_no\_checks@{draw\_sprite\_no\_checks}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_no\_checks()}{draw\_sprite\_no\_checks()}}
+{\footnotesize\ttfamily void() draw\+\_\+sprite\+\_\+no\+\_\+checks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+cheap sprite draw; does not check for out of bound positions and does not support negative sprite positions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & the sprite \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 60 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a3671b9920cf64d55c27e948289644554_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_ac0ed1caa41e75146327fe870769fe9ae}\label{sprite_8h_ac0ed1caa41e75146327fe870769fe9ae}} 
+\index{sprite.h@{sprite.h}!draw\_sprite\_zoom@{draw\_sprite\_zoom}}
+\index{draw\_sprite\_zoom@{draw\_sprite\_zoom}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_zoom()}{draw\_sprite\_zoom()}}
+{\footnotesize\ttfamily void() draw\+\_\+sprite\+\_\+zoom (\begin{DoxyParamCaption}\item[{char $\ast$}]{og\+\_\+buf,  }\item[{char $\ast$}]{zoom\+\_\+buf,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp,  }\item[{uint8\+\_\+t}]{zoom\+\_\+factor }\end{DoxyParamCaption})}
+
+
+
+draws a sprite in the original size to a buffer and with the requested zoom factor in other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em og\+\_\+buf} & the original buffer (where the sprite is drawn first) \\
+\hline
+{\em zoom\+\_\+buf} & the zoom buffer (to where the sprite is copied) \\
+\hline
+{\em sp} & the sprite \\
+\hline
+{\em zoom\+\_\+factor} & the desired zoom factor \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 109 of file sprite.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{sprite_8h_ac0ed1caa41e75146327fe870769fe9ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_aeef385120129fb7d447c3b10d62203d3}\label{sprite_8h_aeef385120129fb7d447c3b10d62203d3}} 
+\index{sprite.h@{sprite.h}!get\_mirrored\_pixmap@{get\_mirrored\_pixmap}}
+\index{get\_mirrored\_pixmap@{get\_mirrored\_pixmap}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{get\_mirrored\_pixmap()}{get\_mirrored\_pixmap()}}
+{\footnotesize\ttfamily char$\ast$() get\+\_\+mirrored\+\_\+pixmap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pixmap,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+
+mirrors a pixmap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixmap} & the pixmap \\
+\hline
+{\em width} & the pixmap\textquotesingle{}s width \\
+\hline
+{\em height} & the pixmap\textquotesingle{}s height \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & mirrored pixmap \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 94 of file sprite.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aeef385120129fb7d447c3b10d62203d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aeef385120129fb7d447c3b10d62203d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a66816cf4f68b047b2f11e5c188e09c2c}\label{sprite_8h_a66816cf4f68b047b2f11e5c188e09c2c}} 
+\index{sprite.h@{sprite.h}!is\_inside\_sprite@{is\_inside\_sprite}}
+\index{is\_inside\_sprite@{is\_inside\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{is\_inside\_sprite()}{is\_inside\_sprite()}}
+{\footnotesize\ttfamily bool() is\+\_\+inside\+\_\+sprite (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+checks if a coordinate is within a sprite (in its current position) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of a position \\
+\hline
+{\em y} & the y coordinate of a position \\
+\hline
+{\em sp} & the sprite \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the position is within the sprite, false otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 105 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a66816cf4f68b047b2f11e5c188e09c2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a550bf3bcf049ad58aabb5900fcb5f98b}\label{sprite_8h_a550bf3bcf049ad58aabb5900fcb5f98b}} 
+\index{sprite.h@{sprite.h}!move\_sprite@{move\_sprite}}
+\index{move\_sprite@{move\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite()}{move\_sprite()}}
+{\footnotesize\ttfamily int() move\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{fig,  }\item[{int16\+\_\+t}]{xmov,  }\item[{int16\+\_\+t}]{ymov,  }\item[{bool}]{allow\+\_\+image\+\_\+cut\+\_\+left\+\_\+up,  }\item[{bool}]{allow\+\_\+image\+\_\+cut\+\_\+right\+\_\+down }\end{DoxyParamCaption})}
+
+
+
+changes the sprite position attributes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fig} & the animated sprite \\
+\hline
+{\em xmov} & the x axis displacement \\
+\hline
+{\em ymov} & the y axis displacement \\
+\hline
+{\em allow\+\_\+image\+\_\+cut\+\_\+left\+\_\+up} & whether to allow cut of the image\textquotesingle{}s left and up sides or not (if not allowed and cuts, the sprite will not be moved) \\
+\hline
+{\em allow\+\_\+image\+\_\+cut\+\_\+right\+\_\+down} & whether to allow cut of the image\textquotesingle{}s right and down sides or not (if not allowed and cuts, the sprite will not be moved) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 74 of file sprite.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{sprite_8h_a550bf3bcf049ad58aabb5900fcb5f98b_icgraph}
+\end{center}
+\end{figure}

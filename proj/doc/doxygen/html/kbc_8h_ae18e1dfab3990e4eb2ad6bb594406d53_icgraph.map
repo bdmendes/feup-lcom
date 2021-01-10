@@ -1,0 +1,9 @@
+<map id="kbc_can_write_to_inbuf" name="kbc_can_write_to_inbuf">
+<area shape="rect" id="node1" title="checks if the input buffer is available to be written to (IBF is unset)" alt="" coords="645,39,820,65"/>
+<area shape="rect" id="node2" href="$kbc_8h.html#a67add78c3cdb2abeaabfc45d429aca0e" title="writes a command byte" alt="" coords="404,9,597,36"/>
+<area shape="rect" id="node4" href="$mouse_8h.html#a51e10ced7af84c1ec12f6c6c441b4f3b" title="writes a mouse byte" alt="" coords="429,64,572,91"/>
+<area shape="rect" id="node3" href="$keyboard_8h.html#a9af668c9c49ff8c09c526b272f284552" title="reenables keyboard interrupts" alt="" coords="176,5,356,32"/>
+<area shape="rect" id="node5" href="$mouse_8h.html#aa8ab77f4eebbfb8ced8fb2e6f435c1e8" title="enables mouse data reporting" alt="" coords="179,57,353,98"/>
+<area shape="rect" id="node7" href="$mouse_8h.html#a7e311379d4d64f88873ef8ade5c82a25" title="disables mouse data reporting" alt="" coords="188,122,344,163"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,97,128,124"/>
+</map>

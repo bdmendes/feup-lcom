@@ -1,0 +1,335 @@
+\hypertarget{panel_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/panel/panel.h File Reference}
+\label{panel_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/panel/panel.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/panel/panel.h}}
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+Include dependency graph for panel.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{panel_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_panel}{Panel}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_panel}{Panel}} is composed of a title, a solid background, text strings and a close button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{panel_8h_ad94f97286bd6f40f75df2736a63ac899}{P\+A\+N\+E\+L\+\_\+\+H\+E\+I\+G\+HT}}~600
+\item 
+\#define \mbox{\hyperlink{panel_8h_ac399c8c03210406264e1c047169db774}{P\+A\+N\+E\+L\+\_\+\+S\+I\+D\+E\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+P\+A\+D\+D\+I\+NG}}~50
+\item 
+\#define \mbox{\hyperlink{panel_8h_a7bceaa0cccd947a0589456af2b825f83}{P\+A\+N\+E\+L\+\_\+\+E\+X\+I\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+T\+E\+XT}}~\char`\"{}Close\char`\"{}
+\item 
+\#define \mbox{\hyperlink{panel_8h_a3b91f913949d7f493dbe07f086d52d32}{P\+A\+N\+E\+L\+\_\+\+S\+M\+A\+L\+L\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}~20
+\item 
+\#define \mbox{\hyperlink{panel_8h_a11d810b3669eca31af26bf1c2c87b0b4}{P\+A\+N\+E\+L\+\_\+\+B\+I\+G\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG}}~30
+\item 
+\#define \mbox{\hyperlink{panel_8h_a2e4a8f7d602627848debc777e097785b}{P\+A\+N\+E\+L\+\_\+\+S\+T\+R\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}~50
+\item 
+\#define \mbox{\hyperlink{panel_8h_ac7787a3537f4388a6ae38025417f85fd}{P\+A\+N\+E\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa4e24361e668445917e4fbc39d0cb9dac}{M\+I\+L\+D\+\_\+\+G\+R\+AY}}
+\item 
+\#define \mbox{\hyperlink{panel_8h_a3e4208c88ffdeea686b10e19246a0ca5}{P\+A\+N\+E\+L\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa82a1f4f015ad85784e8c8671b7338433}{L\+I\+G\+H\+T\+\_\+\+G\+R\+AY}}
+\item 
+\#define \mbox{\hyperlink{panel_8h_a9d159d62b4c27c00846e286ecb487e4b}{P\+A\+N\+E\+L\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+O\+V\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fad254a51d7451c1b04c989011b7c04213}{P\+U\+R\+E\+\_\+\+W\+H\+I\+TE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_panel}{Panel}} \mbox{\hyperlink{panel_8h_ae93b1fc1db1d6e7fa3ab20c2afb2f5bd}{Panel}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_panel}{Panel}} is composed of a title, a solid background, text strings and a close button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_panel}{Panel}} $\ast$() \mbox{\hyperlink{panel_8h_af78e501555e192c7fcc560ae61bf2fa1}{create\+\_\+panel}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$mouse, \mbox{\hyperlink{struct_font}{Font}} $\ast$font, char $\ast$title, bool big\+\_\+padding, bool center\+\_\+text, uint8\+\_\+t no\+\_\+strings, const char $\ast$str1,...)
+\begin{DoxyCompactList}\small\item\em allocates a panel object \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{panel_8h_a442a715947c2fb234d776d62e0ce65af}{draw\+\_\+panel}} (\mbox{\hyperlink{struct_panel}{Panel}} $\ast$panel)
+\begin{DoxyCompactList}\small\item\em draws a panel to the video buffer \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{panel_8h_a2bd212779333647f569d6590a9c70526}{set\+\_\+panel\+\_\+strings}} (\mbox{\hyperlink{struct_panel}{Panel}} $\ast$panel, const char $\ast$title, const char $\ast$str1,...)
+\begin{DoxyCompactList}\small\item\em sets the panel\textquotesingle{}s strings \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{panel_8h_aaf2191428653d2fe3ee26701b03184d3}{destroy\+\_\+panel}} (\mbox{\hyperlink{struct_panel}{Panel}} $\ast$panel)
+\begin{DoxyCompactList}\small\item\em deallocates a panel object\+: the button and background sprites. The mouse and font are not destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{panel_8h_ac7787a3537f4388a6ae38025417f85fd}\label{panel_8h_ac7787a3537f4388a6ae38025417f85fd}} 
+\index{panel.h@{panel.h}!PANEL\_BACKGROUND\_COLOR@{PANEL\_BACKGROUND\_COLOR}}
+\index{PANEL\_BACKGROUND\_COLOR@{PANEL\_BACKGROUND\_COLOR}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_BACKGROUND\_COLOR}{PANEL\_BACKGROUND\_COLOR}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa4e24361e668445917e4fbc39d0cb9dac}{M\+I\+L\+D\+\_\+\+G\+R\+AY}}}
+
+
+
+Definition at line 12 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a11d810b3669eca31af26bf1c2c87b0b4}\label{panel_8h_a11d810b3669eca31af26bf1c2c87b0b4}} 
+\index{panel.h@{panel.h}!PANEL\_BIG\_STR\_PADDING@{PANEL\_BIG\_STR\_PADDING}}
+\index{PANEL\_BIG\_STR\_PADDING@{PANEL\_BIG\_STR\_PADDING}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_BIG\_STR\_PADDING}{PANEL\_BIG\_STR\_PADDING}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+B\+I\+G\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG~30}
+
+
+
+Definition at line 10 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a3e4208c88ffdeea686b10e19246a0ca5}\label{panel_8h_a3e4208c88ffdeea686b10e19246a0ca5}} 
+\index{panel.h@{panel.h}!PANEL\_BUTTON\_BACK\_COLOR@{PANEL\_BUTTON\_BACK\_COLOR}}
+\index{PANEL\_BUTTON\_BACK\_COLOR@{PANEL\_BUTTON\_BACK\_COLOR}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_BUTTON\_BACK\_COLOR}{PANEL\_BUTTON\_BACK\_COLOR}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa82a1f4f015ad85784e8c8671b7338433}{L\+I\+G\+H\+T\+\_\+\+G\+R\+AY}}}
+
+
+
+Definition at line 13 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a9d159d62b4c27c00846e286ecb487e4b}\label{panel_8h_a9d159d62b4c27c00846e286ecb487e4b}} 
+\index{panel.h@{panel.h}!PANEL\_BUTTON\_HOVER\_FRAME\_COLOR@{PANEL\_BUTTON\_HOVER\_FRAME\_COLOR}}
+\index{PANEL\_BUTTON\_HOVER\_FRAME\_COLOR@{PANEL\_BUTTON\_HOVER\_FRAME\_COLOR}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_BUTTON\_HOVER\_FRAME\_COLOR}{PANEL\_BUTTON\_HOVER\_FRAME\_COLOR}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+O\+V\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fad254a51d7451c1b04c989011b7c04213}{P\+U\+R\+E\+\_\+\+W\+H\+I\+TE}}}
+
+
+
+Definition at line 14 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a7bceaa0cccd947a0589456af2b825f83}\label{panel_8h_a7bceaa0cccd947a0589456af2b825f83}} 
+\index{panel.h@{panel.h}!PANEL\_EXIT\_BUTTON\_TEXT@{PANEL\_EXIT\_BUTTON\_TEXT}}
+\index{PANEL\_EXIT\_BUTTON\_TEXT@{PANEL\_EXIT\_BUTTON\_TEXT}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_EXIT\_BUTTON\_TEXT}{PANEL\_EXIT\_BUTTON\_TEXT}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+E\+X\+I\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+T\+E\+XT~\char`\"{}Close\char`\"{}}
+
+
+
+Definition at line 8 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_ad94f97286bd6f40f75df2736a63ac899}\label{panel_8h_ad94f97286bd6f40f75df2736a63ac899}} 
+\index{panel.h@{panel.h}!PANEL\_HEIGHT@{PANEL\_HEIGHT}}
+\index{PANEL\_HEIGHT@{PANEL\_HEIGHT}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_HEIGHT}{PANEL\_HEIGHT}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+H\+E\+I\+G\+HT~600}
+
+
+
+Definition at line 6 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_ac399c8c03210406264e1c047169db774}\label{panel_8h_ac399c8c03210406264e1c047169db774}} 
+\index{panel.h@{panel.h}!PANEL\_SIDE\_SPRITE\_PADDING@{PANEL\_SIDE\_SPRITE\_PADDING}}
+\index{PANEL\_SIDE\_SPRITE\_PADDING@{PANEL\_SIDE\_SPRITE\_PADDING}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_SIDE\_SPRITE\_PADDING}{PANEL\_SIDE\_SPRITE\_PADDING}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+S\+I\+D\+E\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+P\+A\+D\+D\+I\+NG~50}
+
+
+
+Definition at line 7 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a3b91f913949d7f493dbe07f086d52d32}\label{panel_8h_a3b91f913949d7f493dbe07f086d52d32}} 
+\index{panel.h@{panel.h}!PANEL\_SMALL\_STR\_PADDING@{PANEL\_SMALL\_STR\_PADDING}}
+\index{PANEL\_SMALL\_STR\_PADDING@{PANEL\_SMALL\_STR\_PADDING}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_SMALL\_STR\_PADDING}{PANEL\_SMALL\_STR\_PADDING}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+S\+M\+A\+L\+L\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG~20}
+
+
+
+Definition at line 9 of file panel.\+h.
+
+\mbox{\Hypertarget{panel_8h_a2e4a8f7d602627848debc777e097785b}\label{panel_8h_a2e4a8f7d602627848debc777e097785b}} 
+\index{panel.h@{panel.h}!PANEL\_STR\_MAX\_LEN@{PANEL\_STR\_MAX\_LEN}}
+\index{PANEL\_STR\_MAX\_LEN@{PANEL\_STR\_MAX\_LEN}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{PANEL\_STR\_MAX\_LEN}{PANEL\_STR\_MAX\_LEN}}
+{\footnotesize\ttfamily \#define P\+A\+N\+E\+L\+\_\+\+S\+T\+R\+\_\+\+M\+A\+X\+\_\+\+L\+EN~50}
+
+
+
+Definition at line 11 of file panel.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{panel_8h_ae93b1fc1db1d6e7fa3ab20c2afb2f5bd}\label{panel_8h_ae93b1fc1db1d6e7fa3ab20c2afb2f5bd}} 
+\index{panel.h@{panel.h}!Panel@{Panel}}
+\index{Panel@{Panel}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{Panel}{Panel}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_panel}{Panel}} \mbox{\hyperlink{struct_panel}{Panel}}}
+
+
+
+A \mbox{\hyperlink{struct_panel}{Panel}} is composed of a title, a solid background, text strings and a close button. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{panel_8h_af78e501555e192c7fcc560ae61bf2fa1}\label{panel_8h_af78e501555e192c7fcc560ae61bf2fa1}} 
+\index{panel.h@{panel.h}!create\_panel@{create\_panel}}
+\index{create\_panel@{create\_panel}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{create\_panel()}{create\_panel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_panel}{Panel}}$\ast$() create\+\_\+panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{mouse,  }\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{char $\ast$}]{title,  }\item[{bool}]{big\+\_\+padding,  }\item[{bool}]{center\+\_\+text,  }\item[{uint8\+\_\+t}]{no\+\_\+strings,  }\item[{const char $\ast$}]{str1,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+allocates a panel object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & the used mouse\textquotesingle{}s sprite \\
+\hline
+{\em font} & the desired font \\
+\hline
+{\em title} & the desired text \\
+\hline
+{\em big\+\_\+padding} & whether to use P\+A\+N\+E\+L\+\_\+\+B\+I\+G\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG or P\+A\+N\+E\+L\+\_\+\+S\+M\+A\+L\+L\+\_\+\+S\+T\+R\+\_\+\+P\+A\+D\+D\+I\+NG for the padding between strings \\
+\hline
+{\em center\+\_\+text} & whether the text should be centered or not \\
+\hline
+{\em no\+\_\+strings} & number of strings to show \\
+\hline
+{\em str1} & the first string to show \\
+\hline
+{\em ...} & the rest of the strings (variable number) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created pannel \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 5 of file panel.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_af78e501555e192c7fcc560ae61bf2fa1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_af78e501555e192c7fcc560ae61bf2fa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{panel_8h_aaf2191428653d2fe3ee26701b03184d3}\label{panel_8h_aaf2191428653d2fe3ee26701b03184d3}} 
+\index{panel.h@{panel.h}!destroy\_panel@{destroy\_panel}}
+\index{destroy\_panel@{destroy\_panel}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_panel()}{destroy\_panel()}}
+{\footnotesize\ttfamily void() destroy\+\_\+panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_panel}{Panel}} $\ast$}]{panel }\end{DoxyParamCaption})}
+
+
+
+deallocates a panel object\+: the button and background sprites. The mouse and font are not destroyed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em panel} & the panel to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 82 of file panel.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_aaf2191428653d2fe3ee26701b03184d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_aaf2191428653d2fe3ee26701b03184d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{panel_8h_a442a715947c2fb234d776d62e0ce65af}\label{panel_8h_a442a715947c2fb234d776d62e0ce65af}} 
+\index{panel.h@{panel.h}!draw\_panel@{draw\_panel}}
+\index{draw\_panel@{draw\_panel}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{draw\_panel()}{draw\_panel()}}
+{\footnotesize\ttfamily void() draw\+\_\+panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_panel}{Panel}} $\ast$}]{panel }\end{DoxyParamCaption})}
+
+
+
+draws a panel to the video buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em panel} & the panel to show \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 52 of file panel.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_a442a715947c2fb234d776d62e0ce65af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_a442a715947c2fb234d776d62e0ce65af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{panel_8h_a2bd212779333647f569d6590a9c70526}\label{panel_8h_a2bd212779333647f569d6590a9c70526}} 
+\index{panel.h@{panel.h}!set\_panel\_strings@{set\_panel\_strings}}
+\index{set\_panel\_strings@{set\_panel\_strings}!panel.h@{panel.h}}
+\doxysubsubsection{\texorpdfstring{set\_panel\_strings()}{set\_panel\_strings()}}
+{\footnotesize\ttfamily void() set\+\_\+panel\+\_\+strings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_panel}{Panel}} $\ast$}]{panel,  }\item[{const char $\ast$}]{title,  }\item[{const char $\ast$}]{str1,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+sets the panel\textquotesingle{}s strings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em panel} & the panel \\
+\hline
+{\em title} & the panel\textquotesingle{}s title string \\
+\hline
+{\em str1} & the first string \\
+\hline
+{\em ...} & the rest of the strings (variable number) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 71 of file panel.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{panel_8h_a2bd212779333647f569d6590a9c70526_icgraph}
+\end{center}
+\end{figure}

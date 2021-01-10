@@ -1,0 +1,5 @@
+<map id="player_stop" name="player_stop">
+<area shape="rect" id="node1" title="stops the player&#39;s movement: remaining moves are reset and is_guessing is set to false." alt="" coords="353,5,452,32"/>
+<area shape="rect" id="node2" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="176,5,305,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

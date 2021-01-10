@@ -1,0 +1,5 @@
+<map id="draw_menu" name="draw_menu">
+<area shape="rect" id="node1" title="draws the main menu on the string (if instructions and settings are false), or the instructions/setti..." alt="" coords="375,5,473,32"/>
+<area shape="rect" id="node2" href="$ev__handler_8h.html#a836de8ef17e5b149ae19a2596d9d27a8" title="handles the events while on the main menu. The values passed not related to the interrupt type are no..." alt="" coords="176,5,327,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

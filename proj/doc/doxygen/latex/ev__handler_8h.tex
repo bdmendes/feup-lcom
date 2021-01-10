@@ -1,0 +1,299 @@
+\hypertarget{ev__handler_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/ev\+\_\+handler.h File Reference}
+\label{ev__handler_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/ev\_handler.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/ev\_handler.h}}
+{\ttfamily \#include \char`\"{}game/game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu/menu.\+h\char`\"{}}\newline
+Include dependency graph for ev\+\_\+handler.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{ev__handler_8h_ad4621336cedfc63dc6c2a8cde049a4aa}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}
+\begin{DoxyCompactList}\small\item\em the different possible states of the program \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{ev__handler_8h_a8908c670bbc4e3cd23ab658b2b103578}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em the different possible types of interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} \{ \newline
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}, 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca2a3b2d79801adcf99fc1d4565dc6f825}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+NS}}, 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac678338caea29d77d56be2ea56325610}{S\+E\+T\+T\+I\+N\+GS}}, 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca87ff207aee31a9e4007c3dba3fe84893}{I\+N\+\_\+\+G\+A\+ME}}, 
+\newline
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca7a10b5d68d31711288e1fe0fa17dbf4f}{E\+X\+IT}}, 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cae02d40eb9bb1fd97c1442a1b8b9024cd}{I\+N\+\_\+\+G\+A\+M\+E\+\_\+\+C\+L\+UE}}, 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac24d1bac1b0347c9b42979dcf7fc5619}{I\+N\+\_\+\+G\+A\+M\+E\+\_\+\+E\+N\+D\+\_\+\+M\+E\+S\+S\+A\+GE}}
+ \}
+\begin{DoxyCompactList}\small\item\em the different possible states of the program \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca17ba9bae1b8d7e8d6c12d46ec58e0769}{T\+I\+M\+ER}}, 
+\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabcad14e2514427609da194a72091721f4c7}{K\+E\+Y\+B\+O\+A\+RD}}, 
+\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca6abd13b0a6bf7894c7ceb5ff45ddbc14}{M\+O\+U\+SE}}, 
+\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca24073a11916b946561b8cb5c9dfe9bce}{R\+TC}}
+ \}
+\begin{DoxyCompactList}\small\item\em the different possible types of interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8h_a836de8ef17e5b149ae19a2596d9d27a8}{handle\+\_\+main\+\_\+menu}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{struct_menu}{Menu}} $\ast$menu, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code, \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} state)
+\begin{DoxyCompactList}\small\item\em handles the events while on the main menu. The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8h_aaacf439877bd0df1415b73ba8a989293}{handle\+\_\+in\+\_\+game}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code)
+\begin{DoxyCompactList}\small\item\em handles the events while in game. The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8h_a4d2f7bf8ee8923bd7c31b1c9a61d5149}{handle\+\_\+in\+\_\+game\+\_\+panel}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code, \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} state)
+\begin{DoxyCompactList}\small\item\em handles the events while on a game panel (clue or endgame message). The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ev__handler_8h_ad4621336cedfc63dc6c2a8cde049a4aa}\label{ev__handler_8h_ad4621336cedfc63dc6c2a8cde049a4aa}} 
+\index{ev\_handler.h@{ev\_handler.h}!APP\_STATE@{APP\_STATE}}
+\index{APP\_STATE@{APP\_STATE}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{APP\_STATE}{APP\_STATE}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}
+
+
+
+the different possible states of the program 
+
+\mbox{\Hypertarget{ev__handler_8h_a8908c670bbc4e3cd23ab658b2b103578}\label{ev__handler_8h_a8908c670bbc4e3cd23ab658b2b103578}} 
+\index{ev\_handler.h@{ev\_handler.h}!INTERRUPT\_TYPE@{INTERRUPT\_TYPE}}
+\index{INTERRUPT\_TYPE@{INTERRUPT\_TYPE}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_TYPE}{INTERRUPT\_TYPE}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+the different possible types of interrupts 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}} 
+\index{ev\_handler.h@{ev\_handler.h}!APP\_STATE@{APP\_STATE}}
+\index{APP\_STATE@{APP\_STATE}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{APP\_STATE}{APP\_STATE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}
+
+
+
+the different possible states of the program 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAIN\_MENU@{MAIN\_MENU}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!MAIN\_MENU@{MAIN\_MENU}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac22743f1fc74de09544ecc9bab74a17b}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac22743f1fc74de09544ecc9bab74a17b}} 
+M\+A\+I\+N\+\_\+\+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INSTRUCTIONS@{INSTRUCTIONS}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!INSTRUCTIONS@{INSTRUCTIONS}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca2a3b2d79801adcf99fc1d4565dc6f825}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca2a3b2d79801adcf99fc1d4565dc6f825}} 
+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTINGS@{SETTINGS}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!SETTINGS@{SETTINGS}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac678338caea29d77d56be2ea56325610}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac678338caea29d77d56be2ea56325610}} 
+S\+E\+T\+T\+I\+N\+GS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IN\_GAME@{IN\_GAME}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!IN\_GAME@{IN\_GAME}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca87ff207aee31a9e4007c3dba3fe84893}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca87ff207aee31a9e4007c3dba3fe84893}} 
+I\+N\+\_\+\+G\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!EXIT@{EXIT}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca7a10b5d68d31711288e1fe0fa17dbf4f}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70ca7a10b5d68d31711288e1fe0fa17dbf4f}} 
+E\+X\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IN\_GAME\_CLUE@{IN\_GAME\_CLUE}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!IN\_GAME\_CLUE@{IN\_GAME\_CLUE}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cae02d40eb9bb1fd97c1442a1b8b9024cd}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cae02d40eb9bb1fd97c1442a1b8b9024cd}} 
+I\+N\+\_\+\+G\+A\+M\+E\+\_\+\+C\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IN\_GAME\_END\_MESSAGE@{IN\_GAME\_END\_MESSAGE}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!IN\_GAME\_END\_MESSAGE@{IN\_GAME\_END\_MESSAGE}}}\mbox{\Hypertarget{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac24d1bac1b0347c9b42979dcf7fc5619}\label{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70cac24d1bac1b0347c9b42979dcf7fc5619}} 
+I\+N\+\_\+\+G\+A\+M\+E\+\_\+\+E\+N\+D\+\_\+\+M\+E\+S\+S\+A\+GE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 10 of file ev\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}\label{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}} 
+\index{ev\_handler.h@{ev\_handler.h}!INTERRUPT\_TYPE@{INTERRUPT\_TYPE}}
+\index{INTERRUPT\_TYPE@{INTERRUPT\_TYPE}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_TYPE}{INTERRUPT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+the different possible types of interrupts 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMER@{TIMER}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!TIMER@{TIMER}}}\mbox{\Hypertarget{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca17ba9bae1b8d7e8d6c12d46ec58e0769}\label{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca17ba9bae1b8d7e8d6c12d46ec58e0769}} 
+T\+I\+M\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEYBOARD@{KEYBOARD}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!KEYBOARD@{KEYBOARD}}}\mbox{\Hypertarget{ev__handler_8h_a92f35e2838071d2514beab97f46fdabcad14e2514427609da194a72091721f4c7}\label{ev__handler_8h_a92f35e2838071d2514beab97f46fdabcad14e2514427609da194a72091721f4c7}} 
+K\+E\+Y\+B\+O\+A\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOUSE@{MOUSE}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!MOUSE@{MOUSE}}}\mbox{\Hypertarget{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca6abd13b0a6bf7894c7ceb5ff45ddbc14}\label{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca6abd13b0a6bf7894c7ceb5ff45ddbc14}} 
+M\+O\+U\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC@{RTC}!ev\_handler.h@{ev\_handler.h}}\index{ev\_handler.h@{ev\_handler.h}!RTC@{RTC}}}\mbox{\Hypertarget{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca24073a11916b946561b8cb5c9dfe9bce}\label{ev__handler_8h_a92f35e2838071d2514beab97f46fdabca24073a11916b946561b8cb5c9dfe9bce}} 
+R\+TC&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 23 of file ev\+\_\+handler.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ev__handler_8h_aaacf439877bd0df1415b73ba8a989293}\label{ev__handler_8h_aaacf439877bd0df1415b73ba8a989293}} 
+\index{ev\_handler.h@{ev\_handler.h}!handle\_in\_game@{handle\_in\_game}}
+\index{handle\_in\_game@{handle\_in\_game}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{handle\_in\_game()}{handle\_in\_game()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+in\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code }\end{DoxyParamCaption})}
+
+
+
+handles the events while in game. The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 53 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8h_aaacf439877bd0df1415b73ba8a989293_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{ev__handler_8h_aaacf439877bd0df1415b73ba8a989293_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ev__handler_8h_a4d2f7bf8ee8923bd7c31b1c9a61d5149}\label{ev__handler_8h_a4d2f7bf8ee8923bd7c31b1c9a61d5149}} 
+\index{ev\_handler.h@{ev\_handler.h}!handle\_in\_game\_panel@{handle\_in\_game\_panel}}
+\index{handle\_in\_game\_panel@{handle\_in\_game\_panel}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{handle\_in\_game\_panel()}{handle\_in\_game\_panel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+in\+\_\+game\+\_\+panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code,  }\item[{\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+handles the events while on a game panel (clue or endgame message). The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+{\em state} & the state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 123 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8h_a4d2f7bf8ee8923bd7c31b1c9a61d5149_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{ev__handler_8h_a4d2f7bf8ee8923bd7c31b1c9a61d5149_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ev__handler_8h_a836de8ef17e5b149ae19a2596d9d27a8}\label{ev__handler_8h_a836de8ef17e5b149ae19a2596d9d27a8}} 
+\index{ev\_handler.h@{ev\_handler.h}!handle\_main\_menu@{handle\_main\_menu}}
+\index{handle\_main\_menu@{handle\_main\_menu}!ev\_handler.h@{ev\_handler.h}}
+\doxysubsubsection{\texorpdfstring{handle\_main\_menu()}{handle\_main\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{struct_menu}{Menu}} $\ast$}]{menu,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code,  }\item[{\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+handles the events while on the main menu. The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em menu} & the menu \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+{\em state} & the state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 5 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8h_a836de8ef17e5b149ae19a2596d9d27a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{ev__handler_8h_a836de8ef17e5b149ae19a2596d9d27a8_icgraph}
+\end{center}
+\end{figure}

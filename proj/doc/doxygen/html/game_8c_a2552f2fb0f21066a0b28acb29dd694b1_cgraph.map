@@ -1,0 +1,5 @@
+<map id="get_game_finish" name="get_game_finish">
+<area shape="rect" id="node1" title="checks in which way the game ended: bomb explosion (game countdown timer defined),..." alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node2" href="$map_8c.html#aec6f72658269416253e27f8d84ed5c92" title="returns the object in a given position" alt="" coords="403,5,493,32"/>
+<area shape="rect" id="node3" href="$player_8c.html#af627abe7a3c4b67eaa638232c4acff44" title="verifies if the player is above a bomb, ie. at least one of its sprite pixels is above a block bomb" alt="" coords="183,31,355,57"/>
+</map>

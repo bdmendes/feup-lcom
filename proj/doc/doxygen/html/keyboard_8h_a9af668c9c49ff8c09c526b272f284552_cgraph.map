@@ -1,0 +1,8 @@
+<map id="kbd_reenable_interrupts" name="kbd_reenable_interrupts">
+<area shape="rect" id="node1" title="reenables keyboard interrupts" alt="" coords="5,31,185,57"/>
+<area shape="rect" id="node2" href="$kbc_8c.html#a8dd62e08cf4c5093e096829f8b1eb218" title="retrieves the current KBC command byte" alt="" coords="235,5,425,32"/>
+<area shape="rect" id="node4" href="$kbc_8c.html#a67add78c3cdb2abeaabfc45d429aca0e" title="writes a command byte" alt="" coords="233,56,427,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wraps the sys_inb() funtion to allow reading 1 byte values" alt="" coords="697,56,796,83"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a836d35c89424c8eaf2e2d404dde2e60d" title="sleep for a certain duration in milliseconds" alt="" coords="485,56,639,83"/>
+<area shape="rect" id="node6" href="$kbc_8c.html#ae18e1dfab3990e4eb2ad6bb594406d53" title="checks if the input buffer is available to be written to (IBF is unset)" alt="" coords="475,107,649,133"/>
+</map>

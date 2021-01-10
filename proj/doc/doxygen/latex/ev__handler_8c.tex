@@ -1,0 +1,163 @@
+\hypertarget{ev__handler_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/ev\+\_\+handler.c File Reference}
+\label{ev__handler_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/ev\_handler.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/ev\_handler.c}}
+{\ttfamily \#include \char`\"{}ev\+\_\+handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/devices/kbc/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib/devices/timer/timer.\+h\char`\"{}}\newline
+Include dependency graph for ev\+\_\+handler.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8c_a836de8ef17e5b149ae19a2596d9d27a8}{handle\+\_\+main\+\_\+menu}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{struct_menu}{Menu}} $\ast$menu, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code, \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} state)
+\begin{DoxyCompactList}\small\item\em handles the events while on the main menu. The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8c_aaacf439877bd0df1415b73ba8a989293}{handle\+\_\+in\+\_\+game}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code)
+\begin{DoxyCompactList}\small\item\em handles the events while in game. The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() \mbox{\hyperlink{ev__handler_8c_a4d2f7bf8ee8923bd7c31b1c9a61d5149}{handle\+\_\+in\+\_\+game\+\_\+panel}} (\mbox{\hyperlink{struct_game}{Game}} $\ast$game, \mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}} interrupt, const struct packet $\ast$pckt, uint8\+\_\+t kbd\+\_\+code, \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}} state)
+\begin{DoxyCompactList}\small\item\em handles the events while on a game panel (clue or endgame message). The values passed not related to the interrupt type are not considered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ev__handler_8c_aaacf439877bd0df1415b73ba8a989293}\label{ev__handler_8c_aaacf439877bd0df1415b73ba8a989293}} 
+\index{ev\_handler.c@{ev\_handler.c}!handle\_in\_game@{handle\_in\_game}}
+\index{handle\_in\_game@{handle\_in\_game}!ev\_handler.c@{ev\_handler.c}}
+\doxysubsubsection{\texorpdfstring{handle\_in\_game()}{handle\_in\_game()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+in\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code }\end{DoxyParamCaption})}
+
+
+
+handles the events while in game. The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 53 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8c_aaacf439877bd0df1415b73ba8a989293_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{ev__handler_8c_aaacf439877bd0df1415b73ba8a989293_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ev__handler_8c_a4d2f7bf8ee8923bd7c31b1c9a61d5149}\label{ev__handler_8c_a4d2f7bf8ee8923bd7c31b1c9a61d5149}} 
+\index{ev\_handler.c@{ev\_handler.c}!handle\_in\_game\_panel@{handle\_in\_game\_panel}}
+\index{handle\_in\_game\_panel@{handle\_in\_game\_panel}!ev\_handler.c@{ev\_handler.c}}
+\doxysubsubsection{\texorpdfstring{handle\_in\_game\_panel()}{handle\_in\_game\_panel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+in\+\_\+game\+\_\+panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code,  }\item[{\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+handles the events while on a game panel (clue or endgame message). The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+{\em state} & the state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 123 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8c_a4d2f7bf8ee8923bd7c31b1c9a61d5149_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{ev__handler_8c_a4d2f7bf8ee8923bd7c31b1c9a61d5149_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ev__handler_8c_a836de8ef17e5b149ae19a2596d9d27a8}\label{ev__handler_8c_a836de8ef17e5b149ae19a2596d9d27a8}} 
+\index{ev\_handler.c@{ev\_handler.c}!handle\_main\_menu@{handle\_main\_menu}}
+\index{handle\_main\_menu@{handle\_main\_menu}!ev\_handler.c@{ev\_handler.c}}
+\doxysubsubsection{\texorpdfstring{handle\_main\_menu()}{handle\_main\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}() handle\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{struct_menu}{Menu}} $\ast$}]{menu,  }\item[{\mbox{\hyperlink{ev__handler_8h_a92f35e2838071d2514beab97f46fdabc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+Y\+PE}}}]{interrupt,  }\item[{const struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{kbd\+\_\+code,  }\item[{\mbox{\hyperlink{ev__handler_8h_a6b8a24520a2e1d4d3820c581e85de70c}{A\+P\+P\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+handles the events while on the main menu. The values passed not related to the interrupt type are not considered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game \\
+\hline
+{\em menu} & the menu \\
+\hline
+{\em interrupt} & the received interrupt \\
+\hline
+{\em pckt} & the assembled mouse packet \\
+\hline
+{\em kbd\+\_\+code} & the keyboard scancode \\
+\hline
+{\em state} & the state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & next state \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 5 of file ev\+\_\+handler.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ev__handler_8c_a836de8ef17e5b149ae19a2596d9d27a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{ev__handler_8c_a836de8ef17e5b149ae19a2596d9d27a8_icgraph}
+\end{center}
+\end{figure}

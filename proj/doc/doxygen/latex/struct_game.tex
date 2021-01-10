@@ -1,0 +1,206 @@
+\hypertarget{struct_game}{}\doxysection{Game Struct Reference}
+\label{struct_game}\index{Game@{Game}}
+
+
+A \mbox{\hyperlink{struct_game}{Game}} holds information about the mouse, the player, the map and the font to write the buttons and timer. Clues and endgame messages are stored in a panel that is mutable during the game.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Collaboration diagram for Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{struct_game_af03a383fdcfdf7501006a5c8d68be42b}{mouse}}
+\item 
+\mbox{\hyperlink{struct_player}{Player}} $\ast$ \mbox{\hyperlink{struct_game_a96781128d3743da3d17e0fdd91afba7b}{player}}
+\item 
+\mbox{\hyperlink{struct_map}{Map}} $\ast$ \mbox{\hyperlink{struct_game_a7bdaf8655b48f0d7994eb54ec1da4981}{map}}
+\item 
+\mbox{\hyperlink{struct_font}{Font}} $\ast$ \mbox{\hyperlink{struct_game_a7cd87b1eaeb9bdee7ac16121086be6b8}{font}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_game_abf4ea6a57f7bf0386a1bebcdd235b1a4}{remaining\+\_\+minutes}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_game_a56758156f787a62304b71b4e9ea81212}{remaining\+\_\+seconds}}
+\item 
+char \mbox{\hyperlink{struct_game_a241bbcfb78962ccd771165447a110f0f}{countdown\+\_\+text}} \mbox{[}6\mbox{]}
+\item 
+bool \mbox{\hyperlink{struct_game_a67e326e9d2da97a3bd653ed7dd209ebe}{is\+\_\+loaded}}
+\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$ \mbox{\hyperlink{struct_game_a173a61ec5be315a84389cc08d3852abe}{exit\+\_\+button}}
+\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$ \mbox{\hyperlink{struct_game_adecfb92f6340d1a9102df8a453be61d3}{countdown\+\_\+button}}
+\item 
+\mbox{\hyperlink{struct_panel}{Panel}} $\ast$ \mbox{\hyperlink{struct_game_acee02d4328660baba96db0c1ba868f13}{curr\+\_\+panel}}
+\item 
+bool \mbox{\hyperlink{struct_game_a0c0eb328107ba802d82b999bb601b47e}{panel\+\_\+is\+\_\+clue}}
+\item 
+\mbox{\hyperlink{game_8h_af7912ace1b4126126d55c12b99c0b994}{D\+I\+F\+F\+I\+C\+U\+L\+T\+Y\+\_\+\+L\+E\+V\+EL}} \mbox{\hyperlink{struct_game_af5270f947000ef414ce7fa31df59f623}{level}}
+\item 
+bool \mbox{\hyperlink{struct_game_a9c5a82f88d2ddc3973808f6c74234c51}{clue\+\_\+found}} \mbox{[}\mbox{\hyperlink{game_8h_a085251ba4f2f3ab1c404b1d18534787e}{G\+A\+M\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+L\+U\+ES}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{struct_game}{Game}} holds information about the mouse, the player, the map and the font to write the buttons and timer. Clues and endgame messages are stored in a panel that is mutable during the game. 
+
+Definition at line 39 of file game.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_game_a9c5a82f88d2ddc3973808f6c74234c51}\label{struct_game_a9c5a82f88d2ddc3973808f6c74234c51}} 
+\index{Game@{Game}!clue\_found@{clue\_found}}
+\index{clue\_found@{clue\_found}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{clue\_found}{clue\_found}}
+{\footnotesize\ttfamily bool clue\+\_\+found\mbox{[}\mbox{\hyperlink{game_8h_a085251ba4f2f3ab1c404b1d18534787e}{G\+A\+M\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+L\+U\+ES}}\mbox{]}}
+
+
+
+Definition at line 53 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_adecfb92f6340d1a9102df8a453be61d3}\label{struct_game_adecfb92f6340d1a9102df8a453be61d3}} 
+\index{Game@{Game}!countdown\_button@{countdown\_button}}
+\index{countdown\_button@{countdown\_button}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{countdown\_button}{countdown\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$ countdown\+\_\+button}
+
+
+
+Definition at line 49 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a241bbcfb78962ccd771165447a110f0f}\label{struct_game_a241bbcfb78962ccd771165447a110f0f}} 
+\index{Game@{Game}!countdown\_text@{countdown\_text}}
+\index{countdown\_text@{countdown\_text}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{countdown\_text}{countdown\_text}}
+{\footnotesize\ttfamily char countdown\+\_\+text\mbox{[}6\mbox{]}}
+
+
+
+Definition at line 46 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_acee02d4328660baba96db0c1ba868f13}\label{struct_game_acee02d4328660baba96db0c1ba868f13}} 
+\index{Game@{Game}!curr\_panel@{curr\_panel}}
+\index{curr\_panel@{curr\_panel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{curr\_panel}{curr\_panel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_panel}{Panel}}$\ast$ curr\+\_\+panel}
+
+
+
+Definition at line 50 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a173a61ec5be315a84389cc08d3852abe}\label{struct_game_a173a61ec5be315a84389cc08d3852abe}} 
+\index{Game@{Game}!exit\_button@{exit\_button}}
+\index{exit\_button@{exit\_button}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{exit\_button}{exit\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$ exit\+\_\+button}
+
+
+
+Definition at line 48 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a7cd87b1eaeb9bdee7ac16121086be6b8}\label{struct_game_a7cd87b1eaeb9bdee7ac16121086be6b8}} 
+\index{Game@{Game}!font@{font}}
+\index{font@{font}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_font}{Font}}$\ast$ font}
+
+
+
+Definition at line 43 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a67e326e9d2da97a3bd653ed7dd209ebe}\label{struct_game_a67e326e9d2da97a3bd653ed7dd209ebe}} 
+\index{Game@{Game}!is\_loaded@{is\_loaded}}
+\index{is\_loaded@{is\_loaded}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{is\_loaded}{is\_loaded}}
+{\footnotesize\ttfamily bool is\+\_\+loaded}
+
+
+
+Definition at line 47 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_af5270f947000ef414ce7fa31df59f623}\label{struct_game_af5270f947000ef414ce7fa31df59f623}} 
+\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{game_8h_af7912ace1b4126126d55c12b99c0b994}{D\+I\+F\+F\+I\+C\+U\+L\+T\+Y\+\_\+\+L\+E\+V\+EL}} level}
+
+
+
+Definition at line 52 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a7bdaf8655b48f0d7994eb54ec1da4981}\label{struct_game_a7bdaf8655b48f0d7994eb54ec1da4981}} 
+\index{Game@{Game}!map@{map}}
+\index{map@{map}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_map}{Map}}$\ast$ map}
+
+
+
+Definition at line 42 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_af03a383fdcfdf7501006a5c8d68be42b}\label{struct_game_af03a383fdcfdf7501006a5c8d68be42b}} 
+\index{Game@{Game}!mouse@{mouse}}
+\index{mouse@{mouse}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ mouse}
+
+
+
+Definition at line 40 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a0c0eb328107ba802d82b999bb601b47e}\label{struct_game_a0c0eb328107ba802d82b999bb601b47e}} 
+\index{Game@{Game}!panel\_is\_clue@{panel\_is\_clue}}
+\index{panel\_is\_clue@{panel\_is\_clue}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{panel\_is\_clue}{panel\_is\_clue}}
+{\footnotesize\ttfamily bool panel\+\_\+is\+\_\+clue}
+
+
+
+Definition at line 51 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a96781128d3743da3d17e0fdd91afba7b}\label{struct_game_a96781128d3743da3d17e0fdd91afba7b}} 
+\index{Game@{Game}!player@{player}}
+\index{player@{player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_player}{Player}}$\ast$ player}
+
+
+
+Definition at line 41 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_abf4ea6a57f7bf0386a1bebcdd235b1a4}\label{struct_game_abf4ea6a57f7bf0386a1bebcdd235b1a4}} 
+\index{Game@{Game}!remaining\_minutes@{remaining\_minutes}}
+\index{remaining\_minutes@{remaining\_minutes}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{remaining\_minutes}{remaining\_minutes}}
+{\footnotesize\ttfamily uint8\+\_\+t remaining\+\_\+minutes}
+
+
+
+Definition at line 44 of file game.\+h.
+
+\mbox{\Hypertarget{struct_game_a56758156f787a62304b71b4e9ea81212}\label{struct_game_a56758156f787a62304b71b4e9ea81212}} 
+\index{Game@{Game}!remaining\_seconds@{remaining\_seconds}}
+\index{remaining\_seconds@{remaining\_seconds}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{remaining\_seconds}{remaining\_seconds}}
+{\footnotesize\ttfamily uint8\+\_\+t remaining\+\_\+seconds}
+
+
+
+Definition at line 45 of file game.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/game/\mbox{\hyperlink{game_8h}{game.\+h}}\end{DoxyCompactItemize}

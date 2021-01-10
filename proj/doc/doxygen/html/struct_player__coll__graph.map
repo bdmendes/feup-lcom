@@ -1,0 +1,5 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node1" title="A Player is composed of its sprite and a series of attributes related to the its movement in the map,..." alt="" coords="21,184,84,211"/>
+<area shape="rect" id="node2" href="$struct_anim_sprite.html" title="An AnimSprite is composed of a sprite which points to the current frame bitmap. The map is switched w..." alt="" coords="5,95,100,121"/>
+<area shape="rect" id="node3" href="$struct_sprite.html" title="A Sprite holds the width, height, x and y positions and the bitmap of an object that shall be drawn o..." alt="" coords="23,5,83,32"/>
+</map>

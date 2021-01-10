@@ -1,0 +1,16 @@
+<map id="destroy_sprite" name="destroy_sprite">
+<area shape="rect" id="node1" title="deallocates a sprite object" alt="" coords="1168,208,1283,235"/>
+<area shape="rect" id="node2" href="$asprite_8h.html#a264bfe0c5e4e502d56db1193684ac39d" title="allocates an animated sprite object" alt="" coords="1003,5,1117,32"/>
+<area shape="rect" id="node5" href="$font_8h.html#ac9c9f41f95d7a471c8c45e5370e2afbb" title="allocates a font" alt="" coords="1012,56,1108,83"/>
+<area shape="rect" id="node6" href="$button_8h.html#ae27c9bc7795fbe5c8cef13f9fbc63fb8" title="deallocates a button object" alt="" coords="1000,309,1120,336"/>
+<area shape="rect" id="node8" href="$resources_8h.html#a917597ec4db63d34d4f750f05537152d" title="deallocates the game resources" alt="" coords="176,157,361,184"/>
+<area shape="rect" id="node9" href="$menu_8h.html#ac57ed1efe938f214d4279aca79c296d4" title="deallocates a menu object: all sprites and panels are destroyed, except for the font and the mouse." alt="" coords="409,360,524,387"/>
+<area shape="rect" id="node10" href="$panel_8h.html#aaf2191428653d2fe3ee26701b03184d3" title="deallocates a panel object: the button and background sprites. The mouse and font are not destroyed." alt="" coords="806,411,921,437"/>
+<area shape="rect" id="node11" href="$instructions_8h.html#a424ef0db51f872d7392307a931d46696" title="deallocates a game instructions object" alt="" coords="572,411,727,437"/>
+<area shape="rect" id="node13" href="$font_8h.html#a5398f06528f99f97e1ae2efba6c4e0d0" title="deallocates a font" alt="" coords="415,157,519,184"/>
+<area shape="rect" id="node14" href="$map_8h.html#ab05797984f6c2adaddc113f05a517e8f" title="Deallocates a map." alt="" coords="810,208,917,235"/>
+<area shape="rect" id="node3" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="775,56,952,83"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,107,128,133"/>
+<area shape="rect" id="node7" href="$game_8h.html#afa0ec8b2ccc054b64d43ddb01dda6b31" title="deallocats the game map buffers and player. The mouse sprite and the font are not destroyed." alt="" coords="592,247,707,273"/>
+<area shape="rect" id="node12" href="$settings_8h.html#a36d3668afae46aa6c6674fe7fedbadc2" title="deallocates a settings object" alt="" coords="584,360,715,387"/>
+</map>

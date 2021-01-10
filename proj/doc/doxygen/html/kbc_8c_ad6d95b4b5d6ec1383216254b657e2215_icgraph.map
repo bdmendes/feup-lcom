@@ -1,0 +1,6 @@
+<map id="read_buffer_data" name="read_buffer_data">
+<area shape="rect" id="node1" title="reads the data in the output buffer" alt="" coords="309,31,441,57"/>
+<area shape="rect" id="node2" href="$keyboard_8h.html#aca842ab89e3fc03d8cca103dd6808895" title="the keyboard interrupt handler: calls get_buffer_data()" alt="" coords="186,5,251,32"/>
+<area shape="rect" id="node4" href="$mouse_8h.html#a210374b50462acdedab00df64d5cea3c" title="the mouse interrupt handler; calls get get_buffer_data()" alt="" coords="176,56,261,83"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+</map>

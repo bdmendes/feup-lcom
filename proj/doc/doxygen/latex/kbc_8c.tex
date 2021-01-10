@@ -1,0 +1,204 @@
+\hypertarget{kbc_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/devices/kbc/kbc.c File Reference}
+\label{kbc_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/kbc.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/kbc.c}}
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../utils/utils.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{kbc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool() \mbox{\hyperlink{kbc_8c_ae18e1dfab3990e4eb2ad6bb594406d53}{kbc\+\_\+can\+\_\+write\+\_\+to\+\_\+inbuf}} ()
+\begin{DoxyCompactList}\small\item\em checks if the input buffer is available to be written to (I\+BF is unset) \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{kbc_8c_ad6d95b4b5d6ec1383216254b657e2215}{read\+\_\+buffer\+\_\+data}} (bool aux\+\_\+set)
+\begin{DoxyCompactList}\small\item\em reads the data in the output buffer \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{kbc_8c_ac3df632f04efa588702efee2712eb414}{get\+\_\+buffer\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em gets the data previously retrieved from from the output buffer \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{kbc_8c_a8dd62e08cf4c5093e096829f8b1eb218}{kbc\+\_\+read\+\_\+command\+\_\+byte}} (uint8\+\_\+t $\ast$cmd\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em retrieves the current K\+BC command byte \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{kbc_8c_a67add78c3cdb2abeaabfc45d429aca0e}{kbc\+\_\+write\+\_\+command\+\_\+byte}} (uint8\+\_\+t cmd\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em writes a command byte \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc_8c_ac3df632f04efa588702efee2712eb414}\label{kbc_8c_ac3df632f04efa588702efee2712eb414}} 
+\index{kbc.c@{kbc.c}!get\_buffer\_data@{get\_buffer\_data}}
+\index{get\_buffer\_data@{get\_buffer\_data}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{get\_buffer\_data()}{get\_buffer\_data()}}
+{\footnotesize\ttfamily uint8\+\_\+t() get\+\_\+buffer\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets the data previously retrieved from from the output buffer 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & byte read \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 50 of file kbc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{kbc_8c_ac3df632f04efa588702efee2712eb414_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_ae18e1dfab3990e4eb2ad6bb594406d53}\label{kbc_8c_ae18e1dfab3990e4eb2ad6bb594406d53}} 
+\index{kbc.c@{kbc.c}!kbc\_can\_write\_to\_inbuf@{kbc\_can\_write\_to\_inbuf}}
+\index{kbc\_can\_write\_to\_inbuf@{kbc\_can\_write\_to\_inbuf}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_can\_write\_to\_inbuf()}{kbc\_can\_write\_to\_inbuf()}}
+{\footnotesize\ttfamily bool() kbc\+\_\+can\+\_\+write\+\_\+to\+\_\+inbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if the input buffer is available to be written to (I\+BF is unset) 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if can the input buffer is ok, false otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 6 of file kbc.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{kbc_8c_ae18e1dfab3990e4eb2ad6bb594406d53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_ae18e1dfab3990e4eb2ad6bb594406d53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_a8dd62e08cf4c5093e096829f8b1eb218}\label{kbc_8c_a8dd62e08cf4c5093e096829f8b1eb218}} 
+\index{kbc.c@{kbc.c}!kbc\_read\_command\_byte@{kbc\_read\_command\_byte}}
+\index{kbc\_read\_command\_byte@{kbc\_read\_command\_byte}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_read\_command\_byte()}{kbc\_read\_command\_byte()}}
+{\footnotesize\ttfamily int() kbc\+\_\+read\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{cmd\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+retrieves the current K\+BC command byte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+byte} & the byte read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 54 of file kbc.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{kbc_8c_a8dd62e08cf4c5093e096829f8b1eb218_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_a8dd62e08cf4c5093e096829f8b1eb218_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_a67add78c3cdb2abeaabfc45d429aca0e}\label{kbc_8c_a67add78c3cdb2abeaabfc45d429aca0e}} 
+\index{kbc.c@{kbc.c}!kbc\_write\_command\_byte@{kbc\_write\_command\_byte}}
+\index{kbc\_write\_command\_byte@{kbc\_write\_command\_byte}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_write\_command\_byte()}{kbc\_write\_command\_byte()}}
+{\footnotesize\ttfamily int() kbc\+\_\+write\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+writes a command byte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+byte} & the byte to be written \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 67 of file kbc.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_a67add78c3cdb2abeaabfc45d429aca0e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_a67add78c3cdb2abeaabfc45d429aca0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_ad6d95b4b5d6ec1383216254b657e2215}\label{kbc_8c_ad6d95b4b5d6ec1383216254b657e2215}} 
+\index{kbc.c@{kbc.c}!read\_buffer\_data@{read\_buffer\_data}}
+\index{read\_buffer\_data@{read\_buffer\_data}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{read\_buffer\_data()}{read\_buffer\_data()}}
+{\footnotesize\ttfamily int() read\+\_\+buffer\+\_\+data (\begin{DoxyParamCaption}\item[{bool}]{aux\+\_\+set }\end{DoxyParamCaption})}
+
+
+
+reads the data in the output buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aux\+\_\+set} & true if the data is from the mouse, false if it\textquotesingle{}s from the
+\begin{DoxyItemize}
+\item keyboard 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, otherwise !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 15 of file kbc.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{kbc_8c_ad6d95b4b5d6ec1383216254b657e2215_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_ad6d95b4b5d6ec1383216254b657e2215_icgraph}
+\end{center}
+\end{figure}

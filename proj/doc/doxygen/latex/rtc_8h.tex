@@ -1,0 +1,624 @@
+\hypertarget{rtc_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/devices/rtc/rtc.h File Reference}
+\label{rtc_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/rtc/rtc.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/rtc/rtc.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for rtc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a4e22feb6ffbc1cda32fadff5c740dc51}{R\+T\+C\+\_\+\+I\+RQ}}~8
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a449956e39db86f43fc2e0b37393c2c96}{R\+T\+C\+\_\+\+W\+A\+I\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+MS}}~20
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a710b98232df2c563009e6f8a6cd18220}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}}~0x70
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}}~0x71
+\item 
+\#define \mbox{\hyperlink{rtc_8h_aa682b18b0f4f5fb1174c69b1f9877829}{R\+T\+C\+\_\+\+M\+I\+N\+\_\+\+Y\+E\+AR}}~2000
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a1f55d4c7092bcb8169ae8efbaa3d5e13}{R\+T\+C\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+R\+E\+\_\+\+V\+A\+L\+UE}}~B\+IT(7) $\vert$ B\+IT(6)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a0be2fdeec5509971dfb173bacf675c63}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+S\+E\+C\+O\+N\+DS}}~0
+\item 
+\#define \mbox{\hyperlink{rtc_8h_ae7f3f678568246a66cec7cc9f17165d5}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+S\+E\+C\+\_\+\+A\+L\+A\+RM}}~1
+\item 
+\#define \mbox{\hyperlink{rtc_8h_acce201fe6cb0ebd6c977603e295719f7}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+I\+N\+U\+T\+ES}}~2
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a35939ecf1433e79f0a47c36f8998c1a2}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+I\+N\+\_\+\+A\+L\+A\+RM}}~3
+\item 
+\#define \mbox{\hyperlink{rtc_8h_adba446383903232b6ba99df106731a01}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+H\+O\+UR}}~4
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a56f8028cd2e4b39221c6fdd70da6192e}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+H\+O\+U\+R\+\_\+\+A\+L\+A\+RM}}~5
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a8faf89deac0bd62617b9869aa05ab7b9}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+D\+A\+Y\+\_\+\+O\+F\+\_\+\+W\+E\+EK}}~6
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a593af8b77db5e4c1055efd7845f65032}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+D\+A\+Y\+\_\+\+O\+F\+\_\+\+M\+O\+N\+TH}}~7
+\item 
+\#define \mbox{\hyperlink{rtc_8h_ac25418702e9b5178c473b7648face2df}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+N\+TH}}~8
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a9844f26d42d0414051718fd515624492}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+Y\+E\+AR}}~9
+\item 
+\#define \mbox{\hyperlink{rtc_8h_ad3334ee01ab49b65a5b08012fee0e563}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+A}}~10
+\item 
+\#define \mbox{\hyperlink{rtc_8h_ae9ff1783a6d13318275bc53fea4b81d0}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+B}}~11
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a7f8f2d403f68bda175ea67885574bc03}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+C}}~12
+\item 
+\#define \mbox{\hyperlink{rtc_8h_ab5e14f86cc7d740bef2a3266cdec15f4}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+D}}~13
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a6c2f83754f1a178231a49715b10b4653}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+IP}}~B\+IT(7)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a06af994f4d47108dc14739fce49a964a}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S3}}~B\+IT(3)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a31e1101fbda145ca1da97ef9c08bc4d6}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S2}}~B\+IT(2)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a4cda88beb73da8bed9c5bd48cac07d2c}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S1}}~B\+IT(1)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a436c2abdefa74eb9eb0cd3267133af2b}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+I\+N\+H\+I\+B\+I\+T\+\_\+\+U\+P\+D\+A\+T\+ES}}~B\+IT(7)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_adb48c5284bdd4dd19c2620abde4d2a17}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+P\+E\+R\+I\+O\+D\+I\+C\+\_\+\+IE}}~B\+IT(6)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_adaa58733b165739c13ec7ef10a6286bd}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+A\+L\+A\+R\+M\+\_\+\+IE}}~B\+IT(5)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a0a4563d33248e6c5fde491e25af46d32}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+IE}}~B\+IT(4)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_acfacff776ef3e063aef5eddcd3613705}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+D\+M\+\_\+\+B\+I\+N\+A\+RY}}~B\+IT(2)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_afae6c21db3970022d75a1defa4d9e260}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+S\+QW}}~B\+IT(3)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a38174f5b51b268ab91bc0d9e4f9177c8}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+I\+R\+QF}}~B\+IT(7)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a4e96da8e6998c6a7b275d8d1d2e21657}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+PF}}~B\+IT(6)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a5d87d84ef1cc2472d66bea9f1309cd60}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+AF}}~B\+IT(5)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_af8ce7b20a854a0ce90b2954cc1cef920}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+UF}}~B\+IT(4)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a9a60ce03e3440c2c5a9df0a0c3bd2bb1}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+D\+\_\+\+V\+A\+L\+I\+D\+\_\+\+RT}}~B\+IT(7)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em reads register C to clear possible error flags and then subscribes R\+TC interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_a9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes R\+TC interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_a0b9ae809cf571f61e54712a23c65348e}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em the R\+TC interrupt handler. Does nothing besides reading register C to clear the pending interrupt. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_aaddcec07dabe46b7dfe77ff6c6a1f8f4}{rtc\+\_\+disable\+\_\+all\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em disables every type of R\+TC interrupts\+: alarm, periodic and update \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_a970ca0ca5796cc68278003d76de2c861}{rtc\+\_\+set\+\_\+alarm\+\_\+every\+\_\+second}} ()
+\begin{DoxyCompactList}\small\item\em sets the R\+TC to cause an alarm interrupt every second\+: the second, minute and hour registers are set with 11X\+X\+X\+X\+XX values. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_aa5ffbfb3517d789dd4281407e05d7d91}{rtc\+\_\+enable\+\_\+alarm\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em enables R\+TC alarm interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{rtc_8h_ad3334ee01ab49b65a5b08012fee0e563}\label{rtc_8h_ad3334ee01ab49b65a5b08012fee0e563}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_A@{RTC\_ADDR\_A}}
+\index{RTC\_ADDR\_A@{RTC\_ADDR\_A}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_A}{RTC\_ADDR\_A}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+A~10}
+
+
+
+Definition at line 28 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_ae9ff1783a6d13318275bc53fea4b81d0}\label{rtc_8h_ae9ff1783a6d13318275bc53fea4b81d0}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_B@{RTC\_ADDR\_B}}
+\index{RTC\_ADDR\_B@{RTC\_ADDR\_B}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_B}{RTC\_ADDR\_B}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+B~11}
+
+
+
+Definition at line 29 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a7f8f2d403f68bda175ea67885574bc03}\label{rtc_8h_a7f8f2d403f68bda175ea67885574bc03}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_C@{RTC\_ADDR\_C}}
+\index{RTC\_ADDR\_C@{RTC\_ADDR\_C}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_C}{RTC\_ADDR\_C}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+C~12}
+
+
+
+Definition at line 30 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_ab5e14f86cc7d740bef2a3266cdec15f4}\label{rtc_8h_ab5e14f86cc7d740bef2a3266cdec15f4}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_D@{RTC\_ADDR\_D}}
+\index{RTC\_ADDR\_D@{RTC\_ADDR\_D}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_D}{RTC\_ADDR\_D}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+D~13}
+
+
+
+Definition at line 31 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a593af8b77db5e4c1055efd7845f65032}\label{rtc_8h_a593af8b77db5e4c1055efd7845f65032}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_DAY\_OF\_MONTH@{RTC\_ADDR\_DAY\_OF\_MONTH}}
+\index{RTC\_ADDR\_DAY\_OF\_MONTH@{RTC\_ADDR\_DAY\_OF\_MONTH}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_DAY\_OF\_MONTH}{RTC\_ADDR\_DAY\_OF\_MONTH}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+D\+A\+Y\+\_\+\+O\+F\+\_\+\+M\+O\+N\+TH~7}
+
+
+
+Definition at line 23 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a8faf89deac0bd62617b9869aa05ab7b9}\label{rtc_8h_a8faf89deac0bd62617b9869aa05ab7b9}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_DAY\_OF\_WEEK@{RTC\_ADDR\_DAY\_OF\_WEEK}}
+\index{RTC\_ADDR\_DAY\_OF\_WEEK@{RTC\_ADDR\_DAY\_OF\_WEEK}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_DAY\_OF\_WEEK}{RTC\_ADDR\_DAY\_OF\_WEEK}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+D\+A\+Y\+\_\+\+O\+F\+\_\+\+W\+E\+EK~6}
+
+
+
+Definition at line 22 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_adba446383903232b6ba99df106731a01}\label{rtc_8h_adba446383903232b6ba99df106731a01}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_HOUR@{RTC\_ADDR\_HOUR}}
+\index{RTC\_ADDR\_HOUR@{RTC\_ADDR\_HOUR}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_HOUR}{RTC\_ADDR\_HOUR}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+H\+O\+UR~4}
+
+
+
+Definition at line 20 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a56f8028cd2e4b39221c6fdd70da6192e}\label{rtc_8h_a56f8028cd2e4b39221c6fdd70da6192e}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_HOUR\_ALARM@{RTC\_ADDR\_HOUR\_ALARM}}
+\index{RTC\_ADDR\_HOUR\_ALARM@{RTC\_ADDR\_HOUR\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_HOUR\_ALARM}{RTC\_ADDR\_HOUR\_ALARM}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+H\+O\+U\+R\+\_\+\+A\+L\+A\+RM~5}
+
+
+
+Definition at line 21 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a35939ecf1433e79f0a47c36f8998c1a2}\label{rtc_8h_a35939ecf1433e79f0a47c36f8998c1a2}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_MIN\_ALARM@{RTC\_ADDR\_MIN\_ALARM}}
+\index{RTC\_ADDR\_MIN\_ALARM@{RTC\_ADDR\_MIN\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_MIN\_ALARM}{RTC\_ADDR\_MIN\_ALARM}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+I\+N\+\_\+\+A\+L\+A\+RM~3}
+
+
+
+Definition at line 19 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_acce201fe6cb0ebd6c977603e295719f7}\label{rtc_8h_acce201fe6cb0ebd6c977603e295719f7}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_MINUTES@{RTC\_ADDR\_MINUTES}}
+\index{RTC\_ADDR\_MINUTES@{RTC\_ADDR\_MINUTES}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_MINUTES}{RTC\_ADDR\_MINUTES}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+I\+N\+U\+T\+ES~2}
+
+
+
+Definition at line 18 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_ac25418702e9b5178c473b7648face2df}\label{rtc_8h_ac25418702e9b5178c473b7648face2df}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_MONTH@{RTC\_ADDR\_MONTH}}
+\index{RTC\_ADDR\_MONTH@{RTC\_ADDR\_MONTH}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_MONTH}{RTC\_ADDR\_MONTH}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+N\+TH~8}
+
+
+
+Definition at line 24 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a710b98232df2c563009e6f8a6cd18220}\label{rtc_8h_a710b98232df2c563009e6f8a6cd18220}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_REG@{RTC\_ADDR\_REG}}
+\index{RTC\_ADDR\_REG@{RTC\_ADDR\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_REG}{RTC\_ADDR\_REG}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG~0x70}
+
+
+
+Definition at line 9 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_ae7f3f678568246a66cec7cc9f17165d5}\label{rtc_8h_ae7f3f678568246a66cec7cc9f17165d5}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_SEC\_ALARM@{RTC\_ADDR\_SEC\_ALARM}}
+\index{RTC\_ADDR\_SEC\_ALARM@{RTC\_ADDR\_SEC\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_SEC\_ALARM}{RTC\_ADDR\_SEC\_ALARM}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+S\+E\+C\+\_\+\+A\+L\+A\+RM~1}
+
+
+
+Definition at line 17 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a0be2fdeec5509971dfb173bacf675c63}\label{rtc_8h_a0be2fdeec5509971dfb173bacf675c63}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_SECONDS@{RTC\_ADDR\_SECONDS}}
+\index{RTC\_ADDR\_SECONDS@{RTC\_ADDR\_SECONDS}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_SECONDS}{RTC\_ADDR\_SECONDS}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+S\+E\+C\+O\+N\+DS~0}
+
+
+
+Definition at line 16 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a9844f26d42d0414051718fd515624492}\label{rtc_8h_a9844f26d42d0414051718fd515624492}} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_YEAR@{RTC\_ADDR\_YEAR}}
+\index{RTC\_ADDR\_YEAR@{RTC\_ADDR\_YEAR}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_YEAR}{RTC\_ADDR\_YEAR}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+Y\+E\+AR~9}
+
+
+
+Definition at line 25 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0}\label{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0}} 
+\index{rtc.h@{rtc.h}!RTC\_DATA\_REG@{RTC\_DATA\_REG}}
+\index{RTC\_DATA\_REG@{RTC\_DATA\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DATA\_REG}{RTC\_DATA\_REG}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG~0x71}
+
+
+
+Definition at line 10 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a1f55d4c7092bcb8169ae8efbaa3d5e13}\label{rtc_8h_a1f55d4c7092bcb8169ae8efbaa3d5e13}} 
+\index{rtc.h@{rtc.h}!RTC\_DONT\_CARE\_VALUE@{RTC\_DONT\_CARE\_VALUE}}
+\index{RTC\_DONT\_CARE\_VALUE@{RTC\_DONT\_CARE\_VALUE}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DONT\_CARE\_VALUE}{RTC\_DONT\_CARE\_VALUE}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+R\+E\+\_\+\+V\+A\+L\+UE~B\+IT(7) $\vert$ B\+IT(6)}
+
+
+
+Definition at line 13 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a4e22feb6ffbc1cda32fadff5c740dc51}\label{rtc_8h_a4e22feb6ffbc1cda32fadff5c740dc51}} 
+\index{rtc.h@{rtc.h}!RTC\_IRQ@{RTC\_IRQ}}
+\index{RTC\_IRQ@{RTC\_IRQ}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_IRQ}{RTC\_IRQ}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+RQ~8}
+
+
+
+Definition at line 6 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_aa682b18b0f4f5fb1174c69b1f9877829}\label{rtc_8h_aa682b18b0f4f5fb1174c69b1f9877829}} 
+\index{rtc.h@{rtc.h}!RTC\_MIN\_YEAR@{RTC\_MIN\_YEAR}}
+\index{RTC\_MIN\_YEAR@{RTC\_MIN\_YEAR}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MIN\_YEAR}{RTC\_MIN\_YEAR}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+M\+I\+N\+\_\+\+Y\+E\+AR~2000}
+
+
+
+Definition at line 12 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a4cda88beb73da8bed9c5bd48cac07d2c}\label{rtc_8h_a4cda88beb73da8bed9c5bd48cac07d2c}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_A\_RS1@{RTC\_REG\_A\_RS1}}
+\index{RTC\_REG\_A\_RS1@{RTC\_REG\_A\_RS1}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_A\_RS1}{RTC\_REG\_A\_RS1}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S1~B\+IT(1)}
+
+
+
+Definition at line 37 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a31e1101fbda145ca1da97ef9c08bc4d6}\label{rtc_8h_a31e1101fbda145ca1da97ef9c08bc4d6}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_A\_RS2@{RTC\_REG\_A\_RS2}}
+\index{RTC\_REG\_A\_RS2@{RTC\_REG\_A\_RS2}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_A\_RS2}{RTC\_REG\_A\_RS2}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S2~B\+IT(2)}
+
+
+
+Definition at line 36 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a06af994f4d47108dc14739fce49a964a}\label{rtc_8h_a06af994f4d47108dc14739fce49a964a}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_A\_RS3@{RTC\_REG\_A\_RS3}}
+\index{RTC\_REG\_A\_RS3@{RTC\_REG\_A\_RS3}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_A\_RS3}{RTC\_REG\_A\_RS3}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+R\+S3~B\+IT(3)}
+
+
+
+Definition at line 35 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a6c2f83754f1a178231a49715b10b4653}\label{rtc_8h_a6c2f83754f1a178231a49715b10b4653}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_A\_UPDATE\_IP@{RTC\_REG\_A\_UPDATE\_IP}}
+\index{RTC\_REG\_A\_UPDATE\_IP@{RTC\_REG\_A\_UPDATE\_IP}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_A\_UPDATE\_IP}{RTC\_REG\_A\_UPDATE\_IP}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+IP~B\+IT(7)}
+
+
+
+Definition at line 34 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_adaa58733b165739c13ec7ef10a6286bd}\label{rtc_8h_adaa58733b165739c13ec7ef10a6286bd}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_ALARM\_IE@{RTC\_REG\_B\_ALARM\_IE}}
+\index{RTC\_REG\_B\_ALARM\_IE@{RTC\_REG\_B\_ALARM\_IE}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_ALARM\_IE}{RTC\_REG\_B\_ALARM\_IE}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+A\+L\+A\+R\+M\+\_\+\+IE~B\+IT(5)}
+
+
+
+Definition at line 42 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_acfacff776ef3e063aef5eddcd3613705}\label{rtc_8h_acfacff776ef3e063aef5eddcd3613705}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_DM\_BINARY@{RTC\_REG\_B\_DM\_BINARY}}
+\index{RTC\_REG\_B\_DM\_BINARY@{RTC\_REG\_B\_DM\_BINARY}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_DM\_BINARY}{RTC\_REG\_B\_DM\_BINARY}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+D\+M\+\_\+\+B\+I\+N\+A\+RY~B\+IT(2)}
+
+
+
+Definition at line 44 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a436c2abdefa74eb9eb0cd3267133af2b}\label{rtc_8h_a436c2abdefa74eb9eb0cd3267133af2b}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_INHIBIT\_UPDATES@{RTC\_REG\_B\_INHIBIT\_UPDATES}}
+\index{RTC\_REG\_B\_INHIBIT\_UPDATES@{RTC\_REG\_B\_INHIBIT\_UPDATES}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_INHIBIT\_UPDATES}{RTC\_REG\_B\_INHIBIT\_UPDATES}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+I\+N\+H\+I\+B\+I\+T\+\_\+\+U\+P\+D\+A\+T\+ES~B\+IT(7)}
+
+
+
+Definition at line 40 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_adb48c5284bdd4dd19c2620abde4d2a17}\label{rtc_8h_adb48c5284bdd4dd19c2620abde4d2a17}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_PERIODIC\_IE@{RTC\_REG\_B\_PERIODIC\_IE}}
+\index{RTC\_REG\_B\_PERIODIC\_IE@{RTC\_REG\_B\_PERIODIC\_IE}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_PERIODIC\_IE}{RTC\_REG\_B\_PERIODIC\_IE}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+P\+E\+R\+I\+O\+D\+I\+C\+\_\+\+IE~B\+IT(6)}
+
+
+
+Definition at line 41 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_afae6c21db3970022d75a1defa4d9e260}\label{rtc_8h_afae6c21db3970022d75a1defa4d9e260}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_SQW@{RTC\_REG\_B\_SQW}}
+\index{RTC\_REG\_B\_SQW@{RTC\_REG\_B\_SQW}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_SQW}{RTC\_REG\_B\_SQW}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+S\+QW~B\+IT(3)}
+
+
+
+Definition at line 45 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a0a4563d33248e6c5fde491e25af46d32}\label{rtc_8h_a0a4563d33248e6c5fde491e25af46d32}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_B\_UPDATE\_IE@{RTC\_REG\_B\_UPDATE\_IE}}
+\index{RTC\_REG\_B\_UPDATE\_IE@{RTC\_REG\_B\_UPDATE\_IE}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_B\_UPDATE\_IE}{RTC\_REG\_B\_UPDATE\_IE}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+IE~B\+IT(4)}
+
+
+
+Definition at line 43 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a5d87d84ef1cc2472d66bea9f1309cd60}\label{rtc_8h_a5d87d84ef1cc2472d66bea9f1309cd60}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_C\_AF@{RTC\_REG\_C\_AF}}
+\index{RTC\_REG\_C\_AF@{RTC\_REG\_C\_AF}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_C\_AF}{RTC\_REG\_C\_AF}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+AF~B\+IT(5)}
+
+
+
+Definition at line 50 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a38174f5b51b268ab91bc0d9e4f9177c8}\label{rtc_8h_a38174f5b51b268ab91bc0d9e4f9177c8}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_C\_IRQF@{RTC\_REG\_C\_IRQF}}
+\index{RTC\_REG\_C\_IRQF@{RTC\_REG\_C\_IRQF}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_C\_IRQF}{RTC\_REG\_C\_IRQF}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+I\+R\+QF~B\+IT(7)}
+
+
+
+Definition at line 48 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a4e96da8e6998c6a7b275d8d1d2e21657}\label{rtc_8h_a4e96da8e6998c6a7b275d8d1d2e21657}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_C\_PF@{RTC\_REG\_C\_PF}}
+\index{RTC\_REG\_C\_PF@{RTC\_REG\_C\_PF}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_C\_PF}{RTC\_REG\_C\_PF}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+PF~B\+IT(6)}
+
+
+
+Definition at line 49 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_af8ce7b20a854a0ce90b2954cc1cef920}\label{rtc_8h_af8ce7b20a854a0ce90b2954cc1cef920}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_C\_UF@{RTC\_REG\_C\_UF}}
+\index{RTC\_REG\_C\_UF@{RTC\_REG\_C\_UF}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_C\_UF}{RTC\_REG\_C\_UF}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+UF~B\+IT(4)}
+
+
+
+Definition at line 51 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a9a60ce03e3440c2c5a9df0a0c3bd2bb1}\label{rtc_8h_a9a60ce03e3440c2c5a9df0a0c3bd2bb1}} 
+\index{rtc.h@{rtc.h}!RTC\_REG\_D\_VALID\_RT@{RTC\_REG\_D\_VALID\_RT}}
+\index{RTC\_REG\_D\_VALID\_RT@{RTC\_REG\_D\_VALID\_RT}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_REG\_D\_VALID\_RT}{RTC\_REG\_D\_VALID\_RT}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+D\+\_\+\+V\+A\+L\+I\+D\+\_\+\+RT~B\+IT(7)}
+
+
+
+Definition at line 54 of file rtc.\+h.
+
+\mbox{\Hypertarget{rtc_8h_a449956e39db86f43fc2e0b37393c2c96}\label{rtc_8h_a449956e39db86f43fc2e0b37393c2c96}} 
+\index{rtc.h@{rtc.h}!RTC\_WAIT\_DELAY\_MS@{RTC\_WAIT\_DELAY\_MS}}
+\index{RTC\_WAIT\_DELAY\_MS@{RTC\_WAIT\_DELAY\_MS}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_WAIT\_DELAY\_MS}{RTC\_WAIT\_DELAY\_MS}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+W\+A\+I\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+MS~20}
+
+
+
+Definition at line 7 of file rtc.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8h_aaddcec07dabe46b7dfe77ff6c6a1f8f4}\label{rtc_8h_aaddcec07dabe46b7dfe77ff6c6a1f8f4}} 
+\index{rtc.h@{rtc.h}!rtc\_disable\_all\_interrupts@{rtc\_disable\_all\_interrupts}}
+\index{rtc\_disable\_all\_interrupts@{rtc\_disable\_all\_interrupts}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_disable\_all\_interrupts()}{rtc\_disable\_all\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+disable\+\_\+all\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+disables every type of R\+TC interrupts\+: alarm, periodic and update 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if succeess, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 163 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{rtc_8h_aaddcec07dabe46b7dfe77ff6c6a1f8f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_aa5ffbfb3517d789dd4281407e05d7d91}\label{rtc_8h_aa5ffbfb3517d789dd4281407e05d7d91}} 
+\index{rtc.h@{rtc.h}!rtc\_enable\_alarm\_interrupts@{rtc\_enable\_alarm\_interrupts}}
+\index{rtc\_enable\_alarm\_interrupts@{rtc\_enable\_alarm\_interrupts}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_enable\_alarm\_interrupts()}{rtc\_enable\_alarm\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+enable\+\_\+alarm\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+enables R\+TC alarm interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if successful, otherwise !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 115 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_aa5ffbfb3517d789dd4281407e05d7d91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a0b9ae809cf571f61e54712a23c65348e}\label{rtc_8h_a0b9ae809cf571f61e54712a23c65348e}} 
+\index{rtc.h@{rtc.h}!rtc\_ih@{rtc\_ih}}
+\index{rtc\_ih@{rtc\_ih}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily void() rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the R\+TC interrupt handler. Does nothing besides reading register C to clear the pending interrupt. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{rtc_8h_a0b9ae809cf571f61e54712a23c65348e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a970ca0ca5796cc68278003d76de2c861}\label{rtc_8h_a970ca0ca5796cc68278003d76de2c861}} 
+\index{rtc.h@{rtc.h}!rtc\_set\_alarm\_every\_second@{rtc\_set\_alarm\_every\_second}}
+\index{rtc\_set\_alarm\_every\_second@{rtc\_set\_alarm\_every\_second}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_set\_alarm\_every\_second()}{rtc\_set\_alarm\_every\_second()}}
+{\footnotesize\ttfamily void() rtc\+\_\+set\+\_\+alarm\+\_\+every\+\_\+second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the R\+TC to cause an alarm interrupt every second\+: the second, minute and hour registers are set with 11X\+X\+X\+X\+XX values. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 84 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{rtc_8h_a970ca0ca5796cc68278003d76de2c861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}\label{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}} 
+\index{rtc.h@{rtc.h}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+reads register C to clear possible error flags and then subscribes R\+TC interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & the bit number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 93 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a9d4850bb2a488644672d43287f160622}\label{rtc_8h_a9d4850bb2a488644672d43287f160622}} 
+\index{rtc.h@{rtc.h}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes R\+TC interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 107 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{rtc_8h_a9d4850bb2a488644672d43287f160622_icgraph}
+\end{center}
+\end{figure}

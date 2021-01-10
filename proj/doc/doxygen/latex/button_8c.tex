@@ -1,0 +1,329 @@
+\hypertarget{button_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/panel/button.c File Reference}
+\label{button_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/panel/button.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/panel/button.c}}
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+Include dependency graph for button.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{button_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$() \mbox{\hyperlink{button_8c_a39ddedf83a135ccf9b93f24aae099105}{create\+\_\+button}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, const char $\ast$text, uint16\+\_\+t width, uint16\+\_\+t height, int16\+\_\+t x, int16\+\_\+t y, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} back\+\_\+color, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} hover\+\_\+frame\+\_\+color)
+\begin{DoxyCompactList}\small\item\em allocates a button object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$() \mbox{\hyperlink{button_8c_a863948f0db1e930d09456179c07aedec}{create\+\_\+button\+\_\+centered}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, const char $\ast$text, uint16\+\_\+t width, uint16\+\_\+t height, int16\+\_\+t y, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} back\+\_\+color, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} hover\+\_\+frame\+\_\+color)
+\begin{DoxyCompactList}\small\item\em allocates a button object that is centered in the screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$() \mbox{\hyperlink{button_8c_a9cb35a9d0814259c74a7090db5a0f8e9}{create\+\_\+button\+\_\+letter\+\_\+sized}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, char $\ast$text, int16\+\_\+t x, int16\+\_\+t y, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} back\+\_\+color, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} hover\+\_\+frame\+\_\+color)
+\begin{DoxyCompactList}\small\item\em allocates a button object according to the text\textquotesingle{}s size \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{button_8c_aa223516c6cbd61f35f7f9da7d4cbd884}{draw\+\_\+button}} (\mbox{\hyperlink{struct_button}{Button}} $\ast$button, bool hover)
+\begin{DoxyCompactList}\small\item\em draws a button to the video buffer \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{button_8c_a7ccb6860add187e41eda092d809eec52}{button\+\_\+set\+\_\+colors}} (\mbox{\hyperlink{struct_button}{Button}} $\ast$button, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} back\+\_\+color, \mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}} hover\+\_\+frame\+\_\+color)
+\begin{DoxyCompactList}\small\item\em sets a button background and frame (when hovering) colors \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{button_8c_ae27c9bc7795fbe5c8cef13f9fbc63fb8}{destroy\+\_\+button}} (\mbox{\hyperlink{struct_button}{Button}} $\ast$button)
+\begin{DoxyCompactList}\small\item\em deallocates a button object \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{button_8c_a0cf351c17bdf5833c77ad383daf9818f}{button\+\_\+set\+\_\+position}} (\mbox{\hyperlink{struct_button}{Button}} $\ast$button, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em sets a button\textquotesingle{}s position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{button_8c_a7ccb6860add187e41eda092d809eec52}\label{button_8c_a7ccb6860add187e41eda092d809eec52}} 
+\index{button.c@{button.c}!button\_set\_colors@{button\_set\_colors}}
+\index{button\_set\_colors@{button\_set\_colors}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{button\_set\_colors()}{button\_set\_colors()}}
+{\footnotesize\ttfamily void() button\+\_\+set\+\_\+colors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_button}{Button}} $\ast$}]{button,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{back\+\_\+color,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{hover\+\_\+frame\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+sets a button background and frame (when hovering) colors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button \\
+\hline
+{\em back\+\_\+color} & the value of the desired background color \\
+\hline
+{\em hover\+\_\+frame\+\_\+color} & the value of the desired frame hovering color \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 56 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{button_8c_a7ccb6860add187e41eda092d809eec52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_a7ccb6860add187e41eda092d809eec52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_a0cf351c17bdf5833c77ad383daf9818f}\label{button_8c_a0cf351c17bdf5833c77ad383daf9818f}} 
+\index{button.c@{button.c}!button\_set\_position@{button\_set\_position}}
+\index{button\_set\_position@{button\_set\_position}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{button\_set\_position()}{button\_set\_position()}}
+{\footnotesize\ttfamily void() button\+\_\+set\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_button}{Button}} $\ast$}]{button,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+sets a button\textquotesingle{}s position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button \\
+\hline
+{\em x} & the x coordinate of the desired button\textquotesingle{}s position \\
+\hline
+{\em y} & the y coordinate of the desired button\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 84 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{button_8c_a0cf351c17bdf5833c77ad383daf9818f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_a39ddedf83a135ccf9b93f24aae099105}\label{button_8c_a39ddedf83a135ccf9b93f24aae099105}} 
+\index{button.c@{button.c}!create\_button@{create\_button}}
+\index{create\_button@{create\_button}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{create\_button()}{create\_button()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$() create\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{const char $\ast$}]{text,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{back\+\_\+color,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{hover\+\_\+frame\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+allocates a button object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the desired text font \\
+\hline
+{\em text} & the desired text \\
+\hline
+{\em width} & the desired button width \\
+\hline
+{\em height} & the desired button height \\
+\hline
+{\em x} & the x coordinate of the desired position \\
+\hline
+{\em y} & the y coordinate of the desired position \\
+\hline
+{\em back\+\_\+color} & the desired background color \\
+\hline
+{\em hover\+\_\+frame\+\_\+color} & the desired color to show when hovering the button \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created button \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 3 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{button_8c_a39ddedf83a135ccf9b93f24aae099105_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_a39ddedf83a135ccf9b93f24aae099105_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_a863948f0db1e930d09456179c07aedec}\label{button_8c_a863948f0db1e930d09456179c07aedec}} 
+\index{button.c@{button.c}!create\_button\_centered@{create\_button\_centered}}
+\index{create\_button\_centered@{create\_button\_centered}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{create\_button\_centered()}{create\_button\_centered()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$() create\+\_\+button\+\_\+centered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{const char $\ast$}]{text,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{int16\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{back\+\_\+color,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{hover\+\_\+frame\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+allocates a button object that is centered in the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the desired text font \\
+\hline
+{\em text} & the desired text \\
+\hline
+{\em width} & the desired button width \\
+\hline
+{\em height} & the desired button height \\
+\hline
+{\em x} & the x coordinate of the desired position \\
+\hline
+{\em back\+\_\+color} & the desired background color \\
+\hline
+{\em hover\+\_\+frame\+\_\+color} & the desired frame color to show when hovering the button \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created button \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 39 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_a863948f0db1e930d09456179c07aedec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_a863948f0db1e930d09456179c07aedec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_a9cb35a9d0814259c74a7090db5a0f8e9}\label{button_8c_a9cb35a9d0814259c74a7090db5a0f8e9}} 
+\index{button.c@{button.c}!create\_button\_letter\_sized@{create\_button\_letter\_sized}}
+\index{create\_button\_letter\_sized@{create\_button\_letter\_sized}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{create\_button\_letter\_sized()}{create\_button\_letter\_sized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$() create\+\_\+button\+\_\+letter\+\_\+sized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{char $\ast$}]{text,  }\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{back\+\_\+color,  }\item[{\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+L\+OR}}}]{hover\+\_\+frame\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+allocates a button object according to the text\textquotesingle{}s size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the desired font \\
+\hline
+{\em text} & the desired text \\
+\hline
+{\em x} & the x coordinate of the desired position \\
+\hline
+{\em y} & the y coordinate of the desired position \\
+\hline
+{\em back\+\_\+color} & the desired background color \\
+\hline
+{\em hover\+\_\+frame\+\_\+color} & the desired frame color to show when hovering the button \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created button \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 45 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_a9cb35a9d0814259c74a7090db5a0f8e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_ae27c9bc7795fbe5c8cef13f9fbc63fb8}\label{button_8c_ae27c9bc7795fbe5c8cef13f9fbc63fb8}} 
+\index{button.c@{button.c}!destroy\_button@{destroy\_button}}
+\index{destroy\_button@{destroy\_button}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_button()}{destroy\_button()}}
+{\footnotesize\ttfamily void() destroy\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_button}{Button}} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+deallocates a button object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 79 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{button_8c_ae27c9bc7795fbe5c8cef13f9fbc63fb8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_ae27c9bc7795fbe5c8cef13f9fbc63fb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8c_aa223516c6cbd61f35f7f9da7d4cbd884}\label{button_8c_aa223516c6cbd61f35f7f9da7d4cbd884}} 
+\index{button.c@{button.c}!draw\_button@{draw\_button}}
+\index{draw\_button@{draw\_button}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{draw\_button()}{draw\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_button}{Button}} $\ast$}]{button,  }\item[{bool}]{hover }\end{DoxyParamCaption})}
+
+
+
+draws a button to the video buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button \\
+\hline
+{\em hover} & whether or not the button is being hovered \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 51 of file button.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{button_8c_aa223516c6cbd61f35f7f9da7d4cbd884_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{button_8c_aa223516c6cbd61f35f7f9da7d4cbd884_icgraph}
+\end{center}
+\end{figure}

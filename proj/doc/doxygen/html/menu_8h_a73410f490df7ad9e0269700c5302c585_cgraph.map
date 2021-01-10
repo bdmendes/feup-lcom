@@ -1,0 +1,4 @@
+<map id="get_hovered_button" name="get_hovered_button">
+<area shape="rect" id="node1" title="check which button is being hovered" alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a66816cf4f68b047b2f11e5c188e09c2c" title="checks if a coordinate is within a sprite (in its current position)" alt="" coords="205,5,328,32"/>
+</map>

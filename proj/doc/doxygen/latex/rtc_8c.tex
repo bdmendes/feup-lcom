@@ -1,0 +1,191 @@
+\hypertarget{rtc_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/devices/rtc/rtc.c File Reference}
+\label{rtc_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/rtc/rtc.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/rtc/rtc.c}}
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../utils/utils.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{rtc_8c_a970ca0ca5796cc68278003d76de2c861}{rtc\+\_\+set\+\_\+alarm\+\_\+every\+\_\+second}} ()
+\begin{DoxyCompactList}\small\item\em sets the R\+TC to cause an alarm interrupt every second\+: the second, minute and hour registers are set with 11X\+X\+X\+X\+XX values. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em reads register C to clear possible error flags and then subscribes R\+TC interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes R\+TC interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_aa5ffbfb3517d789dd4281407e05d7d91}{rtc\+\_\+enable\+\_\+alarm\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em enables R\+TC alarm interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_aaddcec07dabe46b7dfe77ff6c6a1f8f4}{rtc\+\_\+disable\+\_\+all\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em disables every type of R\+TC interrupts\+: alarm, periodic and update \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em the R\+TC interrupt handler. Does nothing besides reading register C to clear the pending interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_aaddcec07dabe46b7dfe77ff6c6a1f8f4}\label{rtc_8c_aaddcec07dabe46b7dfe77ff6c6a1f8f4}} 
+\index{rtc.c@{rtc.c}!rtc\_disable\_all\_interrupts@{rtc\_disable\_all\_interrupts}}
+\index{rtc\_disable\_all\_interrupts@{rtc\_disable\_all\_interrupts}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_disable\_all\_interrupts()}{rtc\_disable\_all\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+disable\+\_\+all\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+disables every type of R\+TC interrupts\+: alarm, periodic and update 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if succeess, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 163 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{rtc_8c_aaddcec07dabe46b7dfe77ff6c6a1f8f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_aa5ffbfb3517d789dd4281407e05d7d91}\label{rtc_8c_aa5ffbfb3517d789dd4281407e05d7d91}} 
+\index{rtc.c@{rtc.c}!rtc\_enable\_alarm\_interrupts@{rtc\_enable\_alarm\_interrupts}}
+\index{rtc\_enable\_alarm\_interrupts@{rtc\_enable\_alarm\_interrupts}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_enable\_alarm\_interrupts()}{rtc\_enable\_alarm\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+enable\+\_\+alarm\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+enables R\+TC alarm interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if successful, otherwise !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 115 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_aa5ffbfb3517d789dd4281407e05d7d91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}\label{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}} 
+\index{rtc.c@{rtc.c}!rtc\_ih@{rtc\_ih}}
+\index{rtc\_ih@{rtc\_ih}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily void() rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the R\+TC interrupt handler. Does nothing besides reading register C to clear the pending interrupt. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{rtc_8c_a0b9ae809cf571f61e54712a23c65348e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a970ca0ca5796cc68278003d76de2c861}\label{rtc_8c_a970ca0ca5796cc68278003d76de2c861}} 
+\index{rtc.c@{rtc.c}!rtc\_set\_alarm\_every\_second@{rtc\_set\_alarm\_every\_second}}
+\index{rtc\_set\_alarm\_every\_second@{rtc\_set\_alarm\_every\_second}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_set\_alarm\_every\_second()}{rtc\_set\_alarm\_every\_second()}}
+{\footnotesize\ttfamily void() rtc\+\_\+set\+\_\+alarm\+\_\+every\+\_\+second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the R\+TC to cause an alarm interrupt every second\+: the second, minute and hour registers are set with 11X\+X\+X\+X\+XX values. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 84 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{rtc_8c_a970ca0ca5796cc68278003d76de2c861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}\label{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}} 
+\index{rtc.c@{rtc.c}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+reads register C to clear possible error flags and then subscribes R\+TC interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & the bit number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 93 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a9d4850bb2a488644672d43287f160622}\label{rtc_8c_a9d4850bb2a488644672d43287f160622}} 
+\index{rtc.c@{rtc.c}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes R\+TC interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 107 of file rtc.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{rtc_8c_a9d4850bb2a488644672d43287f160622_icgraph}
+\end{center}
+\end{figure}

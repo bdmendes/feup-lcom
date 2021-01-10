@@ -1,0 +1,4 @@
+<map id="asprite_go_idle" name="asprite_go_idle">
+<area shape="rect" id="node1" title="makes the animated sprite show the default image, with attention to whether it is mirrored or not" alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a805ed4591cfa555f440d73a5d431ec7f" title="signals that new information is available to be drawn. vg_has_updates() will return true and allow th..." alt="" coords="175,5,311,32"/>
+</map>

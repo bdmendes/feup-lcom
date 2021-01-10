@@ -1,0 +1,6 @@
+<map id="button_set_colors" name="button_set_colors">
+<area shape="rect" id="node1" title="sets a button background and frame (when hovering) colors" alt="" coords="561,13,699,39"/>
+<area shape="rect" id="node2" href="$settings_8h.html#a1ac9b251192a2f9e73a2ff51356663c0" title="highlights a button from the given settings" alt="" coords="375,5,513,47"/>
+<area shape="rect" id="node3" href="$ev__handler_8h.html#a836de8ef17e5b149ae19a2596d9d27a8" title="handles the events while on the main menu. The values passed not related to the interrupt type are no..." alt="" coords="176,13,327,39"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,13,128,39"/>
+</map>

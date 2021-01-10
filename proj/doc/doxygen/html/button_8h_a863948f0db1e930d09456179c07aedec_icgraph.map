@@ -1,0 +1,7 @@
+<map id="create_button_centered" name="create_button_centered">
+<area shape="rect" id="node1" title="allocates a button object that is centered in the screen" alt="" coords="556,31,732,57"/>
+<area shape="rect" id="node2" href="$menu_8h.html#acf480fe24385c2ddbcebed9d6e0f5537" title="Allocate a menu object." alt="" coords="401,5,508,32"/>
+<area shape="rect" id="node5" href="$panel_8h.html#af78e501555e192c7fcc560ae61bf2fa1" title="allocates a panel object" alt="" coords="401,56,508,83"/>
+<area shape="rect" id="node3" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,31,353,57"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="create_button" name="create_button">
+<area shape="rect" id="node1" title="allocates a button object" alt="" coords="796,64,908,91"/>
+<area shape="rect" id="node2" href="$button_8h.html#a863948f0db1e930d09456179c07aedec" title="allocates a button object that is centered in the screen" alt="" coords="572,5,748,32"/>
+<area shape="rect" id="node7" href="$button_8h.html#a9cb35a9d0814259c74a7090db5a0f8e9" title="allocates a button object according to the text&#39;s size" alt="" coords="583,57,737,98"/>
+<area shape="rect" id="node8" href="$settings_8h.html#a59b23db9210e309f1554780b425a3376" title="allocates a settings object" alt="" coords="401,115,524,141"/>
+<area shape="rect" id="node3" href="$menu_8h.html#acf480fe24385c2ddbcebed9d6e0f5537" title="Allocate a menu object." alt="" coords="409,5,516,32"/>
+<area shape="rect" id="node6" href="$panel_8h.html#af78e501555e192c7fcc560ae61bf2fa1" title="allocates a panel object" alt="" coords="409,56,516,83"/>
+<area shape="rect" id="node4" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,56,353,83"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,56,128,83"/>
+</map>

@@ -1,0 +1,270 @@
+\hypertarget{settings_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/menu/settings.h File Reference}
+\label{settings_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/menu/settings.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/menu/settings.h}}
+{\ttfamily \#include \char`\"{}lib/panel/panel.\+h\char`\"{}}\newline
+Include dependency graph for settings.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{settings_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_settings}{Settings}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_settings}{Settings}} is a panel wrapper with aditional buttons (options) at the bottom to the first panel string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{settings_8h_abe33a783ae2a92790b50ed0dc268b303}{S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+W\+I\+D\+TH}}~300
+\item 
+\#define \mbox{\hyperlink{settings_8h_a72bc0067da2428ce54e0085fd2a35f2f}{S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+I\+G\+HT}}~100
+\item 
+\#define \mbox{\hyperlink{settings_8h_a40679e64593b5d26d9dc0b86b006c153}{S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+A\+C\+T\+I\+V\+E\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa82a1f4f015ad85784e8c8671b7338433}{L\+I\+G\+H\+T\+\_\+\+G\+R\+AY}}
+\item 
+\#define \mbox{\hyperlink{settings_8h_a4acb1529a80ecdd8f314afeb5458a437}{S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fac505d35c0dcc07f675a7c03e546075ec}{S\+T\+R\+O\+N\+G\+\_\+\+G\+R\+AY}}
+\item 
+\#define \mbox{\hyperlink{settings_8h_aae8278b6a5fb41a6f4e3ec52febc3907}{S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+O\+V\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+L\+OR}}~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fac505d35c0dcc07f675a7c03e546075ec}{S\+T\+R\+O\+N\+G\+\_\+\+G\+R\+AY}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_settings}{Settings}} \mbox{\hyperlink{settings_8h_a07f2571e2b8cd812acfd5b3c4ba4d224}{Settings}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_settings}{Settings}} is a panel wrapper with aditional buttons (options) at the bottom to the first panel string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_settings}{Settings}} $\ast$() \mbox{\hyperlink{settings_8h_a59b23db9210e309f1554780b425a3376}{create\+\_\+settings}} (\mbox{\hyperlink{struct_panel}{Panel}} $\ast$panel, uint8\+\_\+t initial\+\_\+highlighted\+\_\+button, uint8\+\_\+t no\+\_\+buttons, const char $\ast$button1\+\_\+txt,...)
+\begin{DoxyCompactList}\small\item\em allocates a settings object \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{settings_8h_aeaeda978912b9765ee8895940930b65d}{draw\+\_\+settings}} (\mbox{\hyperlink{struct_settings}{Settings}} $\ast$settings)
+\begin{DoxyCompactList}\small\item\em draws the settings to the screen \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{settings_8h_a1ac9b251192a2f9e73a2ff51356663c0}{settings\+\_\+highlight\+\_\+button}} (\mbox{\hyperlink{struct_settings}{Settings}} $\ast$settings, uint8\+\_\+t highlighted\+\_\+button)
+\begin{DoxyCompactList}\small\item\em highlights a button from the given settings \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{settings_8h_a36d3668afae46aa6c6674fe7fedbadc2}{destroy\+\_\+settings}} (\mbox{\hyperlink{struct_settings}{Settings}} $\ast$settings)
+\begin{DoxyCompactList}\small\item\em deallocates a settings object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{settings_8h_a4acb1529a80ecdd8f314afeb5458a437}\label{settings_8h_a4acb1529a80ecdd8f314afeb5458a437}} 
+\index{settings.h@{settings.h}!SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR@{SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR}}
+\index{SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR@{SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR}{SETTINGS\_BUTTON\_BACK\_ACTIVE\_COLOR}}
+{\footnotesize\ttfamily \#define S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fac505d35c0dcc07f675a7c03e546075ec}{S\+T\+R\+O\+N\+G\+\_\+\+G\+R\+AY}}}
+
+
+
+Definition at line 9 of file settings.\+h.
+
+\mbox{\Hypertarget{settings_8h_a40679e64593b5d26d9dc0b86b006c153}\label{settings_8h_a40679e64593b5d26d9dc0b86b006c153}} 
+\index{settings.h@{settings.h}!SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR@{SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR}}
+\index{SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR@{SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR}{SETTINGS\_BUTTON\_BACK\_INACTIVE\_COLOR}}
+{\footnotesize\ttfamily \#define S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+A\+C\+T\+I\+V\+E\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fa82a1f4f015ad85784e8c8671b7338433}{L\+I\+G\+H\+T\+\_\+\+G\+R\+AY}}}
+
+
+
+Definition at line 8 of file settings.\+h.
+
+\mbox{\Hypertarget{settings_8h_a72bc0067da2428ce54e0085fd2a35f2f}\label{settings_8h_a72bc0067da2428ce54e0085fd2a35f2f}} 
+\index{settings.h@{settings.h}!SETTINGS\_BUTTON\_HEIGHT@{SETTINGS\_BUTTON\_HEIGHT}}
+\index{SETTINGS\_BUTTON\_HEIGHT@{SETTINGS\_BUTTON\_HEIGHT}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{SETTINGS\_BUTTON\_HEIGHT}{SETTINGS\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+I\+G\+HT~100}
+
+
+
+Definition at line 7 of file settings.\+h.
+
+\mbox{\Hypertarget{settings_8h_aae8278b6a5fb41a6f4e3ec52febc3907}\label{settings_8h_aae8278b6a5fb41a6f4e3ec52febc3907}} 
+\index{settings.h@{settings.h}!SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR@{SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR}}
+\index{SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR@{SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR}{SETTINGS\_BUTTON\_HOVER\_FRAME\_COLOR}}
+{\footnotesize\ttfamily \#define S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+H\+O\+V\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+L\+OR~\mbox{\hyperlink{button_8h_afbdc7306323748932e90302a6496298fac505d35c0dcc07f675a7c03e546075ec}{S\+T\+R\+O\+N\+G\+\_\+\+G\+R\+AY}}}
+
+
+
+Definition at line 10 of file settings.\+h.
+
+\mbox{\Hypertarget{settings_8h_abe33a783ae2a92790b50ed0dc268b303}\label{settings_8h_abe33a783ae2a92790b50ed0dc268b303}} 
+\index{settings.h@{settings.h}!SETTINGS\_BUTTON\_WIDTH@{SETTINGS\_BUTTON\_WIDTH}}
+\index{SETTINGS\_BUTTON\_WIDTH@{SETTINGS\_BUTTON\_WIDTH}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{SETTINGS\_BUTTON\_WIDTH}{SETTINGS\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \#define S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+W\+I\+D\+TH~300}
+
+
+
+Definition at line 6 of file settings.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{settings_8h_a07f2571e2b8cd812acfd5b3c4ba4d224}\label{settings_8h_a07f2571e2b8cd812acfd5b3c4ba4d224}} 
+\index{settings.h@{settings.h}!Settings@{Settings}}
+\index{Settings@{Settings}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{Settings}{Settings}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_settings}{Settings}} \mbox{\hyperlink{struct_settings}{Settings}}}
+
+
+
+\mbox{\hyperlink{struct_settings}{Settings}} is a panel wrapper with aditional buttons (options) at the bottom to the first panel string. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{settings_8h_a59b23db9210e309f1554780b425a3376}\label{settings_8h_a59b23db9210e309f1554780b425a3376}} 
+\index{settings.h@{settings.h}!create\_settings@{create\_settings}}
+\index{create\_settings@{create\_settings}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{create\_settings()}{create\_settings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_settings}{Settings}}$\ast$() create\+\_\+settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_panel}{Panel}} $\ast$}]{panel,  }\item[{uint8\+\_\+t}]{initial\+\_\+highlighted\+\_\+button,  }\item[{uint8\+\_\+t}]{no\+\_\+buttons,  }\item[{const char $\ast$}]{button1\+\_\+txt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+allocates a settings object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em panel} & the panel to use \\
+\hline
+{\em initial\+\_\+highlighted\+\_\+button} & the index of the button that is highlighted by default \\
+\hline
+{\em no\+\_\+buttons} & the number of buttons in the menu \\
+\hline
+{\em button1\+\_\+txt} & the text for the first button \\
+\hline
+{\em ...} & remaining button texts (variable number of arguments) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & created settings \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 5 of file settings.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_a59b23db9210e309f1554780b425a3376_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_a59b23db9210e309f1554780b425a3376_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{settings_8h_a36d3668afae46aa6c6674fe7fedbadc2}\label{settings_8h_a36d3668afae46aa6c6674fe7fedbadc2}} 
+\index{settings.h@{settings.h}!destroy\_settings@{destroy\_settings}}
+\index{destroy\_settings@{destroy\_settings}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_settings()}{destroy\_settings()}}
+{\footnotesize\ttfamily void() destroy\+\_\+settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_settings}{Settings}} $\ast$}]{settings }\end{DoxyParamCaption})}
+
+
+
+deallocates a settings object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & the settings to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 55 of file settings.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_a36d3668afae46aa6c6674fe7fedbadc2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{settings_8h_aeaeda978912b9765ee8895940930b65d}\label{settings_8h_aeaeda978912b9765ee8895940930b65d}} 
+\index{settings.h@{settings.h}!draw\_settings@{draw\_settings}}
+\index{draw\_settings@{draw\_settings}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{draw\_settings()}{draw\_settings()}}
+{\footnotesize\ttfamily void() draw\+\_\+settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_settings}{Settings}} $\ast$}]{settings }\end{DoxyParamCaption})}
+
+
+
+draws the settings to the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & the settings \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 33 of file settings.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_aeaeda978912b9765ee8895940930b65d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{settings_8h_a1ac9b251192a2f9e73a2ff51356663c0}\label{settings_8h_a1ac9b251192a2f9e73a2ff51356663c0}} 
+\index{settings.h@{settings.h}!settings\_highlight\_button@{settings\_highlight\_button}}
+\index{settings\_highlight\_button@{settings\_highlight\_button}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{settings\_highlight\_button()}{settings\_highlight\_button()}}
+{\footnotesize\ttfamily void() settings\+\_\+highlight\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_settings}{Settings}} $\ast$}]{settings,  }\item[{uint8\+\_\+t}]{highlighted\+\_\+button }\end{DoxyParamCaption})}
+
+
+
+highlights a button from the given settings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & the settings \\
+\hline
+{\em highlighted\+\_\+button} & the index of the button to highlight \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 40 of file settings.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_a1ac9b251192a2f9e73a2ff51356663c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{settings_8h_a1ac9b251192a2f9e73a2ff51356663c0_icgraph}
+\end{center}
+\end{figure}

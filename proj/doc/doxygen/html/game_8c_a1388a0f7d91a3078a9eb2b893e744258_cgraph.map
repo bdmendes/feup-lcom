@@ -1,0 +1,5 @@
+<map id="set_game_dificulty_level" name="set_game_dificulty_level">
+<area shape="rect" id="node1" title="sets a new game dificulty level: the game is unloaded and needs to be loaded with the new map zoom bu..." alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$game_8c.html#a93855694318a61d772292409fc48b254" title="signal that the game shall be loaded again in the next in_game handler call, e.g when the door has be..." alt="" coords="199,13,309,39"/>
+<area shape="rect" id="node3" href="$vbe_8c.html#a805ed4591cfa555f440d73a5d431ec7f" title="signals that new information is available to be drawn. vg_has_updates() will return true and allow th..." alt="" coords="357,13,493,39"/>
+</map>

@@ -1,0 +1,192 @@
+\hypertarget{menu_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/menu/menu.c File Reference}
+\label{menu_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/menu/menu.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/menu/menu.c}}
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+Include dependency graph for menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_menu}{Menu}} $\ast$() \mbox{\hyperlink{menu_8c_acf480fe24385c2ddbcebed9d6e0f5537}{create\+\_\+menu}} (\mbox{\hyperlink{struct_instructions}{Instructions}} $\ast$instructions, \mbox{\hyperlink{struct_settings}{Settings}} $\ast$settings, \mbox{\hyperlink{struct_font}{Font}} $\ast$font, char $\ast$title, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$mouse, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$back\+\_\+img, uint8\+\_\+t no\+\_\+buttons, const char $\ast$button1\+\_\+text,...)
+\begin{DoxyCompactList}\small\item\em Allocate a menu object. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{menu_8c_ab205a45d2c4b6f35db73098022ff896a}{draw\+\_\+menu}} (\mbox{\hyperlink{struct_menu}{Menu}} $\ast$menu, bool instructions, bool settings)
+\begin{DoxyCompactList}\small\item\em draws the main menu on the string (if instructions and settings are false), or the instructions/settings panel. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{menu_8c_ac57ed1efe938f214d4279aca79c296d4}{destroy\+\_\+menu}} (\mbox{\hyperlink{struct_menu}{Menu}} $\ast$menu)
+\begin{DoxyCompactList}\small\item\em deallocates a menu object\+: all sprites and panels are destroyed, except for the font and the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{menu_8c_a73410f490df7ad9e0269700c5302c585}{get\+\_\+hovered\+\_\+button}} (\mbox{\hyperlink{struct_menu}{Menu}} $\ast$menu)
+\begin{DoxyCompactList}\small\item\em check which button is being hovered \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{menu_8c_acf480fe24385c2ddbcebed9d6e0f5537}\label{menu_8c_acf480fe24385c2ddbcebed9d6e0f5537}} 
+\index{menu.c@{menu.c}!create\_menu@{create\_menu}}
+\index{create\_menu@{create\_menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{create\_menu()}{create\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_menu}{Menu}}$\ast$() create\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_instructions}{Instructions}} $\ast$}]{instructions,  }\item[{\mbox{\hyperlink{struct_settings}{Settings}} $\ast$}]{settings,  }\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{char $\ast$}]{title,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{mouse,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{back\+\_\+img,  }\item[{uint8\+\_\+t}]{no\+\_\+buttons,  }\item[{const char $\ast$}]{button1\+\_\+text,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Allocate a menu object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instructions} & menu instructions \\
+\hline
+{\em settings} & menu settings \\
+\hline
+{\em font} & font used to draw the title and the buttons \\
+\hline
+{\em title} & title to be shown above the buttons \\
+\hline
+{\em mouse} & mouse sprite, to allow checks for button hovering \\
+\hline
+{\em back\+\_\+img} & menu background image \\
+\hline
+{\em no\+\_\+buttons} & number of buttons to be shown \\
+\hline
+{\em button1\+\_\+text} & text of the first button \\
+\hline
+{\em ...} & remaining button texts (variable number) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em allocated} & menu object \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 11 of file menu.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_acf480fe24385c2ddbcebed9d6e0f5537_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_acf480fe24385c2ddbcebed9d6e0f5537_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_8c_ac57ed1efe938f214d4279aca79c296d4}\label{menu_8c_ac57ed1efe938f214d4279aca79c296d4}} 
+\index{menu.c@{menu.c}!destroy\_menu@{destroy\_menu}}
+\index{destroy\_menu@{destroy\_menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_menu()}{destroy\_menu()}}
+{\footnotesize\ttfamily void() destroy\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_menu}{Menu}} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+deallocates a menu object\+: all sprites and panels are destroyed, except for the font and the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the menu to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 57 of file menu.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_ac57ed1efe938f214d4279aca79c296d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_ac57ed1efe938f214d4279aca79c296d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_8c_ab205a45d2c4b6f35db73098022ff896a}\label{menu_8c_ab205a45d2c4b6f35db73098022ff896a}} 
+\index{menu.c@{menu.c}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily void() draw\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_menu}{Menu}} $\ast$}]{menu,  }\item[{bool}]{instructions,  }\item[{bool}]{settings }\end{DoxyParamCaption})}
+
+
+
+draws the main menu on the string (if instructions and settings are false), or the instructions/settings panel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the menu to draw \\
+\hline
+{\em instructions} & if set, draw instructions panel instead of main menu \\
+\hline
+{\em settings} & if set, draw settings panel instead of main menu \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 36 of file menu.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_ab205a45d2c4b6f35db73098022ff896a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_8c_a73410f490df7ad9e0269700c5302c585}\label{menu_8c_a73410f490df7ad9e0269700c5302c585}} 
+\index{menu.c@{menu.c}!get\_hovered\_button@{get\_hovered\_button}}
+\index{get\_hovered\_button@{get\_hovered\_button}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{get\_hovered\_button()}{get\_hovered\_button()}}
+{\footnotesize\ttfamily int() get\+\_\+hovered\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_menu}{Menu}} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+check which button is being hovered 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the menu \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & hovered button\textquotesingle{}s index; -\/1 if no button is being hovered \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 69 of file menu.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{menu_8c_a73410f490df7ad9e0269700c5302c585_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_a73410f490df7ad9e0269700c5302c585_icgraph}
+\end{center}
+\end{figure}

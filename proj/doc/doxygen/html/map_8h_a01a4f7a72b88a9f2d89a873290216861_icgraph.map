@@ -1,0 +1,5 @@
+<map id="create_map" name="create_map">
+<area shape="rect" id="node1" title="Allocates a map." alt="" coords="401,5,500,32"/>
+<area shape="rect" id="node2" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,5,353,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

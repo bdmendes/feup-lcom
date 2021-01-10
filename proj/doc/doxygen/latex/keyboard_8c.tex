@@ -1,0 +1,207 @@
+\hypertarget{keyboard_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/devices/kbc/keyboard.c File Reference}
+\label{keyboard_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/keyboard.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/keyboard.c}}
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{keyboard_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{keyboard_8c_aca842ab89e3fc03d8cca103dd6808895}{kbd\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em the keyboard interrupt handler\+: calls \mbox{\hyperlink{kbc_8c_ac3df632f04efa588702efee2712eb414}{get\+\_\+buffer\+\_\+data()}} \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8c_a4ac9231a99a664d6a9f0b69767e0d707}{kbd\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes keyboard interruptions \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8c_aee0a7b54ee426fade9c780418d110fe0}{kbd\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsibscribes keyboard interrupts \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{keyboard_8c_a84542072050c61f70d438f4aa26da8dc}{is\+\_\+make\+\_\+code}} (uint8\+\_\+t code)
+\begin{DoxyCompactList}\small\item\em checks if a scancode is a make code \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8c_a9af668c9c49ff8c09c526b272f284552}{kbd\+\_\+reenable\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em reenables keyboard interrupts \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{keyboard_8c_acb9721b087df00cb2583b6263486eca9}{get\+\_\+break\+\_\+code}} (uint8\+\_\+t make\+\_\+code)
+\begin{DoxyCompactList}\small\item\em gets the breakcode corresponding to a given makecode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8c_acb9721b087df00cb2583b6263486eca9}\label{keyboard_8c_acb9721b087df00cb2583b6263486eca9}} 
+\index{keyboard.c@{keyboard.c}!get\_break\_code@{get\_break\_code}}
+\index{get\_break\_code@{get\_break\_code}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{get\_break\_code()}{get\_break\_code()}}
+{\footnotesize\ttfamily uint8\+\_\+t() get\+\_\+break\+\_\+code (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{make\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets the breakcode corresponding to a given makecode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em make\+\_\+code} & the makecode \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & corresponding breakcode \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 37 of file keyboard.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_acb9721b087df00cb2583b6263486eca9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a84542072050c61f70d438f4aa26da8dc}\label{keyboard_8c_a84542072050c61f70d438f4aa26da8dc}} 
+\index{keyboard.c@{keyboard.c}!is\_make\_code@{is\_make\_code}}
+\index{is\_make\_code@{is\_make\_code}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{is\_make\_code()}{is\_make\_code()}}
+{\footnotesize\ttfamily bool() is\+\_\+make\+\_\+code (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+checks if a scancode is a make code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & the scancode \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if it\textquotesingle{}s a scancode, false otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 26 of file keyboard.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a84542072050c61f70d438f4aa26da8dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_aca842ab89e3fc03d8cca103dd6808895}\label{keyboard_8c_aca842ab89e3fc03d8cca103dd6808895}} 
+\index{keyboard.c@{keyboard.c}!kbd\_ih@{kbd\_ih}}
+\index{kbd\_ih@{kbd\_ih}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_ih()}{kbd\_ih()}}
+{\footnotesize\ttfamily void() kbd\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the keyboard interrupt handler\+: calls \mbox{\hyperlink{kbc_8c_ac3df632f04efa588702efee2712eb414}{get\+\_\+buffer\+\_\+data()}} 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 5 of file keyboard.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_aca842ab89e3fc03d8cca103dd6808895_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{keyboard_8c_aca842ab89e3fc03d8cca103dd6808895_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a9af668c9c49ff8c09c526b272f284552}\label{keyboard_8c_a9af668c9c49ff8c09c526b272f284552}} 
+\index{keyboard.c@{keyboard.c}!kbd\_reenable\_interrupts@{kbd\_reenable\_interrupts}}
+\index{kbd\_reenable\_interrupts@{kbd\_reenable\_interrupts}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_reenable\_interrupts()}{kbd\_reenable\_interrupts()}}
+{\footnotesize\ttfamily int() kbd\+\_\+reenable\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reenables keyboard interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 30 of file keyboard.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a9af668c9c49ff8c09c526b272f284552_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a4ac9231a99a664d6a9f0b69767e0d707}\label{keyboard_8c_a4ac9231a99a664d6a9f0b69767e0d707}} 
+\index{keyboard.c@{keyboard.c}!kbd\_subscribe\_int@{kbd\_subscribe\_int}}
+\index{kbd\_subscribe\_int@{kbd\_subscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_subscribe\_int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily int() kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes keyboard interruptions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & the bit number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file keyboard.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{keyboard_8c_a4ac9231a99a664d6a9f0b69767e0d707_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_aee0a7b54ee426fade9c780418d110fe0}\label{keyboard_8c_aee0a7b54ee426fade9c780418d110fe0}} 
+\index{keyboard.c@{keyboard.c}!kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}}
+\index{kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_unsubscribe\_int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsibscribes keyboard interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 18 of file keyboard.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{keyboard_8c_aee0a7b54ee426fade9c780418d110fe0_icgraph}
+\end{center}
+\end{figure}

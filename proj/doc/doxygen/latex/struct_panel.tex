@@ -1,0 +1,146 @@
+\hypertarget{struct_panel}{}\doxysection{Panel Struct Reference}
+\label{struct_panel}\index{Panel@{Panel}}
+
+
+A \mbox{\hyperlink{struct_panel}{Panel}} is composed of a title, a solid background, text strings and a close button.  
+
+
+
+
+{\ttfamily \#include $<$panel.\+h$>$}
+
+
+
+Collaboration diagram for Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{struct_panel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_button}{Button}} $\ast$ \mbox{\hyperlink{struct_panel_a173a61ec5be315a84389cc08d3852abe}{exit\+\_\+button}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_panel_a524635f0695f6b02da7dea7fd708b1d5}{no\+\_\+strings}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_panel_a89cabf254e5ab330fb43fb2d886d1318}{string\+\_\+padding}}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{struct_panel_a00cbca77782f1d0a06611d6c6ea7f545}{strings}}
+\item 
+char \mbox{\hyperlink{struct_panel_a4c352ff46ad45444a918ec72a1d0a310}{title}} \mbox{[}\mbox{\hyperlink{panel_8h_a2e4a8f7d602627848debc777e097785b}{P\+A\+N\+E\+L\+\_\+\+S\+T\+R\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{struct_panel_a37492f10b708c8a5dc1fbfdbecee70c5}{center\+\_\+text}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{struct_panel_a69a7242ee147decd9b827b0c721a728c}{background}}
+\item 
+\mbox{\hyperlink{struct_font}{Font}} $\ast$ \mbox{\hyperlink{struct_panel_a7cd87b1eaeb9bdee7ac16121086be6b8}{font}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{struct_panel_af03a383fdcfdf7501006a5c8d68be42b}{mouse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{struct_panel}{Panel}} is composed of a title, a solid background, text strings and a close button. 
+
+Definition at line 19 of file panel.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_panel_a69a7242ee147decd9b827b0c721a728c}\label{struct_panel_a69a7242ee147decd9b827b0c721a728c}} 
+\index{Panel@{Panel}!background@{background}}
+\index{background@{background}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ background}
+
+
+
+Definition at line 26 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a37492f10b708c8a5dc1fbfdbecee70c5}\label{struct_panel_a37492f10b708c8a5dc1fbfdbecee70c5}} 
+\index{Panel@{Panel}!center\_text@{center\_text}}
+\index{center\_text@{center\_text}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{center\_text}{center\_text}}
+{\footnotesize\ttfamily bool center\+\_\+text}
+
+
+
+Definition at line 25 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a173a61ec5be315a84389cc08d3852abe}\label{struct_panel_a173a61ec5be315a84389cc08d3852abe}} 
+\index{Panel@{Panel}!exit\_button@{exit\_button}}
+\index{exit\_button@{exit\_button}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{exit\_button}{exit\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_button}{Button}}$\ast$ exit\+\_\+button}
+
+
+
+Definition at line 20 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a7cd87b1eaeb9bdee7ac16121086be6b8}\label{struct_panel_a7cd87b1eaeb9bdee7ac16121086be6b8}} 
+\index{Panel@{Panel}!font@{font}}
+\index{font@{font}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_font}{Font}}$\ast$ font}
+
+
+
+Definition at line 27 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_af03a383fdcfdf7501006a5c8d68be42b}\label{struct_panel_af03a383fdcfdf7501006a5c8d68be42b}} 
+\index{Panel@{Panel}!mouse@{mouse}}
+\index{mouse@{mouse}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ mouse}
+
+
+
+Definition at line 28 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a524635f0695f6b02da7dea7fd708b1d5}\label{struct_panel_a524635f0695f6b02da7dea7fd708b1d5}} 
+\index{Panel@{Panel}!no\_strings@{no\_strings}}
+\index{no\_strings@{no\_strings}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{no\_strings}{no\_strings}}
+{\footnotesize\ttfamily uint8\+\_\+t no\+\_\+strings}
+
+
+
+Definition at line 21 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a89cabf254e5ab330fb43fb2d886d1318}\label{struct_panel_a89cabf254e5ab330fb43fb2d886d1318}} 
+\index{Panel@{Panel}!string\_padding@{string\_padding}}
+\index{string\_padding@{string\_padding}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{string\_padding}{string\_padding}}
+{\footnotesize\ttfamily uint16\+\_\+t string\+\_\+padding}
+
+
+
+Definition at line 22 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a00cbca77782f1d0a06611d6c6ea7f545}\label{struct_panel_a00cbca77782f1d0a06611d6c6ea7f545}} 
+\index{Panel@{Panel}!strings@{strings}}
+\index{strings@{strings}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{strings}{strings}}
+{\footnotesize\ttfamily char$\ast$$\ast$ strings}
+
+
+
+Definition at line 23 of file panel.\+h.
+
+\mbox{\Hypertarget{struct_panel_a4c352ff46ad45444a918ec72a1d0a310}\label{struct_panel_a4c352ff46ad45444a918ec72a1d0a310}} 
+\index{Panel@{Panel}!title@{title}}
+\index{title@{title}!Panel@{Panel}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily char title\mbox{[}\mbox{\hyperlink{panel_8h_a2e4a8f7d602627848debc777e097785b}{P\+A\+N\+E\+L\+\_\+\+S\+T\+R\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}\mbox{]}}
+
+
+
+Definition at line 24 of file panel.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/panel/\mbox{\hyperlink{panel_8h}{panel.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="create_font" name="create_font">
+<area shape="rect" id="node1" title="allocates a font" alt="" coords="5,103,101,130"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a28d2fb69da487db91dda39eb9144277b" title="zooms the sprite bitmap (cloning pixels in matrix&#45;like form) and return new generated sprite" alt="" coords="149,53,307,79"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#ae3d8970e3246ba6e6f3eb433529d9233" title="creates a sprite from a bitmap" alt="" coords="358,5,503,47"/>
+<area shape="rect" id="node4" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="355,82,507,109"/>
+<area shape="rect" id="node5" href="$sprite_8c.html#aa3fdb04b78ba12c1d58e244a8e77a012" title="allocates a sprite object" alt="" coords="175,154,281,181"/>
+<area shape="rect" id="node6" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="171,205,285,231"/>
+</map>

@@ -1,0 +1,310 @@
+\hypertarget{player_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/game/player/player.h File Reference}
+\label{player_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/game/player/player.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/game/player/player.h}}
+{\ttfamily \#include \char`\"{}../../lib/sprite/asprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../map/map.\+h\char`\"{}}\newline
+Include dependency graph for player.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{player_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_player}{Player}} is composed of its sprite and a series of attributes related to the its movement in the map, e.\+g x\+\_\+abs and y\+\_\+abs representing the absolute position in the zoomed map, and speed the step of the sprite per movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{player_8h_a480a040facb94f90060562cd65274385}{Player}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{struct_player}{Player}} is composed of its sprite and a series of attributes related to the its movement in the map, e.\+g x\+\_\+abs and y\+\_\+abs representing the absolute position in the zoomed map, and speed the step of the sprite per movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_player}{Player}} $\ast$() \mbox{\hyperlink{player_8h_af0502ad3e059b24911065727963a7bd5}{create\+\_\+player}} (\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$asp, uint16\+\_\+t speed, uint16\+\_\+t step\+\_\+per\+\_\+second)
+\begin{DoxyCompactList}\small\item\em allocates a player \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{player_8h_aa968cf4447e8c6c8b5068ac847e578fa}{destroy\+\_\+player}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em deallocates a player \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{player_8h_af627abe7a3c4b67eaa638232c4acff44}{player\+\_\+is\+\_\+above\+\_\+bomb}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em verifies if the player is above a bomb, ie. at least one of its sprite pixels is above a block bomb \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{player_8h_ac92b3ba78b91f8c1a358008434e81a7d}{assign\+\_\+move}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}} dir)
+\begin{DoxyCompactList}\small\item\em assigns a move to a player in the desired direction (steps per second are added to the remaining step) \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{player_8h_a61a8aea31380d95739f73083ef7966d4}{player\+\_\+stop}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em stops the player\textquotesingle{}s movement\+: remaining moves are reset and is\+\_\+guessing is set to false. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{player_8h_a67e7d5e4848e48950b54c5f50d83d90f}{assign\+\_\+mouse\+\_\+move}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, int32\+\_\+t goal\+\_\+x, int32\+\_\+t goal\+\_\+y)
+\begin{DoxyCompactList}\small\item\em assigns a move made by mouse click\+: the directions will be guessed based on the relative difference of the x and y coordinates. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{player_8h_ab0687dffc1c00d40ee4f8651fb9980b4}{player\+\_\+move\+\_\+timer\+\_\+tick}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint32\+\_\+t timer\+\_\+count)
+\begin{DoxyCompactList}\small\item\em moves the player in sync with the timer, according to the steps per second \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{player_8h_a480a040facb94f90060562cd65274385}\label{player_8h_a480a040facb94f90060562cd65274385}} 
+\index{player.h@{player.h}!Player@{Player}}
+\index{Player@{Player}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_player}{Player}}}
+
+
+
+A \mbox{\hyperlink{struct_player}{Player}} is composed of its sprite and a series of attributes related to the its movement in the map, e.\+g x\+\_\+abs and y\+\_\+abs representing the absolute position in the zoomed map, and speed the step of the sprite per movement. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{player_8h_a67e7d5e4848e48950b54c5f50d83d90f}\label{player_8h_a67e7d5e4848e48950b54c5f50d83d90f}} 
+\index{player.h@{player.h}!assign\_mouse\_move@{assign\_mouse\_move}}
+\index{assign\_mouse\_move@{assign\_mouse\_move}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{assign\_mouse\_move()}{assign\_mouse\_move()}}
+{\footnotesize\ttfamily void() assign\+\_\+mouse\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{int32\+\_\+t}]{goal\+\_\+x,  }\item[{int32\+\_\+t}]{goal\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+assigns a move made by mouse click\+: the directions will be guessed based on the relative difference of the x and y coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+{\em goal\+\_\+x} & the x coordinate of the destination \\
+\hline
+{\em goal\+\_\+y} & the y coordinate of the destination \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 139 of file player.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_a67e7d5e4848e48950b54c5f50d83d90f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_ac92b3ba78b91f8c1a358008434e81a7d}\label{player_8h_ac92b3ba78b91f8c1a358008434e81a7d}} 
+\index{player.h@{player.h}!assign\_move@{assign\_move}}
+\index{assign\_move@{assign\_move}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{assign\_move()}{assign\_move()}}
+{\footnotesize\ttfamily void() assign\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}}}]{dir }\end{DoxyParamCaption})}
+
+
+
+assigns a move to a player in the desired direction (steps per second are added to the remaining step) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+{\em dir} & the direction in which the player will move \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 122 of file player.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_ac92b3ba78b91f8c1a358008434e81a7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_af0502ad3e059b24911065727963a7bd5}\label{player_8h_af0502ad3e059b24911065727963a7bd5}} 
+\index{player.h@{player.h}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_player}{Player}}$\ast$() create\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$}]{asp,  }\item[{uint16\+\_\+t}]{speed,  }\item[{uint16\+\_\+t}]{step\+\_\+per\+\_\+second }\end{DoxyParamCaption})}
+
+
+
+allocates a player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asp} & the player\textquotesingle{}s sprite \\
+\hline
+{\em speed} & the player\textquotesingle{}s speed \\
+\hline
+{\em step\+\_\+per\+\_\+second} & the player\textquotesingle{}s steps per second \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & player created \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 73 of file player.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_af0502ad3e059b24911065727963a7bd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_aa968cf4447e8c6c8b5068ac847e578fa}\label{player_8h_aa968cf4447e8c6c8b5068ac847e578fa}} 
+\index{player.h@{player.h}!destroy\_player@{destroy\_player}}
+\index{destroy\_player@{destroy\_player}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_player()}{destroy\_player()}}
+{\footnotesize\ttfamily void() destroy\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+deallocates a player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 104 of file player.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{player_8h_aa968cf4447e8c6c8b5068ac847e578fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_aa968cf4447e8c6c8b5068ac847e578fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_af627abe7a3c4b67eaa638232c4acff44}\label{player_8h_af627abe7a3c4b67eaa638232c4acff44}} 
+\index{player.h@{player.h}!player\_is\_above\_bomb@{player\_is\_above\_bomb}}
+\index{player\_is\_above\_bomb@{player\_is\_above\_bomb}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_is\_above\_bomb()}{player\_is\_above\_bomb()}}
+{\footnotesize\ttfamily bool() player\+\_\+is\+\_\+above\+\_\+bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+verifies if the player is above a bomb, ie. at least one of its sprite pixels is above a block bomb 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the player is above a bomb, otherwise false \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 208 of file player.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{player_8h_af627abe7a3c4b67eaa638232c4acff44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_af627abe7a3c4b67eaa638232c4acff44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_ab0687dffc1c00d40ee4f8651fb9980b4}\label{player_8h_ab0687dffc1c00d40ee4f8651fb9980b4}} 
+\index{player.h@{player.h}!player\_move\_timer\_tick@{player\_move\_timer\_tick}}
+\index{player\_move\_timer\_tick@{player\_move\_timer\_tick}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_move\_timer\_tick()}{player\_move\_timer\_tick()}}
+{\footnotesize\ttfamily void() player\+\_\+move\+\_\+timer\+\_\+tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint32\+\_\+t}]{timer\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+moves the player in sync with the timer, according to the steps per second 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+{\em map} & the map \\
+\hline
+{\em timer\+\_\+count} & the current timer counter value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 194 of file player.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_ab0687dffc1c00d40ee4f8651fb9980b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8h_a61a8aea31380d95739f73083ef7966d4}\label{player_8h_a61a8aea31380d95739f73083ef7966d4}} 
+\index{player.h@{player.h}!player\_stop@{player\_stop}}
+\index{player\_stop@{player\_stop}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_stop()}{player\_stop()}}
+{\footnotesize\ttfamily void() player\+\_\+stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+stops the player\textquotesingle{}s movement\+: remaining moves are reset and is\+\_\+guessing is set to false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 235 of file player.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_a61a8aea31380d95739f73083ef7966d4_icgraph}
+\end{center}
+\end{figure}

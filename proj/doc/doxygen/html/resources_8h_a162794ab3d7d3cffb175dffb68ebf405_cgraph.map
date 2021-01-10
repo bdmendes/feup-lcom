@@ -1,0 +1,12 @@
+<map id="destroy_game_resources" name="destroy_game_resources">
+<area shape="rect" id="node1" title=" " alt="" coords="5,128,191,155"/>
+<area shape="rect" id="node2" href="$game_8c.html#afa0ec8b2ccc054b64d43ddb01dda6b31" title="deallocats the game" alt="" coords="421,128,536,155"/>
+<area shape="rect" id="node4" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title=" " alt="" coords="941,229,1056,256"/>
+<area shape="rect" id="node9" href="$menu_8c.html#ac57ed1efe938f214d4279aca79c296d4" title=" " alt="" coords="239,229,353,256"/>
+<area shape="rect" id="node3" href="$button_8c.html#ae27c9bc7795fbe5c8cef13f9fbc63fb8" title=" " alt="" coords="772,204,892,231"/>
+<area shape="rect" id="node5" href="$map_8c.html#ab05797984f6c2adaddc113f05a517e8f" title="Deallocates a map." alt="" coords="779,52,885,79"/>
+<area shape="rect" id="node6" href="$panel_8c.html#aaf2191428653d2fe3ee26701b03184d3" title=" " alt="" coords="606,255,721,281"/>
+<area shape="rect" id="node7" href="$player_8c.html#aa968cf4447e8c6c8b5068ac847e578fa" title="deallocates a player" alt="" coords="604,103,723,129"/>
+<area shape="rect" id="node8" href="$asprite_8c.html#a7d4185e8a77e02523e4271141c3593c1" title=" " alt="" coords="771,103,893,129"/>
+<area shape="rect" id="node10" href="$instructions_8c.html#a424ef0db51f872d7392307a931d46696" title=" " alt="" coords="401,255,556,281"/>
+</map>

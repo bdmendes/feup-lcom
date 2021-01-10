@@ -1,0 +1,9 @@
+<map id="destroy_game" name="destroy_game">
+<area shape="rect" id="node1" title="deallocats the game map buffers and player. The mouse sprite and the font are not destroyed." alt="" coords="5,81,120,108"/>
+<area shape="rect" id="node2" href="$button_8c.html#ae27c9bc7795fbe5c8cef13f9fbc63fb8" title="deallocates a button object" alt="" coords="336,56,456,83"/>
+<area shape="rect" id="node4" href="$map_8c.html#ab05797984f6c2adaddc113f05a517e8f" title="Deallocates a map." alt="" coords="343,107,449,133"/>
+<area shape="rect" id="node5" href="$panel_8c.html#aaf2191428653d2fe3ee26701b03184d3" title="deallocates a panel object: the button and background sprites. The mouse and font are not destroyed." alt="" coords="170,5,285,32"/>
+<area shape="rect" id="node6" href="$player_8c.html#aa968cf4447e8c6c8b5068ac847e578fa" title="deallocates a player" alt="" coords="168,157,287,184"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="505,56,620,83"/>
+<area shape="rect" id="node7" href="$asprite_8c.html#a7d4185e8a77e02523e4271141c3593c1" title="deallocates an animated sprite: all animation bitmaps are destroyed and the so is the sprite holder." alt="" coords="335,157,457,184"/>
+</map>

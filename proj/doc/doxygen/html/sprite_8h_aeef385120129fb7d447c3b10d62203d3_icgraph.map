@@ -1,0 +1,6 @@
+<map id="get_mirrored_pixmap" name="get_mirrored_pixmap">
+<area shape="rect" id="node1" title="mirrors a pixmap" alt="" coords="564,5,727,32"/>
+<area shape="rect" id="node2" href="$asprite_8h.html#a264bfe0c5e4e502d56db1193684ac39d" title="allocates an animated sprite object" alt="" coords="401,5,516,32"/>
+<area shape="rect" id="node3" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,5,353,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

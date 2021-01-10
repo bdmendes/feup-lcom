@@ -1,0 +1,4 @@
+<map id="timer_get_conf" name="timer_get_conf">
+<area shape="rect" id="node1" title="retrieves timer configuration status byte" alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wraps the sys_inb() funtion to allow reading 1 byte values" alt="" coords="173,5,272,32"/>
+</map>

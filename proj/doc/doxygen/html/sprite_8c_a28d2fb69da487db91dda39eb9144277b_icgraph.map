@@ -1,0 +1,6 @@
+<map id="create_cloned_sprite" name="create_cloned_sprite">
+<area shape="rect" id="node1" title="zooms the sprite bitmap (cloning pixels in matrix&#45;like form) and return new generated sprite" alt="" coords="545,5,703,32"/>
+<area shape="rect" id="node2" href="$font_8h.html#ac9c9f41f95d7a471c8c45e5370e2afbb" title="allocates a font" alt="" coords="401,5,497,32"/>
+<area shape="rect" id="node3" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,5,353,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

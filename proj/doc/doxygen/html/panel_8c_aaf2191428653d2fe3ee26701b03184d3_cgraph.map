@@ -1,0 +1,5 @@
+<map id="destroy_panel" name="destroy_panel">
+<area shape="rect" id="node1" title="deallocates a panel object: the button and background sprites. The mouse and font are not destroyed." alt="" coords="5,31,120,57"/>
+<area shape="rect" id="node2" href="$button_8c.html#ae27c9bc7795fbe5c8cef13f9fbc63fb8" title="deallocates a button object" alt="" coords="168,5,288,32"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="336,31,451,57"/>
+</map>

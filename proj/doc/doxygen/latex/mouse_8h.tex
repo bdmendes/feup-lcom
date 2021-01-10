@@ -1,0 +1,642 @@
+\hypertarget{mouse_8h}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/devices/kbc/mouse.h File Reference}
+\label{mouse_8h}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/mouse.h@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/lib/devices/kbc/mouse.h}}
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}}~12
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a1feec59f57ba28933fbe3516f30b1d14}{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}}~0x\+A7
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a2c0f7ed5ff3b86d06f0e95600a5f736f}{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}}~0x\+A8
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a19f3f409be0e3cfa750c56408ef50f92}{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}~0x\+A9
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a27c4267800118ec8c413f75f0bc45dc3}{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}}~0x\+D4
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a6b902000c4f0a66e57f0eb78d7611105}{M\+O\+U\+S\+E\+\_\+\+R\+E\+S\+ET}}~0x\+FF
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a1a33902ed453e53395da2d845da0c5b6}{M\+O\+U\+S\+E\+\_\+\+R\+E\+S\+E\+ND}}~0x\+FE
+\item 
+\#define \mbox{\hyperlink{mouse_8h_aacb967610731528c8b5652024e8a1ac7}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+D\+E\+F\+A\+U\+L\+TS}}~0x\+F6
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a841cebcb7d56f8cc3505c202865f3dc2}{M\+O\+U\+S\+E\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG}}~0x\+F5
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ab9680a69d58165012e6b3c102d6cec69}{M\+O\+U\+S\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG}}~0x\+F4
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ab755944a7aa52223e0d49b6f8974974e}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE}}~0x\+F3
+\item 
+\#define \mbox{\hyperlink{mouse_8h_aaa2d5ba39424fb94c1593ae86906008c}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE}}~0x\+F0
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a6065e2718e2c8e4a5b5d005cba836cbc}{M\+O\+U\+S\+E\+\_\+\+R\+E\+A\+D\+\_\+\+D\+A\+TA}}~0x\+EB
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a9af4ac19fb83e1b113043bf44520d386}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}}~0x\+EA
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ae81dac725cb48935cbc4564c35a46c5d}{M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+Q\+U\+E\+ST}}~0x\+E9
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a8f8d8784039ad37ba8f03185ce3c48dc}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}~0x\+E8
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ae1003cc510106afeb30a0462ba049ff9}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}~0x\+E7
+\item 
+\#define \mbox{\hyperlink{mouse_8h_aac2f6741b2d654c9de9961588e7a6f1e}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+DE}}~0x\+E6
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a2c34b8050fdf63c43722a40d2e8dbd2f}{M\+O\+U\+S\+E\+\_\+\+P\+C\+K\+T\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+Y\+T\+E\+\_\+\+F\+L\+AG}}~B\+IT(3)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ae4fd8309d3740444324d85d2ac44beff}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+Y\+\_\+\+O\+V\+FL}}~B\+IT(7)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a9495aababa14763f72d708ce1fe00688}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+X\+\_\+\+O\+V\+FL}}~B\+IT(6)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a1c91938d79aef45770baea99738dfab5}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+Y\+\_\+\+D\+E\+L\+T\+A\+\_\+\+M\+SB}}~B\+IT(5)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a4c7350bda916c597c5cb243b78540674}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+X\+\_\+\+D\+E\+L\+T\+A\+\_\+\+M\+SB}}~B\+IT(4)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a0ff3caa0262caf3650e60bef9e7ee7af}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+MB}}~B\+IT(2)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a192e557f1c7e34d6f7819950f2d13f5a}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+RB}}~B\+IT(1)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_ac52085fb9fe5541384e6da6fc2a1d25d}{M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+LB}}~B\+IT(0)
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a064ec583ce5b039303686ce4c64b4f3e}{M\+O\+U\+S\+E\+\_\+\+A\+CK}}~0x\+FA
+\item 
+\#define \mbox{\hyperlink{mouse_8h_aef4a299dedf83b6dc4765baab230affd}{M\+O\+U\+S\+E\+\_\+\+N\+A\+CK}}~0x\+FE
+\item 
+\#define \mbox{\hyperlink{mouse_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}{M\+O\+U\+S\+E\+\_\+\+E\+R\+R\+OR}}~0x\+FC
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{mouse_8h_a20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes mouse interruptions \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em the mouse interrupt handler; calls get \mbox{\hyperlink{kbc_8c_ac3df632f04efa588702efee2712eb414}{get\+\_\+buffer\+\_\+data()}} \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a51e10ced7af84c1ec12f6c6c441b4f3b}{mouse\+\_\+write\+\_\+byte}} (uint8\+\_\+t mouse\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em writes a mouse byte \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}{mouse\+\_\+disable\+\_\+data\+\_\+reporting}} ()
+\begin{DoxyCompactList}\small\item\em disables mouse data reporting \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_aa8ab77f4eebbfb8ced8fb2e6f435c1e8}{m\+\_\+mouse\+\_\+enable\+\_\+data\+\_\+reporting}} ()
+\begin{DoxyCompactList}\small\item\em enables mouse data reporting \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{mouse_8h_accd1411530ecdac740d5bbaf13874a2b}{mouse\+\_\+packet\+\_\+is\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em checks if a mouse packet is ready, i.\+e the byte that was last read from the buffer was the third one \end{DoxyCompactList}\item 
+struct packet() \mbox{\hyperlink{mouse_8h_a4d194f8789b7aadfd3a2a8d61bee9177}{get\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em assemble a mouse packet based on the last 3 bytes read from the buffer. Should only be called if \mbox{\hyperlink{mouse_8h_accd1411530ecdac740d5bbaf13874a2b}{mouse\+\_\+packet\+\_\+is\+\_\+ready()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mouse_8h_a19f3f409be0e3cfa750c56408ef50f92}\label{mouse_8h_a19f3f409be0e3cfa750c56408ef50f92}} 
+\index{mouse.h@{mouse.h}!KBC\_CHECK\_MOUSE\_INTERFACE@{KBC\_CHECK\_MOUSE\_INTERFACE}}
+\index{KBC\_CHECK\_MOUSE\_INTERFACE@{KBC\_CHECK\_MOUSE\_INTERFACE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_CHECK\_MOUSE\_INTERFACE}{KBC\_CHECK\_MOUSE\_INTERFACE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE~0x\+A9}
+
+
+
+Definition at line 12 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a1feec59f57ba28933fbe3516f30b1d14}\label{mouse_8h_a1feec59f57ba28933fbe3516f30b1d14}} 
+\index{mouse.h@{mouse.h}!KBC\_DISABLE\_MOUSE@{KBC\_DISABLE\_MOUSE}}
+\index{KBC\_DISABLE\_MOUSE@{KBC\_DISABLE\_MOUSE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_DISABLE\_MOUSE}{KBC\_DISABLE\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE~0x\+A7}
+
+
+
+Definition at line 10 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a2c0f7ed5ff3b86d06f0e95600a5f736f}\label{mouse_8h_a2c0f7ed5ff3b86d06f0e95600a5f736f}} 
+\index{mouse.h@{mouse.h}!KBC\_ENABLE\_MOUSE@{KBC\_ENABLE\_MOUSE}}
+\index{KBC\_ENABLE\_MOUSE@{KBC\_ENABLE\_MOUSE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_ENABLE\_MOUSE}{KBC\_ENABLE\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE~0x\+A8}
+
+
+
+Definition at line 11 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a27c4267800118ec8c413f75f0bc45dc3}\label{mouse_8h_a27c4267800118ec8c413f75f0bc45dc3}} 
+\index{mouse.h@{mouse.h}!KBC\_WRITE\_BYTE\_TO\_MOUSE@{KBC\_WRITE\_BYTE\_TO\_MOUSE}}
+\index{KBC\_WRITE\_BYTE\_TO\_MOUSE@{KBC\_WRITE\_BYTE\_TO\_MOUSE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_WRITE\_BYTE\_TO\_MOUSE}{KBC\_WRITE\_BYTE\_TO\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE~0x\+D4}
+
+
+
+Definition at line 13 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a064ec583ce5b039303686ce4c64b4f3e}\label{mouse_8h_a064ec583ce5b039303686ce4c64b4f3e}} 
+\index{mouse.h@{mouse.h}!MOUSE\_ACK@{MOUSE\_ACK}}
+\index{MOUSE\_ACK@{MOUSE\_ACK}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ACK}{MOUSE\_ACK}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+A\+CK~0x\+FA}
+
+
+
+Definition at line 41 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ac52085fb9fe5541384e6da6fc2a1d25d}\label{mouse_8h_ac52085fb9fe5541384e6da6fc2a1d25d}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_LB@{MOUSE\_BYTE\_1\_LB}}
+\index{MOUSE\_BYTE\_1\_LB@{MOUSE\_BYTE\_1\_LB}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_LB}{MOUSE\_BYTE\_1\_LB}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+LB~B\+IT(0)}
+
+
+
+Definition at line 38 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a0ff3caa0262caf3650e60bef9e7ee7af}\label{mouse_8h_a0ff3caa0262caf3650e60bef9e7ee7af}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_MB@{MOUSE\_BYTE\_1\_MB}}
+\index{MOUSE\_BYTE\_1\_MB@{MOUSE\_BYTE\_1\_MB}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_MB}{MOUSE\_BYTE\_1\_MB}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+MB~B\+IT(2)}
+
+
+
+Definition at line 36 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a192e557f1c7e34d6f7819950f2d13f5a}\label{mouse_8h_a192e557f1c7e34d6f7819950f2d13f5a}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_RB@{MOUSE\_BYTE\_1\_RB}}
+\index{MOUSE\_BYTE\_1\_RB@{MOUSE\_BYTE\_1\_RB}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_RB}{MOUSE\_BYTE\_1\_RB}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+RB~B\+IT(1)}
+
+
+
+Definition at line 37 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a4c7350bda916c597c5cb243b78540674}\label{mouse_8h_a4c7350bda916c597c5cb243b78540674}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_X\_DELTA\_MSB@{MOUSE\_BYTE\_1\_X\_DELTA\_MSB}}
+\index{MOUSE\_BYTE\_1\_X\_DELTA\_MSB@{MOUSE\_BYTE\_1\_X\_DELTA\_MSB}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_X\_DELTA\_MSB}{MOUSE\_BYTE\_1\_X\_DELTA\_MSB}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+X\+\_\+\+D\+E\+L\+T\+A\+\_\+\+M\+SB~B\+IT(4)}
+
+
+
+Definition at line 35 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a9495aababa14763f72d708ce1fe00688}\label{mouse_8h_a9495aababa14763f72d708ce1fe00688}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_X\_OVFL@{MOUSE\_BYTE\_1\_X\_OVFL}}
+\index{MOUSE\_BYTE\_1\_X\_OVFL@{MOUSE\_BYTE\_1\_X\_OVFL}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_X\_OVFL}{MOUSE\_BYTE\_1\_X\_OVFL}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+X\+\_\+\+O\+V\+FL~B\+IT(6)}
+
+
+
+Definition at line 33 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a1c91938d79aef45770baea99738dfab5}\label{mouse_8h_a1c91938d79aef45770baea99738dfab5}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_Y\_DELTA\_MSB@{MOUSE\_BYTE\_1\_Y\_DELTA\_MSB}}
+\index{MOUSE\_BYTE\_1\_Y\_DELTA\_MSB@{MOUSE\_BYTE\_1\_Y\_DELTA\_MSB}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_Y\_DELTA\_MSB}{MOUSE\_BYTE\_1\_Y\_DELTA\_MSB}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+Y\+\_\+\+D\+E\+L\+T\+A\+\_\+\+M\+SB~B\+IT(5)}
+
+
+
+Definition at line 34 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ae4fd8309d3740444324d85d2ac44beff}\label{mouse_8h_ae4fd8309d3740444324d85d2ac44beff}} 
+\index{mouse.h@{mouse.h}!MOUSE\_BYTE\_1\_Y\_OVFL@{MOUSE\_BYTE\_1\_Y\_OVFL}}
+\index{MOUSE\_BYTE\_1\_Y\_OVFL@{MOUSE\_BYTE\_1\_Y\_OVFL}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_BYTE\_1\_Y\_OVFL}{MOUSE\_BYTE\_1\_Y\_OVFL}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+B\+Y\+T\+E\+\_\+1\+\_\+\+Y\+\_\+\+O\+V\+FL~B\+IT(7)}
+
+
+
+Definition at line 32 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a841cebcb7d56f8cc3505c202865f3dc2}\label{mouse_8h_a841cebcb7d56f8cc3505c202865f3dc2}} 
+\index{mouse.h@{mouse.h}!MOUSE\_DISABLE\_DATA\_REPORTING@{MOUSE\_DISABLE\_DATA\_REPORTING}}
+\index{MOUSE\_DISABLE\_DATA\_REPORTING@{MOUSE\_DISABLE\_DATA\_REPORTING}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DISABLE\_DATA\_REPORTING}{MOUSE\_DISABLE\_DATA\_REPORTING}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG~0x\+F5}
+
+
+
+Definition at line 19 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ab9680a69d58165012e6b3c102d6cec69}\label{mouse_8h_ab9680a69d58165012e6b3c102d6cec69}} 
+\index{mouse.h@{mouse.h}!MOUSE\_ENABLE\_DATA\_REPORTING@{MOUSE\_ENABLE\_DATA\_REPORTING}}
+\index{MOUSE\_ENABLE\_DATA\_REPORTING@{MOUSE\_ENABLE\_DATA\_REPORTING}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ENABLE\_DATA\_REPORTING}{MOUSE\_ENABLE\_DATA\_REPORTING}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG~0x\+F4}
+
+
+
+Definition at line 20 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}\label{mouse_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}} 
+\index{mouse.h@{mouse.h}!MOUSE\_ERROR@{MOUSE\_ERROR}}
+\index{MOUSE\_ERROR@{MOUSE\_ERROR}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ERROR}{MOUSE\_ERROR}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+E\+R\+R\+OR~0x\+FC}
+
+
+
+Definition at line 43 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a85964cb90343bb1a029b1d1b4229f910}\label{mouse_8h_a85964cb90343bb1a029b1d1b4229f910}} 
+\index{mouse.h@{mouse.h}!MOUSE\_IRQ@{MOUSE\_IRQ}}
+\index{MOUSE\_IRQ@{MOUSE\_IRQ}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_IRQ}{MOUSE\_IRQ}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+I\+RQ~12}
+
+
+
+Definition at line 7 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_aef4a299dedf83b6dc4765baab230affd}\label{mouse_8h_aef4a299dedf83b6dc4765baab230affd}} 
+\index{mouse.h@{mouse.h}!MOUSE\_NACK@{MOUSE\_NACK}}
+\index{MOUSE\_NACK@{MOUSE\_NACK}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_NACK}{MOUSE\_NACK}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+N\+A\+CK~0x\+FE}
+
+
+
+Definition at line 42 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a2c34b8050fdf63c43722a40d2e8dbd2f}\label{mouse_8h_a2c34b8050fdf63c43722a40d2e8dbd2f}} 
+\index{mouse.h@{mouse.h}!MOUSE\_PCKT\_FIRST\_BYTE\_FLAG@{MOUSE\_PCKT\_FIRST\_BYTE\_FLAG}}
+\index{MOUSE\_PCKT\_FIRST\_BYTE\_FLAG@{MOUSE\_PCKT\_FIRST\_BYTE\_FLAG}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_PCKT\_FIRST\_BYTE\_FLAG}{MOUSE\_PCKT\_FIRST\_BYTE\_FLAG}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+P\+C\+K\+T\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+Y\+T\+E\+\_\+\+F\+L\+AG~B\+IT(3)}
+
+
+
+Definition at line 31 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a6065e2718e2c8e4a5b5d005cba836cbc}\label{mouse_8h_a6065e2718e2c8e4a5b5d005cba836cbc}} 
+\index{mouse.h@{mouse.h}!MOUSE\_READ\_DATA@{MOUSE\_READ\_DATA}}
+\index{MOUSE\_READ\_DATA@{MOUSE\_READ\_DATA}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_READ\_DATA}{MOUSE\_READ\_DATA}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+R\+E\+A\+D\+\_\+\+D\+A\+TA~0x\+EB}
+
+
+
+Definition at line 23 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a1a33902ed453e53395da2d845da0c5b6}\label{mouse_8h_a1a33902ed453e53395da2d845da0c5b6}} 
+\index{mouse.h@{mouse.h}!MOUSE\_RESEND@{MOUSE\_RESEND}}
+\index{MOUSE\_RESEND@{MOUSE\_RESEND}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESEND}{MOUSE\_RESEND}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+R\+E\+S\+E\+ND~0x\+FE}
+
+
+
+Definition at line 17 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a6b902000c4f0a66e57f0eb78d7611105}\label{mouse_8h_a6b902000c4f0a66e57f0eb78d7611105}} 
+\index{mouse.h@{mouse.h}!MOUSE\_RESET@{MOUSE\_RESET}}
+\index{MOUSE\_RESET@{MOUSE\_RESET}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESET}{MOUSE\_RESET}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+R\+E\+S\+ET~0x\+FF}
+
+
+
+Definition at line 16 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ae1003cc510106afeb30a0462ba049ff9}\label{mouse_8h_ae1003cc510106afeb30a0462ba049ff9}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_ACCELERATION\_MODE@{MOUSE\_SET\_ACCELERATION\_MODE}}
+\index{MOUSE\_SET\_ACCELERATION\_MODE@{MOUSE\_SET\_ACCELERATION\_MODE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_ACCELERATION\_MODE}{MOUSE\_SET\_ACCELERATION\_MODE}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE~0x\+E7}
+
+
+
+Definition at line 27 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_aacb967610731528c8b5652024e8a1ac7}\label{mouse_8h_aacb967610731528c8b5652024e8a1ac7}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_DEFAULTS@{MOUSE\_SET\_DEFAULTS}}
+\index{MOUSE\_SET\_DEFAULTS@{MOUSE\_SET\_DEFAULTS}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_DEFAULTS}{MOUSE\_SET\_DEFAULTS}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+D\+E\+F\+A\+U\+L\+TS~0x\+F6}
+
+
+
+Definition at line 18 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_aac2f6741b2d654c9de9961588e7a6f1e}\label{mouse_8h_aac2f6741b2d654c9de9961588e7a6f1e}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_LINEAR\_MODE@{MOUSE\_SET\_LINEAR\_MODE}}
+\index{MOUSE\_SET\_LINEAR\_MODE@{MOUSE\_SET\_LINEAR\_MODE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_LINEAR\_MODE}{MOUSE\_SET\_LINEAR\_MODE}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+DE~0x\+E6}
+
+
+
+Definition at line 28 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_aaa2d5ba39424fb94c1593ae86906008c}\label{mouse_8h_aaa2d5ba39424fb94c1593ae86906008c}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_REMOTE\_MODE@{MOUSE\_SET\_REMOTE\_MODE}}
+\index{MOUSE\_SET\_REMOTE\_MODE@{MOUSE\_SET\_REMOTE\_MODE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_REMOTE\_MODE}{MOUSE\_SET\_REMOTE\_MODE}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE~0x\+F0}
+
+
+
+Definition at line 22 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a8f8d8784039ad37ba8f03185ce3c48dc}\label{mouse_8h_a8f8d8784039ad37ba8f03185ce3c48dc}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_RESOLUTION@{MOUSE\_SET\_RESOLUTION}}
+\index{MOUSE\_SET\_RESOLUTION@{MOUSE\_SET\_RESOLUTION}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_RESOLUTION}{MOUSE\_SET\_RESOLUTION}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON~0x\+E8}
+
+
+
+Definition at line 26 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ab755944a7aa52223e0d49b6f8974974e}\label{mouse_8h_ab755944a7aa52223e0d49b6f8974974e}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_SAMPLE\_RATE@{MOUSE\_SET\_SAMPLE\_RATE}}
+\index{MOUSE\_SET\_SAMPLE\_RATE@{MOUSE\_SET\_SAMPLE\_RATE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_SAMPLE\_RATE}{MOUSE\_SET\_SAMPLE\_RATE}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE~0x\+F3}
+
+
+
+Definition at line 21 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_a9af4ac19fb83e1b113043bf44520d386}\label{mouse_8h_a9af4ac19fb83e1b113043bf44520d386}} 
+\index{mouse.h@{mouse.h}!MOUSE\_SET\_STREAM\_MODE@{MOUSE\_SET\_STREAM\_MODE}}
+\index{MOUSE\_SET\_STREAM\_MODE@{MOUSE\_SET\_STREAM\_MODE}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_STREAM\_MODE}{MOUSE\_SET\_STREAM\_MODE}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE~0x\+EA}
+
+
+
+Definition at line 24 of file mouse.\+h.
+
+\mbox{\Hypertarget{mouse_8h_ae81dac725cb48935cbc4564c35a46c5d}\label{mouse_8h_ae81dac725cb48935cbc4564c35a46c5d}} 
+\index{mouse.h@{mouse.h}!MOUSE\_STATUS\_REQUEST@{MOUSE\_STATUS\_REQUEST}}
+\index{MOUSE\_STATUS\_REQUEST@{MOUSE\_STATUS\_REQUEST}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_STATUS\_REQUEST}{MOUSE\_STATUS\_REQUEST}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+Q\+U\+E\+ST~0x\+E9}
+
+
+
+Definition at line 25 of file mouse.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8h_a4d194f8789b7aadfd3a2a8d61bee9177}\label{mouse_8h_a4d194f8789b7aadfd3a2a8d61bee9177}} 
+\index{mouse.h@{mouse.h}!get\_mouse\_packet@{get\_mouse\_packet}}
+\index{get\_mouse\_packet@{get\_mouse\_packet}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{get\_mouse\_packet()}{get\_mouse\_packet()}}
+{\footnotesize\ttfamily struct packet() get\+\_\+mouse\+\_\+packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+assemble a mouse packet based on the last 3 bytes read from the buffer. Should only be called if \mbox{\hyperlink{mouse_8h_accd1411530ecdac740d5bbaf13874a2b}{mouse\+\_\+packet\+\_\+is\+\_\+ready()}} 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & mouse packet \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 67 of file mouse.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{mouse_8h_a4d194f8789b7aadfd3a2a8d61bee9177_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_aa8ab77f4eebbfb8ced8fb2e6f435c1e8}\label{mouse_8h_aa8ab77f4eebbfb8ced8fb2e6f435c1e8}} 
+\index{mouse.h@{mouse.h}!m\_mouse\_enable\_data\_reporting@{m\_mouse\_enable\_data\_reporting}}
+\index{m\_mouse\_enable\_data\_reporting@{m\_mouse\_enable\_data\_reporting}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{m\_mouse\_enable\_data\_reporting()}{m\_mouse\_enable\_data\_reporting()}}
+{\footnotesize\ttfamily int() m\+\_\+mouse\+\_\+enable\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+enables mouse data reporting 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if successful, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 23 of file mouse.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_aa8ab77f4eebbfb8ced8fb2e6f435c1e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{mouse_8h_aa8ab77f4eebbfb8ced8fb2e6f435c1e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}\label{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}} 
+\index{mouse.h@{mouse.h}!mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}}
+\index{mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_disable\_data\_reporting()}{mouse\_disable\_data\_reporting()}}
+{\footnotesize\ttfamily int() mouse\+\_\+disable\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+disables mouse data reporting 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if successful, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 15 of file mouse.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a210374b50462acdedab00df64d5cea3c}\label{mouse_8h_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the mouse interrupt handler; calls get \mbox{\hyperlink{kbc_8c_ac3df632f04efa588702efee2712eb414}{get\+\_\+buffer\+\_\+data()}} 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 100 of file mouse.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{mouse_8h_a210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_accd1411530ecdac740d5bbaf13874a2b}\label{mouse_8h_accd1411530ecdac740d5bbaf13874a2b}} 
+\index{mouse.h@{mouse.h}!mouse\_packet\_is\_ready@{mouse\_packet\_is\_ready}}
+\index{mouse\_packet\_is\_ready@{mouse\_packet\_is\_ready}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet\_is\_ready()}{mouse\_packet\_is\_ready()}}
+{\footnotesize\ttfamily bool() mouse\+\_\+packet\+\_\+is\+\_\+ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+checks if a mouse packet is ready, i.\+e the byte that was last read from the buffer was the third one 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the packet is ready, false otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 106 of file mouse.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{mouse_8h_accd1411530ecdac740d5bbaf13874a2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a20285aed4b3ef45812cd967532dd09db}\label{mouse_8h_a20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse.h@{mouse.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes mouse interruptions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & the bit number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 58 of file mouse.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{mouse_8h_a20285aed4b3ef45812cd967532dd09db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}\label{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes mouse interrupts 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 67 of file mouse.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a51e10ced7af84c1ec12f6c6c441b4f3b}\label{mouse_8h_a51e10ced7af84c1ec12f6c6c441b4f3b}} 
+\index{mouse.h@{mouse.h}!mouse\_write\_byte@{mouse\_write\_byte}}
+\index{mouse\_write\_byte@{mouse\_write\_byte}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_write\_byte()}{mouse\_write\_byte()}}
+{\footnotesize\ttfamily int() mouse\+\_\+write\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mouse\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+writes a mouse byte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+byte} & the byte to write \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if success, !\+OK otherwise \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 31 of file mouse.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a51e10ced7af84c1ec12f6c6c441b4f3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a51e10ced7af84c1ec12f6c6c441b4f3b_icgraph}
+\end{center}
+\end{figure}

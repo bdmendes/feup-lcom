@@ -1,0 +1,15 @@
+.idea
+.gdbinit
+.minix-src
+.clang-format
+*.o
+*.d
+*.depend
+*trace.txt
+*output.txt
+*/lab2
+*/lab3
+*/lab4
+*/lab5
+proj/src/proj
+core.*

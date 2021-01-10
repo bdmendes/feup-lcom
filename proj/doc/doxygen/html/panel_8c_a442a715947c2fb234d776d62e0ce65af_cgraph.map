@@ -1,0 +1,9 @@
+<map id="draw_panel" name="draw_panel">
+<area shape="rect" id="node1" title="draws a panel to the video buffer" alt="" coords="5,88,103,114"/>
+<area shape="rect" id="node2" href="$button_8c.html#aa223516c6cbd61f35f7f9da7d4cbd884" title="draws a button to the video buffer" alt="" coords="181,37,283,64"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#a3671b9920cf64d55c27e948289644554" title="cheap sprite draw; does not check for out of bound positions and does not support negative sprite pos..." alt="" coords="361,12,535,38"/>
+<area shape="rect" id="node4" href="$font_8c.html#a0bac189caf6ba33d8ae33d1044ee8d67" title="draws a string of tiles" alt="" coords="399,88,497,114"/>
+<area shape="rect" id="node5" href="$font_8c.html#aeb369103e160cb1783e2c6b51ca76aba" title="draws a string centered in the x axis, in the desired y position" alt="" coords="151,138,313,165"/>
+<area shape="rect" id="node7" href="$sprite_8c.html#a66816cf4f68b047b2f11e5c188e09c2c" title="checks if a coordinate is within a sprite (in its current position)" alt="" coords="171,189,293,216"/>
+<area shape="rect" id="node6" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="389,138,507,165"/>
+</map>

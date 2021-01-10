@@ -1,0 +1,7 @@
+<map id="create_asprite" name="create_asprite">
+<area shape="rect" id="node1" title="allocates an animated sprite object" alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#aa3fdb04b78ba12c1d58e244a8e77a012" title="allocates a sprite object" alt="" coords="196,5,303,32"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="192,56,307,83"/>
+<area shape="rect" id="node4" href="$sprite_8c.html#aeef385120129fb7d447c3b10d62203d3" title="mirrors a pixmap" alt="" coords="168,107,331,133"/>
+<area shape="rect" id="node5" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="379,107,531,133"/>
+</map>

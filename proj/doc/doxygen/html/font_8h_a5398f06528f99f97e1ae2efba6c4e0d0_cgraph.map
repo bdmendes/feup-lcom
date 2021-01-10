@@ -1,0 +1,4 @@
+<map id="destroy_font" name="destroy_font">
+<area shape="rect" id="node1" title="deallocates a font" alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="157,5,272,32"/>
+</map>

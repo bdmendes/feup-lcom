@@ -1,0 +1,13 @@
+<map id="create_sprite_from_bitmap" name="create_sprite_from_bitmap">
+<area shape="rect" id="node1" title="creates a sprite from a bitmap" alt="" coords="1001,191,1147,232"/>
+<area shape="rect" id="node2" href="$button_8h.html#a39ddedf83a135ccf9b93f24aae099105" title="allocates a button object" alt="" coords="819,97,931,123"/>
+<area shape="rect" id="node7" href="$panel_8h.html#af78e501555e192c7fcc560ae61bf2fa1" title="allocates a panel object" alt="" coords="409,173,516,199"/>
+<area shape="rect" id="node10" href="$sprite_8h.html#a28d2fb69da487db91dda39eb9144277b" title="zooms the sprite bitmap (cloning pixels in matrix&#45;like form) and return new generated sprite" alt="" coords="796,223,953,250"/>
+<area shape="rect" id="node11" href="$font_8h.html#ac9c9f41f95d7a471c8c45e5370e2afbb" title="allocates a font" alt="" coords="612,223,708,250"/>
+<area shape="rect" id="node3" href="$button_8h.html#a863948f0db1e930d09456179c07aedec" title="allocates a button object that is centered in the screen" alt="" coords="572,122,748,149"/>
+<area shape="rect" id="node8" href="$button_8h.html#a9cb35a9d0814259c74a7090db5a0f8e9" title="allocates a button object according to the text&#39;s size" alt="" coords="583,5,737,47"/>
+<area shape="rect" id="node9" href="$settings_8h.html#a59b23db9210e309f1554780b425a3376" title="allocates a settings object" alt="" coords="401,71,524,98"/>
+<area shape="rect" id="node4" href="$menu_8h.html#acf480fe24385c2ddbcebed9d6e0f5537" title="Allocate a menu object." alt="" coords="409,122,516,149"/>
+<area shape="rect" id="node5" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,147,353,174"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,147,128,174"/>
+</map>

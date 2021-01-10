@@ -1,0 +1,206 @@
+\hypertarget{struct_player}{}\doxysection{Player Struct Reference}
+\label{struct_player}\index{Player@{Player}}
+
+
+A \mbox{\hyperlink{struct_player}{Player}} is composed of its sprite and a series of attributes related to the its movement in the map, e.\+g x\+\_\+abs and y\+\_\+abs representing the absolute position in the zoomed map, and speed the step of the sprite per movement.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{struct_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$ \mbox{\hyperlink{struct_player_aa075f5081067c0e69972b6e3abfd4576}{asp}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_player_a12633132d07532aac2bd05fa1d5c8a72}{speed}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_player_a868138f64568e6e579398601b160bc18}{optimal\+\_\+pos\+\_\+boundaries}} \mbox{[}4\mbox{]}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_a6d7773ca2d299e89ff1cee2c31b8c477}{x\+\_\+abs}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_a82c6946c770fc5b0989623248aa31fcb}{y\+\_\+abs}}
+\item 
+bool \mbox{\hyperlink{struct_player_a44991790e8dd3fc578a5b53550b1eeb4}{force\+\_\+move}}
+\item 
+bool \mbox{\hyperlink{struct_player_aff4d1531b25f3014778ea4d68779d8ce}{is\+\_\+moving}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_a30dea9d82141d73b2958358b95bc2ab8}{remaining\+\_\+step\+\_\+x}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_ac3da35f601fc0b32f45a453488ea0cc5}{remaining\+\_\+step\+\_\+y}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_af6330a724d6bb665a9189834a666fcf3}{goal\+\_\+x}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_player_a6cfde088f273c0d9dca2aa13f754afda}{goal\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{struct_player_a557091c7b71a1b7dd30ab2aa3a23a594}{is\+\_\+guessing}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_player_a29c146345d91a716403a24fed7bbfcbf}{step\+\_\+per\+\_\+second}}
+\item 
+\mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}} \mbox{\hyperlink{struct_player_a87adb15d9ce257631473bcf0e9f9f389}{direction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{struct_player}{Player}} is composed of its sprite and a series of attributes related to the its movement in the map, e.\+g x\+\_\+abs and y\+\_\+abs representing the absolute position in the zoomed map, and speed the step of the sprite per movement. 
+
+Definition at line 10 of file player.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_player_aa075f5081067c0e69972b6e3abfd4576}\label{struct_player_aa075f5081067c0e69972b6e3abfd4576}} 
+\index{Player@{Player}!asp@{asp}}
+\index{asp@{asp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{asp}{asp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}}$\ast$ asp}
+
+
+
+Definition at line 11 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a87adb15d9ce257631473bcf0e9f9f389}\label{struct_player_a87adb15d9ce257631473bcf0e9f9f389}} 
+\index{Player@{Player}!direction@{direction}}
+\index{direction@{direction}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}} direction}
+
+
+
+Definition at line 24 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a44991790e8dd3fc578a5b53550b1eeb4}\label{struct_player_a44991790e8dd3fc578a5b53550b1eeb4}} 
+\index{Player@{Player}!force\_move@{force\_move}}
+\index{force\_move@{force\_move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{force\_move}{force\_move}}
+{\footnotesize\ttfamily bool force\+\_\+move}
+
+
+
+Definition at line 16 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_af6330a724d6bb665a9189834a666fcf3}\label{struct_player_af6330a724d6bb665a9189834a666fcf3}} 
+\index{Player@{Player}!goal\_x@{goal\_x}}
+\index{goal\_x@{goal\_x}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{goal\_x}{goal\_x}}
+{\footnotesize\ttfamily int32\+\_\+t goal\+\_\+x}
+
+
+
+Definition at line 20 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a6cfde088f273c0d9dca2aa13f754afda}\label{struct_player_a6cfde088f273c0d9dca2aa13f754afda}} 
+\index{Player@{Player}!goal\_y@{goal\_y}}
+\index{goal\_y@{goal\_y}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{goal\_y}{goal\_y}}
+{\footnotesize\ttfamily int32\+\_\+t goal\+\_\+y}
+
+
+
+Definition at line 21 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a557091c7b71a1b7dd30ab2aa3a23a594}\label{struct_player_a557091c7b71a1b7dd30ab2aa3a23a594}} 
+\index{Player@{Player}!is\_guessing@{is\_guessing}}
+\index{is\_guessing@{is\_guessing}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{is\_guessing}{is\_guessing}}
+{\footnotesize\ttfamily bool is\+\_\+guessing}
+
+
+
+Definition at line 22 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_aff4d1531b25f3014778ea4d68779d8ce}\label{struct_player_aff4d1531b25f3014778ea4d68779d8ce}} 
+\index{Player@{Player}!is\_moving@{is\_moving}}
+\index{is\_moving@{is\_moving}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{is\_moving}{is\_moving}}
+{\footnotesize\ttfamily bool is\+\_\+moving}
+
+
+
+Definition at line 17 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a868138f64568e6e579398601b160bc18}\label{struct_player_a868138f64568e6e579398601b160bc18}} 
+\index{Player@{Player}!optimal\_pos\_boundaries@{optimal\_pos\_boundaries}}
+\index{optimal\_pos\_boundaries@{optimal\_pos\_boundaries}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{optimal\_pos\_boundaries}{optimal\_pos\_boundaries}}
+{\footnotesize\ttfamily uint16\+\_\+t optimal\+\_\+pos\+\_\+boundaries\mbox{[}4\mbox{]}}
+
+
+
+Definition at line 13 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a30dea9d82141d73b2958358b95bc2ab8}\label{struct_player_a30dea9d82141d73b2958358b95bc2ab8}} 
+\index{Player@{Player}!remaining\_step\_x@{remaining\_step\_x}}
+\index{remaining\_step\_x@{remaining\_step\_x}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{remaining\_step\_x}{remaining\_step\_x}}
+{\footnotesize\ttfamily int32\+\_\+t remaining\+\_\+step\+\_\+x}
+
+
+
+Definition at line 18 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_ac3da35f601fc0b32f45a453488ea0cc5}\label{struct_player_ac3da35f601fc0b32f45a453488ea0cc5}} 
+\index{Player@{Player}!remaining\_step\_y@{remaining\_step\_y}}
+\index{remaining\_step\_y@{remaining\_step\_y}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{remaining\_step\_y}{remaining\_step\_y}}
+{\footnotesize\ttfamily int32\+\_\+t remaining\+\_\+step\+\_\+y}
+
+
+
+Definition at line 19 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a12633132d07532aac2bd05fa1d5c8a72}\label{struct_player_a12633132d07532aac2bd05fa1d5c8a72}} 
+\index{Player@{Player}!speed@{speed}}
+\index{speed@{speed}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily uint16\+\_\+t speed}
+
+
+
+Definition at line 12 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a29c146345d91a716403a24fed7bbfcbf}\label{struct_player_a29c146345d91a716403a24fed7bbfcbf}} 
+\index{Player@{Player}!step\_per\_second@{step\_per\_second}}
+\index{step\_per\_second@{step\_per\_second}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{step\_per\_second}{step\_per\_second}}
+{\footnotesize\ttfamily uint32\+\_\+t step\+\_\+per\+\_\+second}
+
+
+
+Definition at line 23 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a6d7773ca2d299e89ff1cee2c31b8c477}\label{struct_player_a6d7773ca2d299e89ff1cee2c31b8c477}} 
+\index{Player@{Player}!x\_abs@{x\_abs}}
+\index{x\_abs@{x\_abs}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{x\_abs}{x\_abs}}
+{\footnotesize\ttfamily int32\+\_\+t x\+\_\+abs}
+
+
+
+Definition at line 14 of file player.\+h.
+
+\mbox{\Hypertarget{struct_player_a82c6946c770fc5b0989623248aa31fcb}\label{struct_player_a82c6946c770fc5b0989623248aa31fcb}} 
+\index{Player@{Player}!y\_abs@{y\_abs}}
+\index{y\_abs@{y\_abs}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{y\_abs}{y\_abs}}
+{\footnotesize\ttfamily int32\+\_\+t y\+\_\+abs}
+
+
+
+Definition at line 15 of file player.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/game/player/\mbox{\hyperlink{player_8h}{player.\+h}}\end{DoxyCompactItemize}

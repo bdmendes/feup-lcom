@@ -1,0 +1,7 @@
+<map id="draw_map" name="draw_map">
+<area shape="rect" id="node1" title="Copies the current position of the zoom buffer to the video buffer." alt="" coords="543,31,633,57"/>
+<area shape="rect" id="node2" href="$game_8h.html#a13aeefc61ffbb91e51e9ca5a73bda4bb" title="draws the various game elements on the screen: the map, the player, the countdown timer and the resig..." alt="" coords="396,31,495,57"/>
+<area shape="rect" id="node3" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="197,5,327,32"/>
+<area shape="rect" id="node5" href="$ev__handler_8h.html#a4d2f7bf8ee8923bd7c31b1c9a61d5149" title="handles the events while on a game panel (clue or endgame message). The values passed not related to ..." alt="" coords="176,56,348,83"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+</map>

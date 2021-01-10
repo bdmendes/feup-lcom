@@ -1,0 +1,8 @@
+<map id="create_panel" name="create_panel">
+<area shape="rect" id="node1" title="allocates a panel object" alt="" coords="5,54,112,81"/>
+<area shape="rect" id="node2" href="$button_8c.html#a863948f0db1e930d09456179c07aedec" title="allocates a button object that is centered in the screen" alt="" coords="160,79,336,106"/>
+<area shape="rect" id="node4" href="$sprite_8c.html#ae3d8970e3246ba6e6f3eb433529d9233" title="creates a sprite from a bitmap" alt="" coords="554,5,699,47"/>
+<area shape="rect" id="node5" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="551,105,703,131"/>
+<area shape="rect" id="node6" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="384,29,503,55"/>
+<area shape="rect" id="node3" href="$button_8c.html#a39ddedf83a135ccf9b93f24aae099105" title="allocates a button object" alt="" coords="387,79,499,106"/>
+</map>

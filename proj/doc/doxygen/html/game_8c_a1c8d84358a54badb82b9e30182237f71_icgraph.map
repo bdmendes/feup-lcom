@@ -1,0 +1,5 @@
+<map id="prepare_game_panel_endgame" name="prepare_game_panel_endgame">
+<area shape="rect" id="node1" title="makes the current game panel show a endgame message according to the finish type of the game." alt="" coords="353,5,512,47"/>
+<area shape="rect" id="node2" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="176,13,305,39"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,13,128,39"/>
+</map>

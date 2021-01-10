@@ -1,0 +1,158 @@
+\hypertarget{struct_anim_sprite}{}\doxysection{Anim\+Sprite Struct Reference}
+\label{struct_anim_sprite}\index{AnimSprite@{AnimSprite}}
+
+
+An \mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} is composed of a sprite which points to the current frame bitmap. The map is switched when it\textquotesingle{}s time to show the next animation (according to the frames\+\_\+per\+\_\+map attribute). According to the direction of the animated sprite, it may be flipped horizontally.  
+
+
+
+
+{\ttfamily \#include $<$asprite.\+h$>$}
+
+
+
+Collaboration diagram for Anim\+Sprite\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{struct_anim_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{struct_anim_sprite_ac1275456b6e27d632409c89d25c489ee}{cur\+\_\+sp}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_anim_sprite_a34e5cc13c19d51c034791e5fc3286592}{num\+\_\+fig}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_anim_sprite_ab9ca98ed25c375864774f48788db1e39}{cur\+\_\+fig}}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{struct_anim_sprite_aeae16276ebf8ada04308d7b7ff9c3000}{map}}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{struct_anim_sprite_a088c187415c63fac6f5f7babc1eee26f}{mirror\+\_\+map}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_anim_sprite_ade7f7b69e8dadfb7ad286be7010ac039}{frames\+\_\+per\+\_\+map}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_anim_sprite_ac97130cc4261b6476f1d485ac522940b}{frames\+\_\+left}}
+\item 
+bool \mbox{\hyperlink{struct_anim_sprite_afc37d663c8962f4295e11dcd9b43d656}{is\+\_\+idle}}
+\item 
+bool \mbox{\hyperlink{struct_anim_sprite_a3d687e335e07164ced0947e5a7b00dc2}{should\+\_\+mirror}}
+\item 
+bool $\ast$ \mbox{\hyperlink{struct_anim_sprite_a09b43a257d9b3178dd8c1feffad3984c}{is\+\_\+mirrored}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} is composed of a sprite which points to the current frame bitmap. The map is switched when it\textquotesingle{}s time to show the next animation (according to the frames\+\_\+per\+\_\+map attribute). According to the direction of the animated sprite, it may be flipped horizontally. 
+
+Definition at line 9 of file asprite.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_anim_sprite_ab9ca98ed25c375864774f48788db1e39}\label{struct_anim_sprite_ab9ca98ed25c375864774f48788db1e39}} 
+\index{AnimSprite@{AnimSprite}!cur\_fig@{cur\_fig}}
+\index{cur\_fig@{cur\_fig}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{cur\_fig}{cur\_fig}}
+{\footnotesize\ttfamily uint8\+\_\+t cur\+\_\+fig}
+
+
+
+Definition at line 12 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_ac1275456b6e27d632409c89d25c489ee}\label{struct_anim_sprite_ac1275456b6e27d632409c89d25c489ee}} 
+\index{AnimSprite@{AnimSprite}!cur\_sp@{cur\_sp}}
+\index{cur\_sp@{cur\_sp}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{cur\_sp}{cur\_sp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ cur\+\_\+sp}
+
+
+
+Definition at line 10 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_ac97130cc4261b6476f1d485ac522940b}\label{struct_anim_sprite_ac97130cc4261b6476f1d485ac522940b}} 
+\index{AnimSprite@{AnimSprite}!frames\_left@{frames\_left}}
+\index{frames\_left@{frames\_left}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{frames\_left}{frames\_left}}
+{\footnotesize\ttfamily uint8\+\_\+t frames\+\_\+left}
+
+
+
+Definition at line 16 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_ade7f7b69e8dadfb7ad286be7010ac039}\label{struct_anim_sprite_ade7f7b69e8dadfb7ad286be7010ac039}} 
+\index{AnimSprite@{AnimSprite}!frames\_per\_map@{frames\_per\_map}}
+\index{frames\_per\_map@{frames\_per\_map}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{frames\_per\_map}{frames\_per\_map}}
+{\footnotesize\ttfamily uint8\+\_\+t frames\+\_\+per\+\_\+map}
+
+
+
+Definition at line 15 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_afc37d663c8962f4295e11dcd9b43d656}\label{struct_anim_sprite_afc37d663c8962f4295e11dcd9b43d656}} 
+\index{AnimSprite@{AnimSprite}!is\_idle@{is\_idle}}
+\index{is\_idle@{is\_idle}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{is\_idle}{is\_idle}}
+{\footnotesize\ttfamily bool is\+\_\+idle}
+
+
+
+Definition at line 17 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_a09b43a257d9b3178dd8c1feffad3984c}\label{struct_anim_sprite_a09b43a257d9b3178dd8c1feffad3984c}} 
+\index{AnimSprite@{AnimSprite}!is\_mirrored@{is\_mirrored}}
+\index{is\_mirrored@{is\_mirrored}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{is\_mirrored}{is\_mirrored}}
+{\footnotesize\ttfamily bool$\ast$ is\+\_\+mirrored}
+
+
+
+Definition at line 19 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_aeae16276ebf8ada04308d7b7ff9c3000}\label{struct_anim_sprite_aeae16276ebf8ada04308d7b7ff9c3000}} 
+\index{AnimSprite@{AnimSprite}!map@{map}}
+\index{map@{map}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily char$\ast$$\ast$ map}
+
+
+
+Definition at line 13 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_a088c187415c63fac6f5f7babc1eee26f}\label{struct_anim_sprite_a088c187415c63fac6f5f7babc1eee26f}} 
+\index{AnimSprite@{AnimSprite}!mirror\_map@{mirror\_map}}
+\index{mirror\_map@{mirror\_map}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{mirror\_map}{mirror\_map}}
+{\footnotesize\ttfamily char$\ast$$\ast$ mirror\+\_\+map}
+
+
+
+Definition at line 14 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_a34e5cc13c19d51c034791e5fc3286592}\label{struct_anim_sprite_a34e5cc13c19d51c034791e5fc3286592}} 
+\index{AnimSprite@{AnimSprite}!num\_fig@{num\_fig}}
+\index{num\_fig@{num\_fig}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{num\_fig}{num\_fig}}
+{\footnotesize\ttfamily uint8\+\_\+t num\+\_\+fig}
+
+
+
+Definition at line 11 of file asprite.\+h.
+
+\mbox{\Hypertarget{struct_anim_sprite_a3d687e335e07164ced0947e5a7b00dc2}\label{struct_anim_sprite_a3d687e335e07164ced0947e5a7b00dc2}} 
+\index{AnimSprite@{AnimSprite}!should\_mirror@{should\_mirror}}
+\index{should\_mirror@{should\_mirror}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{should\_mirror}{should\_mirror}}
+{\footnotesize\ttfamily bool should\+\_\+mirror}
+
+
+
+Definition at line 18 of file asprite.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/lib/sprite/\mbox{\hyperlink{asprite_8h}{asprite.\+h}}\end{DoxyCompactItemize}

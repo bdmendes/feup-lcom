@@ -1,0 +1,7 @@
+<map id="m_mouse_enable_data_reporting" name="m_mouse_enable_data_reporting">
+<area shape="rect" id="node1" title="enables mouse data reporting" alt="" coords="5,49,179,90"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a51e10ced7af84c1ec12f6c6c441b4f3b" title="writes a mouse byte" alt="" coords="227,56,369,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a836d35c89424c8eaf2e2d404dde2e60d" title="sleep for a certain duration in milliseconds" alt="" coords="427,5,582,32"/>
+<area shape="rect" id="node4" href="$kbc_8c.html#ae18e1dfab3990e4eb2ad6bb594406d53" title="checks if the input buffer is available to be written to (IBF is unset)" alt="" coords="417,56,592,83"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wraps the sys_inb() funtion to allow reading 1 byte values" alt="" coords="640,81,739,108"/>
+</map>

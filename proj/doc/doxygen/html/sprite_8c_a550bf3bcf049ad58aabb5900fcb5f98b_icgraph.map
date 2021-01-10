@@ -1,0 +1,5 @@
+<map id="move_sprite" name="move_sprite">
+<area shape="rect" id="node1" title="changes the sprite position attributes" alt="" coords="176,31,279,57"/>
+<area shape="rect" id="node2" href="$asprite_8h.html#a4bc5daee1f2145872fc71d9531a9900b" title="moves the animated sprite with consideration to how it should be drawn" alt="" coords="11,5,122,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,56,128,83"/>
+</map>

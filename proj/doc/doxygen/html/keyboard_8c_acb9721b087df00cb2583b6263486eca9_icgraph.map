@@ -1,0 +1,7 @@
+<map id="get_break_code" name="get_break_code">
+<area shape="rect" id="node1" title="gets the breakcode corresponding to a given makecode" alt="" coords="396,56,521,83"/>
+<area shape="rect" id="node2" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="197,5,327,32"/>
+<area shape="rect" id="node4" href="$ev__handler_8h.html#a4d2f7bf8ee8923bd7c31b1c9a61d5149" title="handles the events while on a game panel (clue or endgame message). The values passed not related to ..." alt="" coords="176,56,348,83"/>
+<area shape="rect" id="node5" href="$ev__handler_8h.html#a836de8ef17e5b149ae19a2596d9d27a8" title="handles the events while on the main menu. The values passed not related to the interrupt type are no..." alt="" coords="187,107,337,133"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,56,128,83"/>
+</map>

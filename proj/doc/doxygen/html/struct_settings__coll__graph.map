@@ -1,0 +1,7 @@
+<map id="Settings" name="Settings">
+<area shape="rect" id="node1" title="Settings is a panel wrapper with aditional buttons (options) at the bottom to the first panel string." alt="" coords="146,395,221,421"/>
+<area shape="rect" id="node2" href="$struct_panel.html" title="A Panel is composed of a title, a solid background, text strings and a close button." alt="" coords="84,305,142,332"/>
+<area shape="rect" id="node3" href="$struct_sprite.html" title="A Sprite holds the width, height, x and y positions and the bitmap of an object that shall be drawn o..." alt="" coords="62,5,122,32"/>
+<area shape="rect" id="node4" href="$struct_font.html" title="A Font is composed of each letter sprite, in its original size and zoomed 2x." alt="" coords="66,111,117,137"/>
+<area shape="rect" id="node5" href="$struct_button.html" title="A Button is composed by two sprites &#45; one with solid color, and one with colored frame to represent t..." alt="" coords="148,216,214,243"/>
+</map>

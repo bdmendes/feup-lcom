@@ -1,0 +1,4 @@
+<map id="Font" name="Font">
+<area shape="rect" id="node1" title="A Font is composed of each letter sprite, in its original size and zoomed 2x." alt="" coords="10,109,61,136"/>
+<area shape="rect" id="node2" href="$struct_sprite.html" title="A Sprite holds the width, height, x and y positions and the bitmap of an object that shall be drawn o..." alt="" coords="5,5,65,32"/>
+</map>

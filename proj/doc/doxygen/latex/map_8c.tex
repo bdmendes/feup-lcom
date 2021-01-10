@@ -1,0 +1,424 @@
+\hypertarget{map_8c}{}\doxysection{/home/bdmendes/\+Documents/\+Faculdade/2 ano/\+L\+C\+O\+M/shared/proj/src/game/map/map.c File Reference}
+\label{map_8c}\index{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/game/map/map.c@{/home/bdmendes/Documents/Faculdade/2 ano/LCOM/shared/proj/src/game/map/map.c}}
+{\ttfamily \#include \char`\"{}map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../lib/devices/graphics/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/grass1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/grass\+\_\+bomb.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/grass\+\_\+bomb\+\_\+defused.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/grass\+\_\+clue.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/grass\+\_\+door.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../assets/environment/stone1.\+xpm\char`\"{}}\newline
+Include dependency graph for map.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_map}{Map}} $\ast$() \mbox{\hyperlink{map_8c_a01a4f7a72b88a9f2d89a873290216861}{create\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em Allocates a map. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{map_8c_a2b9316d8f60ca78e2d1b36cc4c2178b7}{load\+\_\+map}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint8\+\_\+t zoom\+\_\+factor)
+\begin{DoxyCompactList}\small\item\em loads the map to the buffers according to the zoom factor specified \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{map_8c_ab05797984f6c2adaddc113f05a517e8f}{destroy\+\_\+map}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em Deallocates a map. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{map_8c_a684aec429caf4c6702210c9b6566cef1}{move\+\_\+map}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, \mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}} dir, int16\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Moves the map, giving the sensation of a moving camera. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{map_8c_a5e4896a04e9fd0ca5f2a3f807ecbe0ba}{draw\+\_\+map}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em Copies the current position of the zoom buffer to the video buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{map_8c_ac6c46bae7ef8128db3fed08a0fa13936}{map\+\_\+defuse\+\_\+bomb}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint32\+\_\+t x, uint32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em defuses a bomb in a given position \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{map_8c_a39d88c38c29dbab83cf882ed20c7a19b}{map\+\_\+open\+\_\+clue}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint32\+\_\+t x, uint32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em opens a clue in a given position \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{map_8c_ad95014e54d5106647025d8363ac9d2a8}{reactivate\+\_\+all\+\_\+bombs}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em reactivates all the bombs in the map \end{DoxyCompactList}\item 
+\mbox{\hyperlink{map_8h_a4179687208d6463133ca49aa971b26c8}{M\+A\+P\+\_\+\+O\+B\+J\+E\+CT}}() \mbox{\hyperlink{map_8c_aec6f72658269416253e27f8d84ed5c92}{get\+\_\+object}} (uint32\+\_\+t x, uint32\+\_\+t y, \mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em returns the object in a given position \end{DoxyCompactList}\item 
+uint16\+\_\+t() \mbox{\hyperlink{map_8c_a68313a24832b3f411b5f4fe2a9368dd0}{get\+\_\+no\+\_\+block\+\_\+col}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint32\+\_\+t x)
+\begin{DoxyCompactList}\small\item\em calculates the block collumn of a given x coordinate \end{DoxyCompactList}\item 
+uint16\+\_\+t() \mbox{\hyperlink{map_8c_adf2174273cccbbe31191966ba5a860f6}{get\+\_\+no\+\_\+block\+\_\+row}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map, uint32\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em calculates the block row of a given y coordinate \end{DoxyCompactList}\item 
+uint16\+\_\+t() \mbox{\hyperlink{map_8c_a8a60697a101c68fa27dd3ad9c3655197}{get\+\_\+door\+\_\+row}} (\mbox{\hyperlink{struct_map}{Map}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em calculates the block row of the door \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{map_8c_a01a4f7a72b88a9f2d89a873290216861}\label{map_8c_a01a4f7a72b88a9f2d89a873290216861}} 
+\index{map.c@{map.c}!create\_map@{create\_map}}
+\index{create\_map@{create\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{create\_map()}{create\_map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_map}{Map}}$\ast$() create\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates a map. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & map \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 70 of file map.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{map_8c_a01a4f7a72b88a9f2d89a873290216861_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_a01a4f7a72b88a9f2d89a873290216861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_ab05797984f6c2adaddc113f05a517e8f}\label{map_8c_ab05797984f6c2adaddc113f05a517e8f}} 
+\index{map.c@{map.c}!destroy\_map@{destroy\_map}}
+\index{destroy\_map@{destroy\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_map()}{destroy\_map()}}
+{\footnotesize\ttfamily void() destroy\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+Deallocates a map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map to be destroyed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 126 of file map.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{map_8c_ab05797984f6c2adaddc113f05a517e8f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_ab05797984f6c2adaddc113f05a517e8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a5e4896a04e9fd0ca5f2a3f807ecbe0ba}\label{map_8c_a5e4896a04e9fd0ca5f2a3f807ecbe0ba}} 
+\index{map.c@{map.c}!draw\_map@{draw\_map}}
+\index{draw\_map@{draw\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{draw\_map()}{draw\_map()}}
+{\footnotesize\ttfamily void() draw\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+Copies the current position of the zoom buffer to the video buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map to be drawn \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 169 of file map.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{map_8c_a5e4896a04e9fd0ca5f2a3f807ecbe0ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_a5e4896a04e9fd0ca5f2a3f807ecbe0ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a8a60697a101c68fa27dd3ad9c3655197}\label{map_8c_a8a60697a101c68fa27dd3ad9c3655197}} 
+\index{map.c@{map.c}!get\_door\_row@{get\_door\_row}}
+\index{get\_door\_row@{get\_door\_row}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{get\_door\_row()}{get\_door\_row()}}
+{\footnotesize\ttfamily uint16\+\_\+t() get\+\_\+door\+\_\+row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+calculates the block row of the door 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & door row number \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 237 of file map.\+c.
+
+\mbox{\Hypertarget{map_8c_a68313a24832b3f411b5f4fe2a9368dd0}\label{map_8c_a68313a24832b3f411b5f4fe2a9368dd0}} 
+\index{map.c@{map.c}!get\_no\_block\_col@{get\_no\_block\_col}}
+\index{get\_no\_block\_col@{get\_no\_block\_col}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{get\_no\_block\_col()}{get\_no\_block\_col()}}
+{\footnotesize\ttfamily uint16\+\_\+t() get\+\_\+no\+\_\+block\+\_\+col (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint32\+\_\+t}]{x }\end{DoxyParamCaption})}
+
+
+
+calculates the block collumn of a given x coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+{\em x} & the x coordinate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & block collumn number \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 227 of file map.\+c.
+
+\mbox{\Hypertarget{map_8c_adf2174273cccbbe31191966ba5a860f6}\label{map_8c_adf2174273cccbbe31191966ba5a860f6}} 
+\index{map.c@{map.c}!get\_no\_block\_row@{get\_no\_block\_row}}
+\index{get\_no\_block\_row@{get\_no\_block\_row}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{get\_no\_block\_row()}{get\_no\_block\_row()}}
+{\footnotesize\ttfamily uint16\+\_\+t() get\+\_\+no\+\_\+block\+\_\+row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+calculates the block row of a given y coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & block row number \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 232 of file map.\+c.
+
+\mbox{\Hypertarget{map_8c_aec6f72658269416253e27f8d84ed5c92}\label{map_8c_aec6f72658269416253e27f8d84ed5c92}} 
+\index{map.c@{map.c}!get\_object@{get\_object}}
+\index{get\_object@{get\_object}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{get\_object()}{get\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{map_8h_a4179687208d6463133ca49aa971b26c8}{M\+A\+P\+\_\+\+O\+B\+J\+E\+CT}}() get\+\_\+object (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{x,  }\item[{uint32\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+returns the object in a given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the position \\
+\hline
+{\em y} & the y coordinate of the position \\
+\hline
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & object that corresponds to the given position \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 197 of file map.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_aec6f72658269416253e27f8d84ed5c92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a2b9316d8f60ca78e2d1b36cc4c2178b7}\label{map_8c_a2b9316d8f60ca78e2d1b36cc4c2178b7}} 
+\index{map.c@{map.c}!load\_map@{load\_map}}
+\index{load\_map@{load\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{load\_map()}{load\_map()}}
+{\footnotesize\ttfamily void() load\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint8\+\_\+t}]{zoom\+\_\+factor }\end{DoxyParamCaption})}
+
+
+
+loads the map to the buffers according to the zoom factor specified 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+{\em zoom\+\_\+factor} & the zoom factor \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 106 of file map.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{map_8c_a2b9316d8f60ca78e2d1b36cc4c2178b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_ac6c46bae7ef8128db3fed08a0fa13936}\label{map_8c_ac6c46bae7ef8128db3fed08a0fa13936}} 
+\index{map.c@{map.c}!map\_defuse\_bomb@{map\_defuse\_bomb}}
+\index{map\_defuse\_bomb@{map\_defuse\_bomb}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{map\_defuse\_bomb()}{map\_defuse\_bomb()}}
+{\footnotesize\ttfamily int() map\+\_\+defuse\+\_\+bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint32\+\_\+t}]{x,  }\item[{uint32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+defuses a bomb in a given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+{\em x} & the x coordinate \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if the object was a bomb to defuse, else !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 177 of file map.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_ac6c46bae7ef8128db3fed08a0fa13936_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a39d88c38c29dbab83cf882ed20c7a19b}\label{map_8c_a39d88c38c29dbab83cf882ed20c7a19b}} 
+\index{map.c@{map.c}!map\_open\_clue@{map\_open\_clue}}
+\index{map\_open\_clue@{map\_open\_clue}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{map\_open\_clue()}{map\_open\_clue()}}
+{\footnotesize\ttfamily int() map\+\_\+open\+\_\+clue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{uint32\+\_\+t}]{x,  }\item[{uint32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+opens a clue in a given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+{\em x} & the x coordinate of the position \\
+\hline
+{\em y} & the y coordinate of the position \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if there was a clue to open in the given position, else !\+OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file map.\+c.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_a39d88c38c29dbab83cf882ed20c7a19b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a684aec429caf4c6702210c9b6566cef1}\label{map_8c_a684aec429caf4c6702210c9b6566cef1}} 
+\index{map.c@{map.c}!move\_map@{move\_map}}
+\index{move\_map@{move\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{move\_map()}{move\_map()}}
+{\footnotesize\ttfamily int() move\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{map_8h_a1d2a52a949289e820543c7f315a1553a}{M\+O\+V\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}}}]{dir,  }\item[{int16\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+
+
+Moves the map, giving the sensation of a moving camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map to move \\
+\hline
+{\em dir} & the direction to move the map \\
+\hline
+{\em step} & how much to move the map \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em OK} & if the map can move !\+OK if not \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 142 of file map.\+c.
+
+\mbox{\Hypertarget{map_8c_ad95014e54d5106647025d8363ac9d2a8}\label{map_8c_ad95014e54d5106647025d8363ac9d2a8}} 
+\index{map.c@{map.c}!reactivate\_all\_bombs@{reactivate\_all\_bombs}}
+\index{reactivate\_all\_bombs@{reactivate\_all\_bombs}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{reactivate\_all\_bombs()}{reactivate\_all\_bombs()}}
+{\footnotesize\ttfamily void() reactivate\+\_\+all\+\_\+bombs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_map}{Map}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+reactivates all the bombs in the map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 185 of file map.\+c.
+
