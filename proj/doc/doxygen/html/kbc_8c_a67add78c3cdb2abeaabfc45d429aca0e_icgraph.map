@@ -1,4 +1,0 @@
-<map id="kbc_write_command_byte" name="kbc_write_command_byte">
-<area shape="rect" id="node1" title="writes a command byte" alt="" coords="233,5,427,32"/>
-<area shape="rect" id="node2" href="$keyboard_8h.html#a9af668c9c49ff8c09c526b272f284552" title="reenables keyboard interrupts" alt="" coords="5,5,185,32"/>
-</map>

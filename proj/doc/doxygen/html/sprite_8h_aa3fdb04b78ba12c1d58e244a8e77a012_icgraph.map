@@ -1,8 +1,0 @@
-<map id="create_sprite" name="create_sprite">
-<area shape="rect" id="node1" title="allocates a sprite object" alt="" coords="564,81,671,108"/>
-<area shape="rect" id="node2" href="$asprite_8h.html#a264bfe0c5e4e502d56db1193684ac39d" title="allocates an animated sprite object" alt="" coords="401,5,516,32"/>
-<area shape="rect" id="node3" href="$resources_8h.html#a63253cf45c57a7138128fa7135e39368" title="allocates the game resources with the default values" alt="" coords="176,81,353,108"/>
-<area shape="rect" id="node5" href="$font_8h.html#ac9c9f41f95d7a471c8c45e5370e2afbb" title="allocates a font" alt="" coords="411,107,507,133"/>
-<area shape="rect" id="node6" href="$map_8h.html#a01a4f7a72b88a9f2d89a873290216861" title="Allocates a map." alt="" coords="409,157,508,184"/>
-<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,81,128,108"/>
-</map>

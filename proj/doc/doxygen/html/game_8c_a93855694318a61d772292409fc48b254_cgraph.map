@@ -1,4 +1,0 @@
-<map id="unload_game" name="unload_game">
-<area shape="rect" id="node1" title="signal that the game shall be loaded again in the next in_game handler call, e.g when the door has be..." alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node2" href="$vbe_8c.html#a805ed4591cfa555f440d73a5d431ec7f" title="signals that new information is available to be drawn. vg_has_updates() will return true and allow th..." alt="" coords="164,5,300,32"/>
-</map>

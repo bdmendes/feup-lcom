@@ -1,4 +1,0 @@
-<map id="player_is_above_bomb" name="player_is_above_bomb">
-<area shape="rect" id="node1" title="verifies if the player is above a bomb, ie. at least one of its sprite pixels is above a block bomb" alt="" coords="5,5,177,32"/>
-<area shape="rect" id="node2" href="$map_8c.html#aec6f72658269416253e27f8d84ed5c92" title="returns the object in a given position" alt="" coords="225,5,316,32"/>
-</map>

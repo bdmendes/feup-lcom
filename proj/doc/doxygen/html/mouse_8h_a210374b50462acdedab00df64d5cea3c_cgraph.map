@@ -1,5 +1,0 @@
-<map id="mouse_ih" name="mouse_ih">
-<area shape="rect" id="node1" title="the mouse interrupt handler; calls get get_buffer_data()" alt="" coords="5,5,91,32"/>
-<area shape="rect" id="node2" href="$kbc_8c.html#ad6d95b4b5d6ec1383216254b657e2215" title="reads the data in the output buffer" alt="" coords="139,5,271,32"/>
-<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wraps the sys_inb() funtion to allow reading 1 byte values" alt="" coords="319,5,417,32"/>
-</map>

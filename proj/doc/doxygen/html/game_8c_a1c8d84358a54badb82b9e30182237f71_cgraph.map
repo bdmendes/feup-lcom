@@ -1,5 +1,0 @@
-<map id="prepare_game_panel_endgame" name="prepare_game_panel_endgame">
-<area shape="rect" id="node1" title="makes the current game panel show a endgame message according to the finish type of the game." alt="" coords="5,23,164,65"/>
-<area shape="rect" id="node2" href="$panel_8c.html#a2bd212779333647f569d6590a9c70526" title="sets the panel&#39;s strings" alt="" coords="212,5,348,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#a805ed4591cfa555f440d73a5d431ec7f" title="signals that new information is available to be drawn. vg_has_updates() will return true and allow th..." alt="" coords="212,56,348,83"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="draw_asprite" name="draw_asprite">
-<area shape="rect" id="node1" title="draws an animated sprite to a buffer" alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="$sprite_8c.html#a25e999cee7fa87acc22651c0503728a1" title="draws a sprite to a buffer" alt="" coords="160,5,259,32"/>
-</map>

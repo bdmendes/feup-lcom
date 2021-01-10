@@ -1,5 +1,0 @@
-<map id="settings_highlight_button" name="settings_highlight_button">
-<area shape="rect" id="node1" title="highlights a button from the given settings" alt="" coords="5,23,144,65"/>
-<area shape="rect" id="node2" href="$button_8c.html#a7ccb6860add187e41eda092d809eec52" title="sets a button background and frame (when hovering) colors" alt="" coords="192,5,329,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="377,31,529,57"/>
-</map>

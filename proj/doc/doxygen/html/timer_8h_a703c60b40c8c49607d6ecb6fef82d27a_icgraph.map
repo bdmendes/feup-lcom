@@ -1,4 +1,0 @@
-<map id="timer_get_conf" name="timer_get_conf">
-<area shape="rect" id="node1" title="retrieves timer configuration status byte" alt="" coords="209,5,329,32"/>
-<area shape="rect" id="node2" href="$timer_8h.html#af2c04fa8e97ffa748fd3f612886a92a7" title="sets timer frequency" alt="" coords="5,5,161,32"/>
-</map>

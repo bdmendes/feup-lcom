@@ -1,5 +1,0 @@
-<map id="draw_pixel" name="draw_pixel">
-<area shape="rect" id="node1" title="draws a pixel to a given position in a given color. Transparency color for 0x14C mode is discarded an..." alt="" coords="5,31,97,57"/>
-<area shape="rect" id="node2" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="145,5,297,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="162,56,281,83"/>
-</map>

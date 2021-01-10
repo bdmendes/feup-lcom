@@ -1,4 +1,0 @@
-<map id="create_player" name="create_player">
-<area shape="rect" id="node1" title="allocates a player" alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node2" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information" alt="" coords="164,5,283,32"/>
-</map>

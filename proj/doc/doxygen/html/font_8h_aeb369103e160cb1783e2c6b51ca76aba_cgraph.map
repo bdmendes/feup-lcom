@@ -1,5 +1,0 @@
-<map id="draw_string_centered" name="draw_string_centered">
-<area shape="rect" id="node1" title="draws a string centered in the x axis, in the desired y position" alt="" coords="5,31,168,57"/>
-<area shape="rect" id="node2" href="$font_8c.html#a0bac189caf6ba33d8ae33d1044ee8d67" title="draws a string of tiles" alt="" coords="226,5,325,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="216,56,335,83"/>
-</map>

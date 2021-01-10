@@ -1,6 +1,0 @@
-<map id="create_map" name="create_map">
-<area shape="rect" id="node1" title="Allocates a map." alt="" coords="5,56,104,83"/>
-<area shape="rect" id="node2" href="$sprite_8c.html#aa3fdb04b78ba12c1d58e244a8e77a012" title="allocates a sprite object" alt="" coords="175,5,281,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="152,56,304,83"/>
-<area shape="rect" id="node4" href="$vbe_8c.html#aaff8e5b6141d374f79caa8a869599128" title="gets the current graphic mode information, that was retrieved when switching to the graphics mode" alt="" coords="169,107,287,133"/>
-</map>

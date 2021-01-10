@@ -1,6 +1,0 @@
-<map id="Panel" name="Panel">
-<area shape="rect" id="node1" title="A Panel is composed of a title, a solid background, text strings and a close button." alt="" coords="65,305,122,332"/>
-<area shape="rect" id="node2" href="$struct_sprite.html" title="A Sprite holds the width, height, x and y positions and the bitmap of an object that shall be drawn o..." alt="" coords="65,5,125,32"/>
-<area shape="rect" id="node3" href="$struct_font.html" title="A Font is composed of each letter sprite, in its original size and zoomed 2x." alt="" coords="70,111,120,137"/>
-<area shape="rect" id="node4" href="$struct_button.html" title="A Button is composed by two sprites &#45; one with solid color, and one with colored frame to represent t..." alt="" coords="149,216,214,243"/>
-</map>

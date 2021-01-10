@@ -1,5 +1,0 @@
-<map id="draw_sprite_zoom" name="draw_sprite_zoom">
-<area shape="rect" id="node1" title="draws a sprite in the original size to a buffer and with the requested zoom factor in other." alt="" coords="5,31,147,57"/>
-<area shape="rect" id="node2" href="$sprite_8c.html#a25e999cee7fa87acc22651c0503728a1" title="draws a sprite to a buffer" alt="" coords="221,5,320,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="195,56,347,83"/>
-</map>

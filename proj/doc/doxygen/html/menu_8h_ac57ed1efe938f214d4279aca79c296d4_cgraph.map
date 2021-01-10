@@ -1,7 +1,0 @@
-<map id="destroy_menu" name="destroy_menu">
-<area shape="rect" id="node1" title="deallocates a menu object: all sprites and panels are destroyed, except for the font and the mouse." alt="" coords="5,38,120,65"/>
-<area shape="rect" id="node2" href="$button_8c.html#ae27c9bc7795fbe5c8cef13f9fbc63fb8" title="deallocates a button object" alt="" coords="533,38,653,65"/>
-<area shape="rect" id="node3" href="$sprite_8c.html#a196ae7662805babf80dbf55d8f0b0020" title="deallocates a sprite object" alt="" coords="701,64,816,90"/>
-<area shape="rect" id="node4" href="$instructions_8c.html#a424ef0db51f872d7392307a931d46696" title="deallocates a game instructions object" alt="" coords="168,89,323,116"/>
-<area shape="rect" id="node5" href="$panel_8c.html#aaf2191428653d2fe3ee26701b03184d3" title="deallocates a panel object: the button and background sprites. The mouse and font are not destroyed." alt="" coords="371,89,485,116"/>
-</map>

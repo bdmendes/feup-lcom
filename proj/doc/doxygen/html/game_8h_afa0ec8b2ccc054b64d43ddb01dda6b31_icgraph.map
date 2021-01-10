@@ -1,5 +1,0 @@
-<map id="destroy_game" name="destroy_game">
-<area shape="rect" id="node1" title="deallocats the game map buffers and player. The mouse sprite and the font are not destroyed." alt="" coords="409,5,524,32"/>
-<area shape="rect" id="node2" href="$resources_8h.html#a917597ec4db63d34d4f750f05537152d" title="deallocates the game resources" alt="" coords="176,5,361,32"/>
-<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
-</map>

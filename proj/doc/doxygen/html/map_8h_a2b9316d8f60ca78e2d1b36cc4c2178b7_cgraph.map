@@ -1,4 +1,0 @@
-<map id="load_map" name="load_map">
-<area shape="rect" id="node1" title="loads the map to the buffers according to the zoom factor specified" alt="" coords="5,5,92,32"/>
-<area shape="rect" id="node2" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="140,5,292,32"/>
-</map>

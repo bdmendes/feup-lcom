@@ -1,6 +1,0 @@
-<map id="mouse_write_byte" name="mouse_write_byte">
-<area shape="rect" id="node1" title="writes a mouse byte" alt="" coords="397,46,540,73"/>
-<area shape="rect" id="node2" href="$mouse_8h.html#aa8ab77f4eebbfb8ced8fb2e6f435c1e8" title="enables mouse data reporting" alt="" coords="176,5,349,47"/>
-<area shape="rect" id="node4" href="$mouse_8h.html#a7e311379d4d64f88873ef8ade5c82a25" title="disables mouse data reporting" alt="" coords="185,71,341,112"/>
-<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,46,128,73"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="player_is_above_bomb" name="player_is_above_bomb">
-<area shape="rect" id="node1" title="verifies if the player is above a bomb, ie. at least one of its sprite pixels is above a block bomb" alt="" coords="531,5,703,32"/>
-<area shape="rect" id="node2" href="$game_8h.html#a2552f2fb0f21066a0b28acb29dd694b1" title="checks in which way the game ended: bomb explosion (game countdown timer defined),..." alt="" coords="353,5,483,32"/>
-<area shape="rect" id="node3" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="176,5,305,32"/>
-<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
-</map>

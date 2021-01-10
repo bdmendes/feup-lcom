@@ -1,5 +1,0 @@
-<map id="create_cloned_sprite" name="create_cloned_sprite">
-<area shape="rect" id="node1" title="zooms the sprite bitmap (cloning pixels in matrix&#45;like form) and return new generated sprite" alt="" coords="5,42,163,69"/>
-<area shape="rect" id="node2" href="$sprite_8c.html#ae3d8970e3246ba6e6f3eb433529d9233" title="creates a sprite from a bitmap" alt="" coords="214,5,359,47"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="211,71,363,98"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="game_handle_countdown" name="game_handle_countdown">
-<area shape="rect" id="node1" title="decrements a second to the in_game countdown timer. If a bomb is about to explode in a few seconds,..." alt="" coords="353,5,541,32"/>
-<area shape="rect" id="node2" href="$ev__handler_8h.html#aaacf439877bd0df1415b73ba8a989293" title="handles the events while in game. The values passed not related to the interrupt type are not conside..." alt="" coords="176,5,305,32"/>
-<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
-</map>

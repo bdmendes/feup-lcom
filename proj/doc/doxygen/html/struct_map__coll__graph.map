@@ -1,4 +1,0 @@
-<map id="Map" name="Map">
-<area shape="rect" id="node1" title="A Map holds information about the blocks for each position, and the sprites corresponding to each one..." alt="" coords="10,95,61,121"/>
-<area shape="rect" id="node2" href="$struct_sprite.html" title="A Sprite holds the width, height, x and y positions and the bitmap of an object that shall be drawn o..." alt="" coords="5,5,65,32"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="draw_map" name="draw_map">
-<area shape="rect" id="node1" title="Copies the current position of the zoom buffer to the video buffer." alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$vbe_8c.html#ace8d4e864266e329a2349fa4d4b60b1e" title="gets the number of bytes per pixel for the current graphics mode, that was retrieved when switching t..." alt="" coords="151,5,303,32"/>
-<area shape="rect" id="node3" href="$vbe_8c.html#a41cfd7be8b693f03c1a12e6b3dd98789" title="gets the pointer to the video buffer that is being written to (which is in the moment hidden,..." alt="" coords="144,56,311,83"/>
-</map>
