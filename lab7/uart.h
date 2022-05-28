@@ -3,9 +3,6 @@
 
 #include <lcom/lcf.h>
 
-#define COM1 0x3F8
-#define COM2 0x2F8
-
 enum parity_t {
   NO_PARITY,
   ODD_PARITY,
@@ -22,5 +19,11 @@ struct uart_config_t {
 };
 
 int read_uart_config(struct uart_config_t *uart_config);
+
+int uart_subscribe_int(int *bit_no);
+
+int uart_unsubscribe_int();
+
+void uart_ih();
 
 #endif

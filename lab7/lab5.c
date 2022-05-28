@@ -32,6 +32,30 @@ int(video_test_controller)() {
   printf("stop bits: %d\n", uart_config.no_stop_bits);
   printf("bitrate: %lu\n", uart_config.bitrate);
 
+  /* Read bytes until user stops the program */
+  /* If needed to send, an error protocol at driver and app level should be
+   * developed */
+  int bit_no = 0;
+  uart_subscribe_int(&bit_no);
+  int ipc_status;
+  message msg;
+  int r;
+  uint32_t irq_set = BIT(bit_no);
+  while (true) {
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status)) {
+      if (_ENDPOINT_P(msg.m_source) == HARDWARE) {
+        if (msg.m_notify.interrupts & irq_set) {
+          uart_ih();
+        }
+      }
+    }
+  }
+  uart_unsubscribe_int();
+
   return 0;
 }
 
