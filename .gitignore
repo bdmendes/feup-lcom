@@ -1,6 +1,5 @@
 .idea
 .gdbinit
-.minix-src
 .clang-format
 *.o
 *.d
