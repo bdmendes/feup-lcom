@@ -3,19 +3,18 @@
 #include <lcom/timer.h>
 
 static int hook_id = 0;
+static uint32_t counter = 0;
+
+uint32_t timer_get_counter() { return counter; }
 
 int(timer_subscribe_int)(uint8_t *bit_no) {
-  hook_id = *bit_no;
-  int buf = hook_id;
-  int ret = sys_irqsetpolicy(TIMER0_IRQ, IRQ_REENABLE, &buf);
-  if (ret != OK) {
-    return ret;
-  }
-  *bit_no = buf;
-  return OK;
+  *bit_no = hook_id;
+  return sys_irqsetpolicy(TIMER0_IRQ, IRQ_REENABLE, &hook_id);
 }
 
 int(timer_unsubscribe_int)() { return sys_irqrmpolicy(&hook_id); }
+
+void(timer_int_handler)() { counter += 1; }
 
 int timer_send_read_conf_cmd(uint8_t timer) {
   uint8_t cmd = TIMER_RB_CMD | TIMER_RB_COUNT_ | TIMER_RB_SEL(timer);
