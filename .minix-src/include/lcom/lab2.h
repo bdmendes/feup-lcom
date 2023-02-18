@@ -14,7 +14,7 @@
  * @param field  Configuration field to display
  * @return Return 0 upon success and non-zero otherwise
  */
-int (timer_test_read_config)(uint8_t timer, enum timer_status_field field);
+int(timer_test_read_config)(uint8_t timer, enum timer_status_field field);
 
 /**
  * @brief Tests change of Timer O interrupt frequency
@@ -25,7 +25,7 @@ int (timer_test_read_config)(uint8_t timer, enum timer_status_field field);
  * @param freq Frequency of interrupts to generate
  * @return Return 0 upon success and non-zero otherwise
  */
-int (timer_test_time_base)(uint8_t timer, uint32_t freq);
+int(timer_test_time_base)(uint8_t timer, uint32_t freq);
 
 /**
  * @brief Tests Timer 0 interrupt handling
@@ -36,4 +36,4 @@ int (timer_test_time_base)(uint8_t timer, uint32_t freq);
  * @param time Length of time interval while interrupts are subscribed
  * @return Return 0 upon success and non-zero otherwise
  */
-int (timer_test_int)(uint8_t time);
+int(timer_test_int)(uint8_t time);
