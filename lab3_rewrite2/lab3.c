@@ -84,7 +84,44 @@ int(kbd_test_scan)() {
   return 0;
 }
 
-int(kbd_test_poll)() { return 1; }
+int(kbd_test_poll)() {
+  // this test function already disables the keyboard interrupts
+  // if (kbc_disable_int() != OK) {
+  //   printf("kbc_disable_int failed");
+  //   return 1;
+  // }
+
+  int byte_index = 0;
+  while (1) {
+    if (kbc_read_byte() != OK) {
+      micro_delay(5000);
+      continue;
+    }
+
+    uint8_t *out_buf = kbc_get_out_buf();
+
+    if (out_buf[byte_index] == TWO_BYTE_CODE) {
+      byte_index++;
+      continue;
+    }
+
+    int is_make_code = !IS_BREAK_CODE(out_buf[byte_index]);
+    kbd_print_scancode(is_make_code, byte_index + 1, out_buf);
+
+    if (out_buf[byte_index] == ESC_BREAK_CODE) {
+      break;
+    }
+
+    byte_index = 0;
+  }
+
+  if (kbc_enable_int() != OK) {
+    printf("kbc_enable_int failed");
+    return 1;
+  }
+
+  return 0;
+}
 
 int(kbd_test_timed_scan)(uint8_t n) {
   printf("lab3.c::kbd_test_timed_scan(%d)\t", n);

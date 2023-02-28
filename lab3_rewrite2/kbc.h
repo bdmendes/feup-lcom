@@ -40,4 +40,6 @@ uint8_t *kbc_get_out_buf();
 int kbc_subscribe_int(uint8_t *bit_no);
 int kbc_unsubscibe_int();
 int kbc_read_byte();
+int kbc_disable_int();
+int kbc_enable_int();
 void kbc_interrupt_handler();
