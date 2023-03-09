@@ -3,8 +3,8 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "mouse.h"
 #include "kbc.h"
+#include "mouse.h"
 
 int main(int argc, char *argv[]) {
   lcf_set_language("EN-US");
@@ -54,7 +54,7 @@ int(mouse_test_packet)(uint32_t cnt) {
             cnt--;
             struct packet p = mouse_assemble_packet();
             mouse_print_packet(&p);
-          } else if (!synced && mouse_get_packet_index() == 1){
+          } else if (!synced && mouse_get_packet_index() == 1) {
             printf("Synced!\n");
             synced = true;
           }
@@ -81,9 +81,58 @@ int(mouse_test_packet)(uint32_t cnt) {
 }
 
 int(mouse_test_remote)(uint16_t period, uint8_t cnt) {
-  /* To be completed */
-  printf("%s(%u, %u): under construction\n", __func__, period, cnt);
-  return 1;
+  if (mouse_write_mouse_byte(MOUSE_DISABLE_DATA_REPORTING)) {
+    printf("Error disabling data reporting");
+    return 1;
+  }
+
+  if (mouse_write_mouse_byte(MOUSE_SET_REMOTE_MODE)) {
+    printf("Error setting remote mode");
+    return 1;
+  }
+
+  while (cnt > 0) {
+    if (mouse_write_mouse_byte(MOUSE_READ_DATA)) {
+      printf("Error reading data");
+      return 1;
+    }
+
+    for (int i = 0; i < 3; i++) {
+      if (mouse_read() != OK) {
+        printf("Error reading data");
+      }
+
+      if (i == 2) {
+        cnt--;
+        struct packet p = mouse_assemble_packet();
+        mouse_print_packet(&p);
+      }
+    }
+
+    tickdelay(micros_to_ticks(period * 1000));
+  }
+
+  if (mouse_write_mouse_byte(MOUSE_SET_STREAM_MODE)) {
+    printf("Error setting stream mode");
+    return 1;
+  }
+
+  if (mouse_write_mouse_byte(MOUSE_DISABLE_DATA_REPORTING)) {
+    printf("Error disabling data reporting");
+    return 1;
+  }
+
+  uint8_t default_cmd_byte = minix_get_dflt_kbc_cmd_byte();
+  if (kbc_write_cmd(KBD_CMD_WRITE_BYTE)) {
+    printf("Error writing default command byte");
+    return 1;
+  }
+  if (sys_outb(KBC_IN_BUF, default_cmd_byte)) {
+    printf("Error writing default command byte");
+    return 1;
+  }
+
+  return OK;
 }
 
 int(mouse_test_async)(uint8_t idle_time) {

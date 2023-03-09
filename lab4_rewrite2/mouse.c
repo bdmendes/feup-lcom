@@ -91,16 +91,16 @@ int mouse_write_mouse_byte(uint8_t mouse_byte) {
   return 0;
 }
 
-void mouse_read() {
+int mouse_read() {
   uint8_t byte;
   if (kbc_read_obf(&byte) != OK) {
     printf("Error reading output buffer");
-    return;
+    return 1;
   }
 
   // Sync first byte
   if (packet_index == 0 && !(byte & BIT(3))) {
-    return;
+    return 0;
   }
 
   mouse_packet[packet_index++] = byte;
@@ -108,6 +108,8 @@ void mouse_read() {
   if (packet_index == 3) {
     packet_index = 0;
   }
+
+  return 0;
 }
 
 void(mouse_ih)() { mouse_read(); }

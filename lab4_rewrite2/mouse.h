@@ -6,7 +6,7 @@ int mouse_unsubscribe_int();
 
 int mouse_write_mouse_byte(uint8_t mouse_byte);
 
-void mouse_read();
+int mouse_read();
 
 uint8_t* mouse_get_packet_byte();
 
