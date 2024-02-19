@@ -2,16 +2,8 @@
 
 Labs and final project developed for LCOM 2020/2021.
 
-Intended as a help resource. Be aware of plagiarism!
+**Intended as a help resource. Be aware of plagiarism!**
 
-Developed with [Rita Mendes](https://github.com/eukia).
+## Rewrites
 
-## Help material
-
-[LCOM 20/21 support page](https://paginas.fe.up.pt/~pfs/aulas/lcom2020/)
-
-## Considerations
-
-The serial port was not implemented.
-
-The labs were rewritten to practice for the individual programming assignments.
+I rewrote the programming labs each year that I was a class assistant for the course. They should be semantically similar to the original versions, although with different style. Some of them are more experimental, e.g. the 23/24 rewrite that includes a thin wrapper around IHs to make multi-device handling easier.
