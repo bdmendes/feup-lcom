@@ -11,3 +11,5 @@ void unsubscribe_device_interrupts(int irq_line);
 void exit_interrupt_loop();
 
 void interrupt_loop();
+
+void sleep_abit();

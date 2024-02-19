@@ -5,6 +5,8 @@ static int current_bit_no = 0;
 static ih_vec_t *vec;
 static volatile bool should_exit_interrupt_loop = false;
 
+#define DELAY_US 20000
+
 int main(int argc, char *argv[]) {
   lcf_set_language("EN-US");
 
@@ -48,36 +50,41 @@ void subscribe_device_interrupts(int irq_line, int policy, void (*func)(void)) {
 }
 
 void unsubscribe_device_interrupts(int irq_line) {
+  if (vec == NULL || ih_vec_size(vec) == 0) {
+    return;
+  }
+
   for (int i = 0; i < ih_vec_size(vec); i++) {
     ih_entry entry = ih_vec_at(vec, i);
 
     if (entry.irq_line == irq_line) {
-      ih_vec_remove_at(vec, i);
-
       if (sys_irqrmpolicy(&entry.hook_id) != OK) {
         panic("failed to remove policy");
       }
 
+      ih_vec_remove_at(vec, i);
+
       break;
     }
   }
+
+  if (ih_vec_size(vec) == 0) {
+    free(vec);
+    vec = NULL;
+  }
 }
 
-void exit_interrupt_loop() {
-  should_exit_interrupt_loop = true;
-  free(vec);
-  vec = NULL;
-}
+void exit_interrupt_loop() { should_exit_interrupt_loop = true; }
 
 void interrupt_loop() {
   int ipc_status;
   int r;
   message msg;
 
-  while (!should_exit_interrupt_loop) {
+  while (!should_exit_interrupt_loop && vec != NULL) {
     /* Get a request message. */
     if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
-      printf("driver_receive failed wi%d", r);
+      printf("driver_receive failed with %d", r);
       continue;
     }
     if (is_ipc_notify(ipc_status)) { /* received notification */
@@ -96,3 +103,5 @@ void interrupt_loop() {
     }
   }
 }
+
+void sleep_abit() { tickdelay(micros_to_ticks(DELAY_US)); }
