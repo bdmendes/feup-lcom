@@ -15,6 +15,7 @@
     "*.scss.liquid": "liquid-scss",
     "lib.h": "c",
     "timer.h": "c",
-    "kbc.h": "c"
+    "kbc.h": "c",
+    "graphics.h": "c"
   }
 }
