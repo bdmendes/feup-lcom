@@ -14,6 +14,7 @@
     "*.css.liquid": "liquid-css",
     "*.scss.liquid": "liquid-scss",
     "lib.h": "c",
-    "timer.h": "c"
+    "timer.h": "c",
+    "kbc.h": "c"
   }
 }

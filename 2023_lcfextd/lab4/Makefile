@@ -1,5 +1,5 @@
-PROG = lab3
-SRCS = lab3.c keyboard.c
+PROG = lab4
+SRCS = lab4.c mouse.c
 
 # list of library dependencies (for Lab 2, only LCF library)
 DPADD += ${LIBLCF}
