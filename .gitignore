@@ -3,6 +3,7 @@
 .clang-format
 *.o
 *.d
+*.a
 *.depend
 *trace.txt
 *output.txt
