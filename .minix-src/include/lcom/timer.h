@@ -42,10 +42,10 @@ union timer_status_field_val {
 
 /**
  * @brief Changes the operating frequency of a timer
- * 
- * Must use the read-back command so that it does not change 
+ *
+ * Must use the read-back command so that it does not change
  *   the 4 LSBs (mode and BCD/binary) of the timer's control word.
- * 
+ *
  * @param timer Timer to configure. (Ranges from 0 to 2)
  * @param freq Timer operating frequency
  * @return Return 0 upon success and non-zero otherwise
@@ -86,8 +86,8 @@ int(timer_get_conf)(uint8_t timer, uint8_t *st);
 
 /**
  * @brief Shows timer configuration
- * 
- * Displays, in a human friendly way, the specified field of a 
+ *
+ * Displays, in a human friendly way, the specified field of a
  *  timer status, which was read via the read-back command
  *
  * @param timer timer whose configuration should be displayed (Ranges from 0 to 2)
@@ -99,15 +99,15 @@ int(timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field
 
 /**
  * @brief Prints a timer config field value
- * 
- * @return Returns 0 upon success and non-zero otherwise 
+ *
+ * @return Returns 0 upon success and non-zero otherwise
  */
 int(timer_print_config)(uint8_t timer, enum timer_status_field field,
                         union timer_status_field_val val);
 
 /**
  * @brief Increments elapsed time count
- * 
+ *
  * @return Returns the current time count
  */
 uint32_t(timer_print_elapsed_time)();
