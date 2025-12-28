@@ -16,7 +16,7 @@ typedef int bitpos;
 bitmask mask(bitpos pos, ...);
 
 /**
- * Yields a new bitmask equal to `msk`
+ * Yields a new bitmask equal to `msk`.
  */
 bitmask clear(bitmask msk, bitpos pos);
 
