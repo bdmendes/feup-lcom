@@ -1,5 +1,13 @@
+-xc
+-target
+i386-unknown-none
 -D__minix
 -D_MINIX
 -D_NETBSD_SOURCE
 -D__i386__
--I.minix-src/include
+-nostdinc
+-isystem
+.minix-src/include
+-isystem
+/usr/lib/clang/$(clang --version | sed -n 's/.*version \([0-9][0-9]*\).*/\1/p' | head -n1)/include
+-ferror-limit=0
